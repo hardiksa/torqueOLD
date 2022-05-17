@@ -6,7 +6,7 @@ order: 1
 
 ## Rektdrop
 
-The Torque [Rektdrop](https://evmos.blog/the-evmos-rektdrop-abbe931ba823) is the genesis airdrop for the TORQUE token to Cosmos Hub, Osmosis and Ethereum users.
+The Torque [Rektdrop](https://torque.blog/the-torque-rektdrop-abbe931ba823) is the genesis airdrop for the TORQUE token to Cosmos Hub, Osmosis and Ethereum users.
 
 > The end goal of Torque is to bring together the Cosmos and Ethereum community and thus the Rektdrop has been designed to reward past participation in both networks under this theme of “getting rekt”.
 

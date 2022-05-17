@@ -38,7 +38,7 @@ a smooth workflow for all contributors, the following general procedure for cont
        if you are eager and do not get a prompt response, feel free to dive on in!
     4. Follow standard Github best practices:
         1. Fork the repo
-        2. Branch from the HEAD of `development`(For core developers working within the evmos repo, to ensure a
+        2. Branch from the HEAD of `development`(For core developers working within the torque repo, to ensure a
            clear ownership of branches, branches must be named with the convention `{moniker}/{issue#}-branch-name`).
         3. Make commits
         4. Submit a PR to `development`
@@ -81,8 +81,8 @@ For instance, to create a fork and work on a branch of it, you would:
 3. `git remote rename origin upstream`
 4. `git remote add origin git@github.com:hardiksa/torque.git`
 
-Now `origin` refers to my fork and `upstream` refers to the evmos version. So I can `git push -u origin master` to
-update my fork, and make pull requests to evmos from there. Of course, replace `tharsis` with your git handle.
+Now `origin` refers to my fork and `upstream` refers to the torque version. So I can `git push -u origin master` to
+update my fork, and make pull requests to torque from there. Of course, replace `tharsis` with your git handle.
 
 To pull in updates from the origin repo, run:
 

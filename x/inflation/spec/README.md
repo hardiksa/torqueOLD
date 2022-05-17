@@ -11,7 +11,7 @@ parent:
 
 The `x/inflation` module mints new Torque tokens and allocates them in daily
 epochs according to the [Torque Token
-Model](https://evmos.blog/the-evmos-token-model-edc07014978b) distribution to
+Model](https://torque.blog/the-torque-token-model-edc07014978b) distribution to
 
 * Staking Rewards `40%`,
 * Team Vesting `25%`,

@@ -28,7 +28,7 @@ parent:
   </a>
 </div>
 <div align="center">
-  <a href="https://discord.gg/evmos">
+  <a href="https://discord.gg/torque">
     <img alt="Discord" src="https://img.shields.io/discord/809048090249134080.svg" />
   </a>
   <a href="https://github.com/hardiksa/torque/actions?query=branch%3Amain+workflow%3ALint">
@@ -49,7 +49,7 @@ interoperable with Ethereum. It's built using the [Cosmos SDK](https://github.co
 
 ## Installation
 
-For prerequisites and detailed build instructions please read the [Installation](https://evmos.dev/quickstart/installation.html) instructions. Once the dependencies are installed, run:
+For prerequisites and detailed build instructions please read the [Installation](https://torque.dev/quickstart/installation.html) instructions. Once the dependencies are installed, run:
 
 ```bash
 make install
@@ -59,15 +59,15 @@ Or check out the latest [release](https://github.com/hardiksa/torque/releases).
 
 ## Quick Start
 
-To learn how the Torque works from a high-level perspective, go to the [Introduction](https://evmos.dev/intro/overview.html) section from the documentation. You can also check the instructions to [Run a Node](https://evmos.dev/quickstart/run_node.html).
+To learn how the Torque works from a high-level perspective, go to the [Introduction](https://torque.dev/intro/overview.html) section from the documentation. You can also check the instructions to [Run a Node](https://torque.dev/quickstart/run_node.html).
 
 ## Community
 
 The following chat channels and forums are a great spot to ask questions about Torque:
 
 - [Torque Twitter](https://twitter.com/TorqueOrg)
-- [Torque Discord](https://discord.gg/evmos)
-- [Torque Forum](https://commonwealth.im/evmos)
+- [Torque Discord](https://discord.gg/torque)
+- [Torque Forum](https://commonwealth.im/torque)
 - [Tharsis Twitter](https://twitter.com/TharsisHQ)
 
 ## Contributing
@@ -78,4 +78,4 @@ For additional instructions, standards and style guides, please refer to the [Co
 
 ## Careers
 
-See our open positions on [Cosmos Jobs](https://jobs.cosmos.network/project/evmos-d0sk1uxuh-remote/), [Notion](https://tharsis.notion.site), or feel free to [reach out](mailto:careers@thars.is) via email.
+See our open positions on [Cosmos Jobs](https://jobs.cosmos.network/project/torque-d0sk1uxuh-remote/), [Notion](https://tharsis.notion.site), or feel free to [reach out](mailto:careers@thars.is) via email.

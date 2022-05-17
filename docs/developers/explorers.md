@@ -21,20 +21,20 @@ Below is a list of public block explorers that support Torque Mainnet and Testne
 
 |           | Category | URL                                                    |
 | --------- | -------- | ------------------------------------------------------ |
-| BigDipper | `cosmos` | [evmos.bigdipper.live/](https://evmos.bigdipper.live/) |
+| BigDipper | `cosmos` | [torque.bigdipper.live/](https://torque.bigdipper.live/) |
 <!-- markdown-link-check-disable-next-line -->
-| Blockscout | `evm`    | [evm.evmos.org](https://evm.evmos.org/)          |
+| Blockscout | `evm`    | [evm.torque.org](https://evm.torque.org/)          |
 | M--------n | `------` | [----------------------------------------------) |
-| ATOMScan   | `cosmos` | [atomscan.com/evmos](https://atomscan.com/evmos) |
+| ATOMScan   | `cosmos` | [atomscan.com/torque](https://atomscan.com/torque) |
 :::
 ::: tab Testnet
 
 |           | Category | URL                                                             |
 | --------- | -------- | --------------------------------------------------------------- |
-| BigDipper | `cosmos` | [testnet.bigdipper.live](https://testnet.evmos.bigdipper.live/) |
+| BigDipper | `cosmos` | [testnet.bigdipper.live](https://testnet.torque.bigdipper.live/) |
 <!-- markdown-link-check-disable-next-line -->
-| Blockscout | `evm`    | [evm.evmos.dev](https://evm.evmos.dev/)                                        |
+| Blockscout | `evm`    | [evm.torque.dev](https://evm.torque.dev/)                                        |
 | E--------s | `------` | [----------------------------------------------------------------------------) |
-| Mintscan   | `cosmos` | [testnet.mintscan.io/evmos-testnet](https://testnet.mintscan.io/evmos-testnet) |
+| Mintscan   | `cosmos` | [testnet.mintscan.io/torque-testnet](https://testnet.mintscan.io/torque-testnet) |
 :::
 ::::

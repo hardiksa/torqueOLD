@@ -59,37 +59,37 @@ func TestEqualMetadata(t *testing.T) {
 		{
 			"equal metadata",
 			banktypes.Metadata{
-				Base:        "aevmos",
-				Display:     "evmos",
+				Base:        "atorque",
+				Display:     "torque",
 				Name:        "Torque",
 				Symbol:      "TORQUE",
 				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "aevmos",
+						Denom:    "atorque",
 						Exponent: 0,
-						Aliases:  []string{"atto evmos"},
+						Aliases:  []string{"atto torque"},
 					},
 					{
-						Denom:    "evmos",
+						Denom:    "torque",
 						Exponent: 18,
 					},
 				},
 			},
 			banktypes.Metadata{
-				Base:        "aevmos",
-				Display:     "evmos",
+				Base:        "atorque",
+				Display:     "torque",
 				Name:        "Torque",
 				Symbol:      "TORQUE",
 				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "aevmos",
+						Denom:    "atorque",
 						Exponent: 0,
-						Aliases:  []string{"atto evmos"},
+						Aliases:  []string{"atto torque"},
 					},
 					{
-						Denom:    "evmos",
+						Denom:    "torque",
 						Exponent: 18,
 					},
 				},
@@ -99,44 +99,44 @@ func TestEqualMetadata(t *testing.T) {
 		{
 			"different base field",
 			banktypes.Metadata{
-				Base: "aevmos",
+				Base: "atorque",
 			},
 			banktypes.Metadata{
-				Base: "taevmos",
+				Base: "tatorque",
 			},
 			true,
 		},
 		{
 			"different denom units length",
 			banktypes.Metadata{
-				Base:        "aevmos",
-				Display:     "evmos",
+				Base:        "atorque",
+				Display:     "torque",
 				Name:        "Torque",
 				Symbol:      "TORQUE",
 				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "aevmos",
+						Denom:    "atorque",
 						Exponent: 0,
-						Aliases:  []string{"atto evmos"},
+						Aliases:  []string{"atto torque"},
 					},
 					{
-						Denom:    "evmos",
+						Denom:    "torque",
 						Exponent: 18,
 					},
 				},
 			},
 			banktypes.Metadata{
-				Base:        "aevmos",
-				Display:     "evmos",
+				Base:        "atorque",
+				Display:     "torque",
 				Name:        "Torque",
 				Symbol:      "TORQUE",
 				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "aevmos",
+						Denom:    "atorque",
 						Exponent: 0,
-						Aliases:  []string{"atto evmos"},
+						Aliases:  []string{"atto torque"},
 					},
 				},
 			},
@@ -145,47 +145,47 @@ func TestEqualMetadata(t *testing.T) {
 		{
 			"different denom units",
 			banktypes.Metadata{
-				Base:        "aevmos",
-				Display:     "evmos",
+				Base:        "atorque",
+				Display:     "torque",
 				Name:        "Torque",
 				Symbol:      "TORQUE",
 				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "aevmos",
+						Denom:    "atorque",
 						Exponent: 0,
-						Aliases:  []string{"atto evmos"},
+						Aliases:  []string{"atto torque"},
 					},
 					{
-						Denom:    "uevmos",
+						Denom:    "utorque",
 						Exponent: 12,
-						Aliases:  []string{"micro evmos"},
+						Aliases:  []string{"micro torque"},
 					},
 					{
-						Denom:    "evmos",
+						Denom:    "torque",
 						Exponent: 18,
 					},
 				},
 			},
 			banktypes.Metadata{
-				Base:        "aevmos",
-				Display:     "evmos",
+				Base:        "atorque",
+				Display:     "torque",
 				Name:        "Torque",
 				Symbol:      "TORQUE",
 				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
-						Denom:    "aevmos",
+						Denom:    "atorque",
 						Exponent: 0,
-						Aliases:  []string{"atto evmos"},
+						Aliases:  []string{"atto torque"},
 					},
 					{
-						Denom:    "Uevmos",
+						Denom:    "Utorque",
 						Exponent: 12,
-						Aliases:  []string{"micro evmos"},
+						Aliases:  []string{"micro torque"},
 					},
 					{
-						Denom:    "evmos",
+						Denom:    "torque",
 						Exponent: 18,
 					},
 				},
@@ -220,25 +220,25 @@ func TestEqualAliases(t *testing.T) {
 		{
 			"different lengths",
 			[]string{},
-			[]string{"atto evmos"},
+			[]string{"atto torque"},
 			false,
 		},
 		{
 			"different values",
-			[]string{"attoevmos"},
-			[]string{"atto evmos"},
+			[]string{"attotorque"},
+			[]string{"atto torque"},
 			false,
 		},
 		{
 			"same values, unsorted",
-			[]string{"atto evmos", "aevmos"},
-			[]string{"aevmos", "atto evmos"},
+			[]string{"atto torque", "atorque"},
+			[]string{"atorque", "atto torque"},
 			false,
 		},
 		{
 			"same values, sorted",
-			[]string{"aevmos", "atto evmos"},
-			[]string{"aevmos", "atto evmos"},
+			[]string{"atorque", "atto torque"},
+			[]string{"atorque", "atto torque"},
 			true,
 		},
 	}

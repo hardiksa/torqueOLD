@@ -13,7 +13,7 @@
     "postbuild": "./post.sh"
   },
   "keywords": [
-    "evmos",
+    "torque",
     "cosmos",
     "ethereum",
     "blockchain",

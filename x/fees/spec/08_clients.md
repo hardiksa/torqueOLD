@@ -6,10 +6,10 @@ order: 8
 
 ## CLI
 
-Find below a list of  `evmosd` commands added with the  `x/fees` module. You can obtain the full list by using the `evmosd -h` command. A CLI command can look like this:
+Find below a list of  `torqued` commands added with the  `x/fees` module. You can obtain the full list by using the `torqued -h` command. A CLI command can look like this:
 
 ```bash
-evmosd query fees params
+torqued query fees params
 ```
 
 ### Queries
@@ -34,22 +34,22 @@ evmosd query fees params
 
 | Verb   | Method                                       | Description                                 |
 | :----- | :------------------------------------------- | :------------------------------------------ |
-| `gRPC` | `evmos.fees.v1.Query/Params`                 | Get fees params                             |
-| `gRPC` | `evmos.fees.v1.Query/DevFeeInfo`             | Get registered fee info                     |
-| `gRPC` | `evmos.fees.v1.Query/DevFeeInfos`            | Get all registered fee infos                |
-| `gRPC` | `evmos.fees.v1.Query/DevFeeInfosPerDeployer` | Get all registered fee infos for a deployer |
-| `GET`  | `/evmos/fees/v1/params`                      | Get fees params                             |
-| `GET`  | `/evmos/fees/v1/fees/{contract_address}`     | Get registered fee info                     |
-| `GET`  | `/evmos/fees/v1/fees`                        | Get all registered fee infos                |
-| `GET`  | `/evmos/fees/v1/fees/{deployer_address}`     | Get all registered fee infos for a deployer |
+| `gRPC` | `torque.fees.v1.Query/Params`                 | Get fees params                             |
+| `gRPC` | `torque.fees.v1.Query/DevFeeInfo`             | Get registered fee info                     |
+| `gRPC` | `torque.fees.v1.Query/DevFeeInfos`            | Get all registered fee infos                |
+| `gRPC` | `torque.fees.v1.Query/DevFeeInfosPerDeployer` | Get all registered fee infos for a deployer |
+| `GET`  | `/torque/fees/v1/params`                      | Get fees params                             |
+| `GET`  | `/torque/fees/v1/fees/{contract_address}`     | Get registered fee info                     |
+| `GET`  | `/torque/fees/v1/fees`                        | Get all registered fee infos                |
+| `GET`  | `/torque/fees/v1/fees/{deployer_address}`     | Get all registered fee infos for a deployer |
 
 ### Transactions
 
 | Verb   | Method                                    | Description                                |
 | :----- | :---------------------------------------- | :----------------------------------------- |
-| `gRPC` | `evmos.fees.v1.Msg/RegisterDevFeeInfo`    | Register a contract for receiving fees     |
-| `gRPC` | `evmos.fees.v1.Msg/UpdateDevFeeInfo`      | Update the withdraw address for a contract |
-| `gRPC` | `evmos.fees.v1.Msg/CancelDevFeeInfo`      | Remove the fee info for a contract         |
-| `POST` | `/evmos/fees/v1/tx/register_dev_fee_info` | Register a contract for receiving fees     |
-| `POST` | `/evmos/fees/v1/tx/update_dev_fee_info`   | Update the withdraw address for a contract |
-| `POST` | `/evmos/fees/v1/tx/cancel_dev_fee_info`   | Remove the fee info for a contract         |
+| `gRPC` | `torque.fees.v1.Msg/RegisterDevFeeInfo`    | Register a contract for receiving fees     |
+| `gRPC` | `torque.fees.v1.Msg/UpdateDevFeeInfo`      | Update the withdraw address for a contract |
+| `gRPC` | `torque.fees.v1.Msg/CancelDevFeeInfo`      | Remove the fee info for a contract         |
+| `POST` | `/torque/fees/v1/tx/register_dev_fee_info` | Register a contract for receiving fees     |
+| `POST` | `/torque/fees/v1/tx/update_dev_fee_info`   | Update the withdraw address for a contract |
+| `POST` | `/torque/fees/v1/tx/cancel_dev_fee_info`   | Remove the fee info for a contract         |

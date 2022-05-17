@@ -5,187 +5,187 @@
 
 ## Table of Contents
 
-- [evmos/claims/v1/claims.proto](#evmos/claims/v1/claims.proto)
-    - [Claim](#evmos.claims.v1.Claim)
-    - [ClaimsRecord](#evmos.claims.v1.ClaimsRecord)
-    - [ClaimsRecordAddress](#evmos.claims.v1.ClaimsRecordAddress)
+- [torque/claims/v1/claims.proto](#torque/claims/v1/claims.proto)
+    - [Claim](#torque.claims.v1.Claim)
+    - [ClaimsRecord](#torque.claims.v1.ClaimsRecord)
+    - [ClaimsRecordAddress](#torque.claims.v1.ClaimsRecordAddress)
   
-    - [Action](#evmos.claims.v1.Action)
+    - [Action](#torque.claims.v1.Action)
   
-- [evmos/claims/v1/genesis.proto](#evmos/claims/v1/genesis.proto)
-    - [GenesisState](#evmos.claims.v1.GenesisState)
-    - [Params](#evmos.claims.v1.Params)
+- [torque/claims/v1/genesis.proto](#torque/claims/v1/genesis.proto)
+    - [GenesisState](#torque.claims.v1.GenesisState)
+    - [Params](#torque.claims.v1.Params)
   
-- [evmos/claims/v1/query.proto](#evmos/claims/v1/query.proto)
-    - [QueryClaimsRecordRequest](#evmos.claims.v1.QueryClaimsRecordRequest)
-    - [QueryClaimsRecordResponse](#evmos.claims.v1.QueryClaimsRecordResponse)
-    - [QueryClaimsRecordsRequest](#evmos.claims.v1.QueryClaimsRecordsRequest)
-    - [QueryClaimsRecordsResponse](#evmos.claims.v1.QueryClaimsRecordsResponse)
-    - [QueryParamsRequest](#evmos.claims.v1.QueryParamsRequest)
-    - [QueryParamsResponse](#evmos.claims.v1.QueryParamsResponse)
-    - [QueryTotalUnclaimedRequest](#evmos.claims.v1.QueryTotalUnclaimedRequest)
-    - [QueryTotalUnclaimedResponse](#evmos.claims.v1.QueryTotalUnclaimedResponse)
+- [torque/claims/v1/query.proto](#torque/claims/v1/query.proto)
+    - [QueryClaimsRecordRequest](#torque.claims.v1.QueryClaimsRecordRequest)
+    - [QueryClaimsRecordResponse](#torque.claims.v1.QueryClaimsRecordResponse)
+    - [QueryClaimsRecordsRequest](#torque.claims.v1.QueryClaimsRecordsRequest)
+    - [QueryClaimsRecordsResponse](#torque.claims.v1.QueryClaimsRecordsResponse)
+    - [QueryParamsRequest](#torque.claims.v1.QueryParamsRequest)
+    - [QueryParamsResponse](#torque.claims.v1.QueryParamsResponse)
+    - [QueryTotalUnclaimedRequest](#torque.claims.v1.QueryTotalUnclaimedRequest)
+    - [QueryTotalUnclaimedResponse](#torque.claims.v1.QueryTotalUnclaimedResponse)
   
-    - [Query](#evmos.claims.v1.Query)
+    - [Query](#torque.claims.v1.Query)
   
-- [evmos/epochs/v1/genesis.proto](#evmos/epochs/v1/genesis.proto)
-    - [EpochInfo](#evmos.epochs.v1.EpochInfo)
-    - [GenesisState](#evmos.epochs.v1.GenesisState)
+- [torque/epochs/v1/genesis.proto](#torque/epochs/v1/genesis.proto)
+    - [EpochInfo](#torque.epochs.v1.EpochInfo)
+    - [GenesisState](#torque.epochs.v1.GenesisState)
   
-- [evmos/epochs/v1/query.proto](#evmos/epochs/v1/query.proto)
-    - [QueryCurrentEpochRequest](#evmos.epochs.v1.QueryCurrentEpochRequest)
-    - [QueryCurrentEpochResponse](#evmos.epochs.v1.QueryCurrentEpochResponse)
-    - [QueryEpochsInfoRequest](#evmos.epochs.v1.QueryEpochsInfoRequest)
-    - [QueryEpochsInfoResponse](#evmos.epochs.v1.QueryEpochsInfoResponse)
+- [torque/epochs/v1/query.proto](#torque/epochs/v1/query.proto)
+    - [QueryCurrentEpochRequest](#torque.epochs.v1.QueryCurrentEpochRequest)
+    - [QueryCurrentEpochResponse](#torque.epochs.v1.QueryCurrentEpochResponse)
+    - [QueryEpochsInfoRequest](#torque.epochs.v1.QueryEpochsInfoRequest)
+    - [QueryEpochsInfoResponse](#torque.epochs.v1.QueryEpochsInfoResponse)
   
-    - [Query](#evmos.epochs.v1.Query)
+    - [Query](#torque.epochs.v1.Query)
   
-- [evmos/erc20/v1/erc20.proto](#evmos/erc20/v1/erc20.proto)
-    - [RegisterCoinProposal](#evmos.erc20.v1.RegisterCoinProposal)
-    - [RegisterERC20Proposal](#evmos.erc20.v1.RegisterERC20Proposal)
-    - [ToggleTokenConversionProposal](#evmos.erc20.v1.ToggleTokenConversionProposal)
-    - [TokenPair](#evmos.erc20.v1.TokenPair)
+- [torque/erc20/v1/erc20.proto](#torque/erc20/v1/erc20.proto)
+    - [RegisterCoinProposal](#torque.erc20.v1.RegisterCoinProposal)
+    - [RegisterERC20Proposal](#torque.erc20.v1.RegisterERC20Proposal)
+    - [ToggleTokenConversionProposal](#torque.erc20.v1.ToggleTokenConversionProposal)
+    - [TokenPair](#torque.erc20.v1.TokenPair)
   
-    - [Owner](#evmos.erc20.v1.Owner)
+    - [Owner](#torque.erc20.v1.Owner)
   
-- [evmos/erc20/v1/genesis.proto](#evmos/erc20/v1/genesis.proto)
-    - [GenesisState](#evmos.erc20.v1.GenesisState)
-    - [Params](#evmos.erc20.v1.Params)
+- [torque/erc20/v1/genesis.proto](#torque/erc20/v1/genesis.proto)
+    - [GenesisState](#torque.erc20.v1.GenesisState)
+    - [Params](#torque.erc20.v1.Params)
   
-- [evmos/erc20/v1/query.proto](#evmos/erc20/v1/query.proto)
-    - [QueryParamsRequest](#evmos.erc20.v1.QueryParamsRequest)
-    - [QueryParamsResponse](#evmos.erc20.v1.QueryParamsResponse)
-    - [QueryTokenPairRequest](#evmos.erc20.v1.QueryTokenPairRequest)
-    - [QueryTokenPairResponse](#evmos.erc20.v1.QueryTokenPairResponse)
-    - [QueryTokenPairsRequest](#evmos.erc20.v1.QueryTokenPairsRequest)
-    - [QueryTokenPairsResponse](#evmos.erc20.v1.QueryTokenPairsResponse)
+- [torque/erc20/v1/query.proto](#torque/erc20/v1/query.proto)
+    - [QueryParamsRequest](#torque.erc20.v1.QueryParamsRequest)
+    - [QueryParamsResponse](#torque.erc20.v1.QueryParamsResponse)
+    - [QueryTokenPairRequest](#torque.erc20.v1.QueryTokenPairRequest)
+    - [QueryTokenPairResponse](#torque.erc20.v1.QueryTokenPairResponse)
+    - [QueryTokenPairsRequest](#torque.erc20.v1.QueryTokenPairsRequest)
+    - [QueryTokenPairsResponse](#torque.erc20.v1.QueryTokenPairsResponse)
   
-    - [Query](#evmos.erc20.v1.Query)
+    - [Query](#torque.erc20.v1.Query)
   
-- [evmos/erc20/v1/tx.proto](#evmos/erc20/v1/tx.proto)
-    - [MsgConvertCoin](#evmos.erc20.v1.MsgConvertCoin)
-    - [MsgConvertCoinResponse](#evmos.erc20.v1.MsgConvertCoinResponse)
-    - [MsgConvertERC20](#evmos.erc20.v1.MsgConvertERC20)
-    - [MsgConvertERC20Response](#evmos.erc20.v1.MsgConvertERC20Response)
+- [torque/erc20/v1/tx.proto](#torque/erc20/v1/tx.proto)
+    - [MsgConvertCoin](#torque.erc20.v1.MsgConvertCoin)
+    - [MsgConvertCoinResponse](#torque.erc20.v1.MsgConvertCoinResponse)
+    - [MsgConvertERC20](#torque.erc20.v1.MsgConvertERC20)
+    - [MsgConvertERC20Response](#torque.erc20.v1.MsgConvertERC20Response)
   
-    - [Msg](#evmos.erc20.v1.Msg)
+    - [Msg](#torque.erc20.v1.Msg)
   
-- [evmos/fees/v1/fees.proto](#evmos/fees/v1/fees.proto)
-    - [DevFeeInfo](#evmos.fees.v1.DevFeeInfo)
+- [torque/fees/v1/fees.proto](#torque/fees/v1/fees.proto)
+    - [DevFeeInfo](#torque.fees.v1.DevFeeInfo)
   
-- [evmos/fees/v1/genesis.proto](#evmos/fees/v1/genesis.proto)
-    - [GenesisState](#evmos.fees.v1.GenesisState)
-    - [Params](#evmos.fees.v1.Params)
+- [torque/fees/v1/genesis.proto](#torque/fees/v1/genesis.proto)
+    - [GenesisState](#torque.fees.v1.GenesisState)
+    - [Params](#torque.fees.v1.Params)
   
-- [evmos/fees/v1/query.proto](#evmos/fees/v1/query.proto)
-    - [QueryDevFeeInfoRequest](#evmos.fees.v1.QueryDevFeeInfoRequest)
-    - [QueryDevFeeInfoResponse](#evmos.fees.v1.QueryDevFeeInfoResponse)
-    - [QueryDevFeeInfosPerDeployerRequest](#evmos.fees.v1.QueryDevFeeInfosPerDeployerRequest)
-    - [QueryDevFeeInfosPerDeployerResponse](#evmos.fees.v1.QueryDevFeeInfosPerDeployerResponse)
-    - [QueryDevFeeInfosRequest](#evmos.fees.v1.QueryDevFeeInfosRequest)
-    - [QueryDevFeeInfosResponse](#evmos.fees.v1.QueryDevFeeInfosResponse)
-    - [QueryParamsRequest](#evmos.fees.v1.QueryParamsRequest)
-    - [QueryParamsResponse](#evmos.fees.v1.QueryParamsResponse)
+- [torque/fees/v1/query.proto](#torque/fees/v1/query.proto)
+    - [QueryDevFeeInfoRequest](#torque.fees.v1.QueryDevFeeInfoRequest)
+    - [QueryDevFeeInfoResponse](#torque.fees.v1.QueryDevFeeInfoResponse)
+    - [QueryDevFeeInfosPerDeployerRequest](#torque.fees.v1.QueryDevFeeInfosPerDeployerRequest)
+    - [QueryDevFeeInfosPerDeployerResponse](#torque.fees.v1.QueryDevFeeInfosPerDeployerResponse)
+    - [QueryDevFeeInfosRequest](#torque.fees.v1.QueryDevFeeInfosRequest)
+    - [QueryDevFeeInfosResponse](#torque.fees.v1.QueryDevFeeInfosResponse)
+    - [QueryParamsRequest](#torque.fees.v1.QueryParamsRequest)
+    - [QueryParamsResponse](#torque.fees.v1.QueryParamsResponse)
   
-    - [Query](#evmos.fees.v1.Query)
+    - [Query](#torque.fees.v1.Query)
   
-- [evmos/fees/v1/tx.proto](#evmos/fees/v1/tx.proto)
-    - [MsgCancelDevFeeInfo](#evmos.fees.v1.MsgCancelDevFeeInfo)
-    - [MsgCancelDevFeeInfoResponse](#evmos.fees.v1.MsgCancelDevFeeInfoResponse)
-    - [MsgRegisterDevFeeInfo](#evmos.fees.v1.MsgRegisterDevFeeInfo)
-    - [MsgRegisterDevFeeInfoResponse](#evmos.fees.v1.MsgRegisterDevFeeInfoResponse)
-    - [MsgUpdateDevFeeInfo](#evmos.fees.v1.MsgUpdateDevFeeInfo)
-    - [MsgUpdateDevFeeInfoResponse](#evmos.fees.v1.MsgUpdateDevFeeInfoResponse)
+- [torque/fees/v1/tx.proto](#torque/fees/v1/tx.proto)
+    - [MsgCancelDevFeeInfo](#torque.fees.v1.MsgCancelDevFeeInfo)
+    - [MsgCancelDevFeeInfoResponse](#torque.fees.v1.MsgCancelDevFeeInfoResponse)
+    - [MsgRegisterDevFeeInfo](#torque.fees.v1.MsgRegisterDevFeeInfo)
+    - [MsgRegisterDevFeeInfoResponse](#torque.fees.v1.MsgRegisterDevFeeInfoResponse)
+    - [MsgUpdateDevFeeInfo](#torque.fees.v1.MsgUpdateDevFeeInfo)
+    - [MsgUpdateDevFeeInfoResponse](#torque.fees.v1.MsgUpdateDevFeeInfoResponse)
   
-    - [Msg](#evmos.fees.v1.Msg)
+    - [Msg](#torque.fees.v1.Msg)
   
-- [evmos/incentives/v1/incentives.proto](#evmos/incentives/v1/incentives.proto)
-    - [CancelIncentiveProposal](#evmos.incentives.v1.CancelIncentiveProposal)
-    - [GasMeter](#evmos.incentives.v1.GasMeter)
-    - [Incentive](#evmos.incentives.v1.Incentive)
-    - [RegisterIncentiveProposal](#evmos.incentives.v1.RegisterIncentiveProposal)
+- [torque/incentives/v1/incentives.proto](#torque/incentives/v1/incentives.proto)
+    - [CancelIncentiveProposal](#torque.incentives.v1.CancelIncentiveProposal)
+    - [GasMeter](#torque.incentives.v1.GasMeter)
+    - [Incentive](#torque.incentives.v1.Incentive)
+    - [RegisterIncentiveProposal](#torque.incentives.v1.RegisterIncentiveProposal)
   
-- [evmos/incentives/v1/genesis.proto](#evmos/incentives/v1/genesis.proto)
-    - [GenesisState](#evmos.incentives.v1.GenesisState)
-    - [Params](#evmos.incentives.v1.Params)
+- [torque/incentives/v1/genesis.proto](#torque/incentives/v1/genesis.proto)
+    - [GenesisState](#torque.incentives.v1.GenesisState)
+    - [Params](#torque.incentives.v1.Params)
   
-- [evmos/incentives/v1/query.proto](#evmos/incentives/v1/query.proto)
-    - [QueryAllocationMeterRequest](#evmos.incentives.v1.QueryAllocationMeterRequest)
-    - [QueryAllocationMeterResponse](#evmos.incentives.v1.QueryAllocationMeterResponse)
-    - [QueryAllocationMetersRequest](#evmos.incentives.v1.QueryAllocationMetersRequest)
-    - [QueryAllocationMetersResponse](#evmos.incentives.v1.QueryAllocationMetersResponse)
-    - [QueryGasMeterRequest](#evmos.incentives.v1.QueryGasMeterRequest)
-    - [QueryGasMeterResponse](#evmos.incentives.v1.QueryGasMeterResponse)
-    - [QueryGasMetersRequest](#evmos.incentives.v1.QueryGasMetersRequest)
-    - [QueryGasMetersResponse](#evmos.incentives.v1.QueryGasMetersResponse)
-    - [QueryIncentiveRequest](#evmos.incentives.v1.QueryIncentiveRequest)
-    - [QueryIncentiveResponse](#evmos.incentives.v1.QueryIncentiveResponse)
-    - [QueryIncentivesRequest](#evmos.incentives.v1.QueryIncentivesRequest)
-    - [QueryIncentivesResponse](#evmos.incentives.v1.QueryIncentivesResponse)
-    - [QueryParamsRequest](#evmos.incentives.v1.QueryParamsRequest)
-    - [QueryParamsResponse](#evmos.incentives.v1.QueryParamsResponse)
+- [torque/incentives/v1/query.proto](#torque/incentives/v1/query.proto)
+    - [QueryAllocationMeterRequest](#torque.incentives.v1.QueryAllocationMeterRequest)
+    - [QueryAllocationMeterResponse](#torque.incentives.v1.QueryAllocationMeterResponse)
+    - [QueryAllocationMetersRequest](#torque.incentives.v1.QueryAllocationMetersRequest)
+    - [QueryAllocationMetersResponse](#torque.incentives.v1.QueryAllocationMetersResponse)
+    - [QueryGasMeterRequest](#torque.incentives.v1.QueryGasMeterRequest)
+    - [QueryGasMeterResponse](#torque.incentives.v1.QueryGasMeterResponse)
+    - [QueryGasMetersRequest](#torque.incentives.v1.QueryGasMetersRequest)
+    - [QueryGasMetersResponse](#torque.incentives.v1.QueryGasMetersResponse)
+    - [QueryIncentiveRequest](#torque.incentives.v1.QueryIncentiveRequest)
+    - [QueryIncentiveResponse](#torque.incentives.v1.QueryIncentiveResponse)
+    - [QueryIncentivesRequest](#torque.incentives.v1.QueryIncentivesRequest)
+    - [QueryIncentivesResponse](#torque.incentives.v1.QueryIncentivesResponse)
+    - [QueryParamsRequest](#torque.incentives.v1.QueryParamsRequest)
+    - [QueryParamsResponse](#torque.incentives.v1.QueryParamsResponse)
   
-    - [Query](#evmos.incentives.v1.Query)
+    - [Query](#torque.incentives.v1.Query)
   
-- [evmos/inflation/v1/inflation.proto](#evmos/inflation/v1/inflation.proto)
-    - [ExponentialCalculation](#evmos.inflation.v1.ExponentialCalculation)
-    - [InflationDistribution](#evmos.inflation.v1.InflationDistribution)
+- [torque/inflation/v1/inflation.proto](#torque/inflation/v1/inflation.proto)
+    - [ExponentialCalculation](#torque.inflation.v1.ExponentialCalculation)
+    - [InflationDistribution](#torque.inflation.v1.InflationDistribution)
   
-- [evmos/inflation/v1/genesis.proto](#evmos/inflation/v1/genesis.proto)
-    - [GenesisState](#evmos.inflation.v1.GenesisState)
-    - [Params](#evmos.inflation.v1.Params)
+- [torque/inflation/v1/genesis.proto](#torque/inflation/v1/genesis.proto)
+    - [GenesisState](#torque.inflation.v1.GenesisState)
+    - [Params](#torque.inflation.v1.Params)
   
-- [evmos/inflation/v1/query.proto](#evmos/inflation/v1/query.proto)
-    - [QueryCirculatingSupplyRequest](#evmos.inflation.v1.QueryCirculatingSupplyRequest)
-    - [QueryCirculatingSupplyResponse](#evmos.inflation.v1.QueryCirculatingSupplyResponse)
-    - [QueryEpochMintProvisionRequest](#evmos.inflation.v1.QueryEpochMintProvisionRequest)
-    - [QueryEpochMintProvisionResponse](#evmos.inflation.v1.QueryEpochMintProvisionResponse)
-    - [QueryInflationRateRequest](#evmos.inflation.v1.QueryInflationRateRequest)
-    - [QueryInflationRateResponse](#evmos.inflation.v1.QueryInflationRateResponse)
-    - [QueryParamsRequest](#evmos.inflation.v1.QueryParamsRequest)
-    - [QueryParamsResponse](#evmos.inflation.v1.QueryParamsResponse)
-    - [QueryPeriodRequest](#evmos.inflation.v1.QueryPeriodRequest)
-    - [QueryPeriodResponse](#evmos.inflation.v1.QueryPeriodResponse)
-    - [QuerySkippedEpochsRequest](#evmos.inflation.v1.QuerySkippedEpochsRequest)
-    - [QuerySkippedEpochsResponse](#evmos.inflation.v1.QuerySkippedEpochsResponse)
+- [torque/inflation/v1/query.proto](#torque/inflation/v1/query.proto)
+    - [QueryCirculatingSupplyRequest](#torque.inflation.v1.QueryCirculatingSupplyRequest)
+    - [QueryCirculatingSupplyResponse](#torque.inflation.v1.QueryCirculatingSupplyResponse)
+    - [QueryEpochMintProvisionRequest](#torque.inflation.v1.QueryEpochMintProvisionRequest)
+    - [QueryEpochMintProvisionResponse](#torque.inflation.v1.QueryEpochMintProvisionResponse)
+    - [QueryInflationRateRequest](#torque.inflation.v1.QueryInflationRateRequest)
+    - [QueryInflationRateResponse](#torque.inflation.v1.QueryInflationRateResponse)
+    - [QueryParamsRequest](#torque.inflation.v1.QueryParamsRequest)
+    - [QueryParamsResponse](#torque.inflation.v1.QueryParamsResponse)
+    - [QueryPeriodRequest](#torque.inflation.v1.QueryPeriodRequest)
+    - [QueryPeriodResponse](#torque.inflation.v1.QueryPeriodResponse)
+    - [QuerySkippedEpochsRequest](#torque.inflation.v1.QuerySkippedEpochsRequest)
+    - [QuerySkippedEpochsResponse](#torque.inflation.v1.QuerySkippedEpochsResponse)
   
-    - [Query](#evmos.inflation.v1.Query)
+    - [Query](#torque.inflation.v1.Query)
   
-- [evmos/recovery/v1/genesis.proto](#evmos/recovery/v1/genesis.proto)
-    - [GenesisState](#evmos.recovery.v1.GenesisState)
-    - [Params](#evmos.recovery.v1.Params)
+- [torque/recovery/v1/genesis.proto](#torque/recovery/v1/genesis.proto)
+    - [GenesisState](#torque.recovery.v1.GenesisState)
+    - [Params](#torque.recovery.v1.Params)
   
-- [evmos/recovery/v1/query.proto](#evmos/recovery/v1/query.proto)
-    - [QueryParamsRequest](#evmos.recovery.v1.QueryParamsRequest)
-    - [QueryParamsResponse](#evmos.recovery.v1.QueryParamsResponse)
+- [torque/recovery/v1/query.proto](#torque/recovery/v1/query.proto)
+    - [QueryParamsRequest](#torque.recovery.v1.QueryParamsRequest)
+    - [QueryParamsResponse](#torque.recovery.v1.QueryParamsResponse)
   
-    - [Query](#evmos.recovery.v1.Query)
+    - [Query](#torque.recovery.v1.Query)
   
-- [evmos/vesting/v1/query.proto](#evmos/vesting/v1/query.proto)
-    - [QueryBalancesRequest](#evmos.vesting.v1.QueryBalancesRequest)
-    - [QueryBalancesResponse](#evmos.vesting.v1.QueryBalancesResponse)
+- [torque/vesting/v1/query.proto](#torque/vesting/v1/query.proto)
+    - [QueryBalancesRequest](#torque.vesting.v1.QueryBalancesRequest)
+    - [QueryBalancesResponse](#torque.vesting.v1.QueryBalancesResponse)
   
-    - [Query](#evmos.vesting.v1.Query)
+    - [Query](#torque.vesting.v1.Query)
   
-- [evmos/vesting/v1/tx.proto](#evmos/vesting/v1/tx.proto)
-    - [MsgClawback](#evmos.vesting.v1.MsgClawback)
-    - [MsgClawbackResponse](#evmos.vesting.v1.MsgClawbackResponse)
-    - [MsgCreateClawbackVestingAccount](#evmos.vesting.v1.MsgCreateClawbackVestingAccount)
-    - [MsgCreateClawbackVestingAccountResponse](#evmos.vesting.v1.MsgCreateClawbackVestingAccountResponse)
+- [torque/vesting/v1/tx.proto](#torque/vesting/v1/tx.proto)
+    - [MsgClawback](#torque.vesting.v1.MsgClawback)
+    - [MsgClawbackResponse](#torque.vesting.v1.MsgClawbackResponse)
+    - [MsgCreateClawbackVestingAccount](#torque.vesting.v1.MsgCreateClawbackVestingAccount)
+    - [MsgCreateClawbackVestingAccountResponse](#torque.vesting.v1.MsgCreateClawbackVestingAccountResponse)
   
-    - [Msg](#evmos.vesting.v1.Msg)
+    - [Msg](#torque.vesting.v1.Msg)
   
-- [evmos/vesting/v1/vesting.proto](#evmos/vesting/v1/vesting.proto)
-    - [ClawbackVestingAccount](#evmos.vesting.v1.ClawbackVestingAccount)
+- [torque/vesting/v1/vesting.proto](#torque/vesting/v1/vesting.proto)
+    - [ClawbackVestingAccount](#torque.vesting.v1.ClawbackVestingAccount)
   
 - [Scalar Value Types](#scalar-value-types)
 
-<a name="evmos/claims/v1/claims.proto"></a>
+<a name="torque/claims/v1/claims.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/claims/v1/claims.proto
+## torque/claims/v1/claims.proto
 
-<a name="evmos.claims.v1.Claim"></a>
+<a name="torque.claims.v1.Claim"></a>
 
 ### Claim
 
@@ -194,11 +194,11 @@ for a given user. This is only used during client queries.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `action` | [Action](#evmos.claims.v1.Action) |  | action enum |
+| `action` | [Action](#torque.claims.v1.Action) |  | action enum |
 | `completed` | [bool](#bool) |  | true if the action has been completed |
 | `claimable_amount` | [string](#string) |  | claimable token amount for the action. Zero if completed |
 
-<a name="evmos.claims.v1.ClaimsRecord"></a>
+<a name="torque.claims.v1.ClaimsRecord"></a>
 
 ### ClaimsRecord
 
@@ -210,7 +210,7 @@ completed actions to claim the tokens.
 | `initial_claimable_amount` | [string](#string) |  | total initial claimable amount for the user |
 | `actions_completed` | [bool](#bool) | repeated | slice of the available actions completed |
 
-<a name="evmos.claims.v1.ClaimsRecordAddress"></a>
+<a name="torque.claims.v1.ClaimsRecordAddress"></a>
 
 ### ClaimsRecordAddress
 
@@ -224,7 +224,7 @@ ClaimsRecordAddress is the claims metadata per address that is used at Genesis.
 
  <!-- end messages -->
 
-<a name="evmos.claims.v1.Action"></a>
+<a name="torque.claims.v1.Action"></a>
 
 ### Action
 
@@ -244,12 +244,12 @@ Action defines the list of available actions to claim the airdrop tokens.
 
  <!-- end services -->
 
-<a name="evmos/claims/v1/genesis.proto"></a>
+<a name="torque/claims/v1/genesis.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/claims/v1/genesis.proto
+## torque/claims/v1/genesis.proto
 
-<a name="evmos.claims.v1.GenesisState"></a>
+<a name="torque.claims.v1.GenesisState"></a>
 
 ### GenesisState
 
@@ -257,10 +257,10 @@ GenesisState define the claims module's genesis state.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.claims.v1.Params) |  | params defines all the parameters of the module. |
-| `claims_records` | [ClaimsRecordAddress](#evmos.claims.v1.ClaimsRecordAddress) | repeated | list of claim records with the corresponding airdrop recipient |
+| `params` | [Params](#torque.claims.v1.Params) |  | params defines all the parameters of the module. |
+| `claims_records` | [ClaimsRecordAddress](#torque.claims.v1.ClaimsRecordAddress) | repeated | list of claim records with the corresponding airdrop recipient |
 
-<a name="evmos.claims.v1.Params"></a>
+<a name="torque.claims.v1.Params"></a>
 
 ### Params
 
@@ -284,12 +284,12 @@ Params defines the claims module's parameters.
 
  <!-- end services -->
 
-<a name="evmos/claims/v1/query.proto"></a>
+<a name="torque/claims/v1/query.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/claims/v1/query.proto
+## torque/claims/v1/query.proto
 
-<a name="evmos.claims.v1.QueryClaimsRecordRequest"></a>
+<a name="torque.claims.v1.QueryClaimsRecordRequest"></a>
 
 ### QueryClaimsRecordRequest
 
@@ -300,7 +300,7 @@ method.
 | ----- | ---- | ----- | ----------- |
 | `address` | [string](#string) |  | address defines the user to query claims record for |
 
-<a name="evmos.claims.v1.QueryClaimsRecordResponse"></a>
+<a name="torque.claims.v1.QueryClaimsRecordResponse"></a>
 
 ### QueryClaimsRecordResponse
 
@@ -310,9 +310,9 @@ method.
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | `initial_claimable_amount` | [string](#string) |  | total initial claimable amount for the user |
-| `claims` | [Claim](#evmos.claims.v1.Claim) | repeated | the claims of the user |
+| `claims` | [Claim](#torque.claims.v1.Claim) | repeated | the claims of the user |
 
-<a name="evmos.claims.v1.QueryClaimsRecordsRequest"></a>
+<a name="torque.claims.v1.QueryClaimsRecordsRequest"></a>
 
 ### QueryClaimsRecordsRequest
 
@@ -323,7 +323,7 @@ method.
 | ----- | ---- | ----- | ----------- |
 | `pagination` | [cosmos.base.query.v1beta1.PageRequest](#cosmos.base.query.v1beta1.PageRequest) |  | pagination defines an optional pagination for the request. |
 
-<a name="evmos.claims.v1.QueryClaimsRecordsResponse"></a>
+<a name="torque.claims.v1.QueryClaimsRecordsResponse"></a>
 
 ### QueryClaimsRecordsResponse
 
@@ -332,16 +332,16 @@ RPC method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `claims` | [ClaimsRecordAddress](#evmos.claims.v1.ClaimsRecordAddress) | repeated | claims defines all claims records |
+| `claims` | [ClaimsRecordAddress](#torque.claims.v1.ClaimsRecordAddress) | repeated | claims defines all claims records |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  | pagination defines the pagination in the response. |
 
-<a name="evmos.claims.v1.QueryParamsRequest"></a>
+<a name="torque.claims.v1.QueryParamsRequest"></a>
 
 ### QueryParamsRequest
 
 QueryParamsRequest is the request type for the Query/Params RPC method.
 
-<a name="evmos.claims.v1.QueryParamsResponse"></a>
+<a name="torque.claims.v1.QueryParamsResponse"></a>
 
 ### QueryParamsResponse
 
@@ -349,16 +349,16 @@ QueryParamsResponse is the response type for the Query/Params RPC method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.claims.v1.Params) |  | params defines the parameters of the module. |
+| `params` | [Params](#torque.claims.v1.Params) |  | params defines the parameters of the module. |
 
-<a name="evmos.claims.v1.QueryTotalUnclaimedRequest"></a>
+<a name="torque.claims.v1.QueryTotalUnclaimedRequest"></a>
 
 ### QueryTotalUnclaimedRequest
 
 QueryTotalUnclaimedRequest is the request type for the Query/TotalUnclaimed
 RPC method.
 
-<a name="evmos.claims.v1.QueryTotalUnclaimedResponse"></a>
+<a name="torque.claims.v1.QueryTotalUnclaimedResponse"></a>
 
 ### QueryTotalUnclaimedResponse
 
@@ -375,7 +375,7 @@ RPC method.
 
  <!-- end HasExtensions -->
 
-<a name="evmos.claims.v1.Query"></a>
+<a name="torque.claims.v1.Query"></a>
 
 ### Query
 
@@ -383,19 +383,19 @@ Query defines the gRPC querier service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `TotalUnclaimed` | [QueryTotalUnclaimedRequest](#evmos.claims.v1.QueryTotalUnclaimedRequest) | [QueryTotalUnclaimedResponse](#evmos.claims.v1.QueryTotalUnclaimedResponse) | TotalUnclaimed queries the total unclaimed tokens from the airdrop | GET|/evmos/claims/v1/total_unclaimed|
-| `Params` | [QueryParamsRequest](#evmos.claims.v1.QueryParamsRequest) | [QueryParamsResponse](#evmos.claims.v1.QueryParamsResponse) | Params returns the claims module parameters | GET|/evmos/claims/v1/params|
-| `ClaimsRecords` | [QueryClaimsRecordsRequest](#evmos.claims.v1.QueryClaimsRecordsRequest) | [QueryClaimsRecordsResponse](#evmos.claims.v1.QueryClaimsRecordsResponse) | ClaimsRecords returns all claims records | GET|/evmos/claims/v1/claims_records|
-| `ClaimsRecord` | [QueryClaimsRecordRequest](#evmos.claims.v1.QueryClaimsRecordRequest) | [QueryClaimsRecordResponse](#evmos.claims.v1.QueryClaimsRecordResponse) | ClaimsRecord returns the claims record for a given address | GET|/evmos/claims/v1/claims_records/{address}|
+| `TotalUnclaimed` | [QueryTotalUnclaimedRequest](#torque.claims.v1.QueryTotalUnclaimedRequest) | [QueryTotalUnclaimedResponse](#torque.claims.v1.QueryTotalUnclaimedResponse) | TotalUnclaimed queries the total unclaimed tokens from the airdrop | GET|/torque/claims/v1/total_unclaimed|
+| `Params` | [QueryParamsRequest](#torque.claims.v1.QueryParamsRequest) | [QueryParamsResponse](#torque.claims.v1.QueryParamsResponse) | Params returns the claims module parameters | GET|/torque/claims/v1/params|
+| `ClaimsRecords` | [QueryClaimsRecordsRequest](#torque.claims.v1.QueryClaimsRecordsRequest) | [QueryClaimsRecordsResponse](#torque.claims.v1.QueryClaimsRecordsResponse) | ClaimsRecords returns all claims records | GET|/torque/claims/v1/claims_records|
+| `ClaimsRecord` | [QueryClaimsRecordRequest](#torque.claims.v1.QueryClaimsRecordRequest) | [QueryClaimsRecordResponse](#torque.claims.v1.QueryClaimsRecordResponse) | ClaimsRecord returns the claims record for a given address | GET|/torque/claims/v1/claims_records/{address}|
 
  <!-- end services -->
 
-<a name="evmos/epochs/v1/genesis.proto"></a>
+<a name="torque/epochs/v1/genesis.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/epochs/v1/genesis.proto
+## torque/epochs/v1/genesis.proto
 
-<a name="evmos.epochs.v1.EpochInfo"></a>
+<a name="torque.epochs.v1.EpochInfo"></a>
 
 ### EpochInfo
 
@@ -409,7 +409,7 @@ Query defines the gRPC querier service.
 | `epoch_counting_started` | [bool](#bool) |  |  |
 | `current_epoch_start_height` | [int64](#int64) |  |  |
 
-<a name="evmos.epochs.v1.GenesisState"></a>
+<a name="torque.epochs.v1.GenesisState"></a>
 
 ### GenesisState
 
@@ -417,7 +417,7 @@ GenesisState defines the epochs module's genesis state.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `epochs` | [EpochInfo](#evmos.epochs.v1.EpochInfo) | repeated |  |
+| `epochs` | [EpochInfo](#torque.epochs.v1.EpochInfo) | repeated |  |
 
  <!-- end messages -->
 
@@ -427,12 +427,12 @@ GenesisState defines the epochs module's genesis state.
 
  <!-- end services -->
 
-<a name="evmos/epochs/v1/query.proto"></a>
+<a name="torque/epochs/v1/query.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/epochs/v1/query.proto
+## torque/epochs/v1/query.proto
 
-<a name="evmos.epochs.v1.QueryCurrentEpochRequest"></a>
+<a name="torque.epochs.v1.QueryCurrentEpochRequest"></a>
 
 ### QueryCurrentEpochRequest
 
@@ -440,7 +440,7 @@ GenesisState defines the epochs module's genesis state.
 | ----- | ---- | ----- | ----------- |
 | `identifier` | [string](#string) |  |  |
 
-<a name="evmos.epochs.v1.QueryCurrentEpochResponse"></a>
+<a name="torque.epochs.v1.QueryCurrentEpochResponse"></a>
 
 ### QueryCurrentEpochResponse
 
@@ -448,7 +448,7 @@ GenesisState defines the epochs module's genesis state.
 | ----- | ---- | ----- | ----------- |
 | `current_epoch` | [int64](#int64) |  |  |
 
-<a name="evmos.epochs.v1.QueryEpochsInfoRequest"></a>
+<a name="torque.epochs.v1.QueryEpochsInfoRequest"></a>
 
 ### QueryEpochsInfoRequest
 
@@ -456,13 +456,13 @@ GenesisState defines the epochs module's genesis state.
 | ----- | ---- | ----- | ----------- |
 | `pagination` | [cosmos.base.query.v1beta1.PageRequest](#cosmos.base.query.v1beta1.PageRequest) |  |  |
 
-<a name="evmos.epochs.v1.QueryEpochsInfoResponse"></a>
+<a name="torque.epochs.v1.QueryEpochsInfoResponse"></a>
 
 ### QueryEpochsInfoResponse
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `epochs` | [EpochInfo](#evmos.epochs.v1.EpochInfo) | repeated |  |
+| `epochs` | [EpochInfo](#torque.epochs.v1.EpochInfo) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  |  |
 
  <!-- end messages -->
@@ -471,7 +471,7 @@ GenesisState defines the epochs module's genesis state.
 
  <!-- end HasExtensions -->
 
-<a name="evmos.epochs.v1.Query"></a>
+<a name="torque.epochs.v1.Query"></a>
 
 ### Query
 
@@ -479,17 +479,17 @@ Query defines the gRPC querier service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `EpochInfos` | [QueryEpochsInfoRequest](#evmos.epochs.v1.QueryEpochsInfoRequest) | [QueryEpochsInfoResponse](#evmos.epochs.v1.QueryEpochsInfoResponse) | EpochInfos provide running epochInfos | GET|/evmos/epochs/v1/epochs|
-| `CurrentEpoch` | [QueryCurrentEpochRequest](#evmos.epochs.v1.QueryCurrentEpochRequest) | [QueryCurrentEpochResponse](#evmos.epochs.v1.QueryCurrentEpochResponse) | CurrentEpoch provide current epoch of specified identifier | GET|/evmos/epochs/v1/current_epoch|
+| `EpochInfos` | [QueryEpochsInfoRequest](#torque.epochs.v1.QueryEpochsInfoRequest) | [QueryEpochsInfoResponse](#torque.epochs.v1.QueryEpochsInfoResponse) | EpochInfos provide running epochInfos | GET|/torque/epochs/v1/epochs|
+| `CurrentEpoch` | [QueryCurrentEpochRequest](#torque.epochs.v1.QueryCurrentEpochRequest) | [QueryCurrentEpochResponse](#torque.epochs.v1.QueryCurrentEpochResponse) | CurrentEpoch provide current epoch of specified identifier | GET|/torque/epochs/v1/current_epoch|
 
  <!-- end services -->
 
-<a name="evmos/erc20/v1/erc20.proto"></a>
+<a name="torque/erc20/v1/erc20.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/erc20/v1/erc20.proto
+## torque/erc20/v1/erc20.proto
 
-<a name="evmos.erc20.v1.RegisterCoinProposal"></a>
+<a name="torque.erc20.v1.RegisterCoinProposal"></a>
 
 ### RegisterCoinProposal
 
@@ -502,7 +502,7 @@ native Cosmos coin.
 | `description` | [string](#string) |  | proposal description |
 | `metadata` | [cosmos.bank.v1beta1.Metadata](#cosmos.bank.v1beta1.Metadata) |  | metadata of the native Cosmos coin |
 
-<a name="evmos.erc20.v1.RegisterERC20Proposal"></a>
+<a name="torque.erc20.v1.RegisterERC20Proposal"></a>
 
 ### RegisterERC20Proposal
 
@@ -515,7 +515,7 @@ ERC20 token
 | `description` | [string](#string) |  | proposal description |
 | `erc20address` | [string](#string) |  | contract address of ERC20 token |
 
-<a name="evmos.erc20.v1.ToggleTokenConversionProposal"></a>
+<a name="torque.erc20.v1.ToggleTokenConversionProposal"></a>
 
 ### ToggleTokenConversionProposal
 
@@ -528,7 +528,7 @@ of a token pair.
 | `description` | [string](#string) |  | proposal description |
 | `token` | [string](#string) |  | token identifier can be either the hex contract address of the ERC20 or the Cosmos base denomination |
 
-<a name="evmos.erc20.v1.TokenPair"></a>
+<a name="torque.erc20.v1.TokenPair"></a>
 
 ### TokenPair
 
@@ -540,11 +540,11 @@ TokenPair defines an instance that records a pairing consisting of a native
 | `erc20_address` | [string](#string) |  | address of ERC20 contract token |
 | `denom` | [string](#string) |  | cosmos base denomination to be mapped to |
 | `enabled` | [bool](#bool) |  | shows token mapping enable status |
-| `contract_owner` | [Owner](#evmos.erc20.v1.Owner) |  | ERC20 owner address ENUM (0 invalid, 1 ModuleAccount, 2 external address) |
+| `contract_owner` | [Owner](#torque.erc20.v1.Owner) |  | ERC20 owner address ENUM (0 invalid, 1 ModuleAccount, 2 external address) |
 
  <!-- end messages -->
 
-<a name="evmos.erc20.v1.Owner"></a>
+<a name="torque.erc20.v1.Owner"></a>
 
 ### Owner
 
@@ -562,12 +562,12 @@ Owner enumerates the ownership of a ERC20 contract.
 
  <!-- end services -->
 
-<a name="evmos/erc20/v1/genesis.proto"></a>
+<a name="torque/erc20/v1/genesis.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/erc20/v1/genesis.proto
+## torque/erc20/v1/genesis.proto
 
-<a name="evmos.erc20.v1.GenesisState"></a>
+<a name="torque.erc20.v1.GenesisState"></a>
 
 ### GenesisState
 
@@ -575,10 +575,10 @@ GenesisState defines the module's genesis state.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.erc20.v1.Params) |  | module parameters |
-| `token_pairs` | [TokenPair](#evmos.erc20.v1.TokenPair) | repeated | registered token pairs |
+| `params` | [Params](#torque.erc20.v1.Params) |  | module parameters |
+| `token_pairs` | [TokenPair](#torque.erc20.v1.TokenPair) | repeated | registered token pairs |
 
-<a name="evmos.erc20.v1.Params"></a>
+<a name="torque.erc20.v1.Params"></a>
 
 ### Params
 
@@ -597,18 +597,18 @@ Params defines the erc20 module params
 
  <!-- end services -->
 
-<a name="evmos/erc20/v1/query.proto"></a>
+<a name="torque/erc20/v1/query.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/erc20/v1/query.proto
+## torque/erc20/v1/query.proto
 
-<a name="evmos.erc20.v1.QueryParamsRequest"></a>
+<a name="torque.erc20.v1.QueryParamsRequest"></a>
 
 ### QueryParamsRequest
 
 QueryParamsRequest is the request type for the Query/Params RPC method.
 
-<a name="evmos.erc20.v1.QueryParamsResponse"></a>
+<a name="torque.erc20.v1.QueryParamsResponse"></a>
 
 ### QueryParamsResponse
 
@@ -617,9 +617,9 @@ method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.erc20.v1.Params) |  |  |
+| `params` | [Params](#torque.erc20.v1.Params) |  |  |
 
-<a name="evmos.erc20.v1.QueryTokenPairRequest"></a>
+<a name="torque.erc20.v1.QueryTokenPairRequest"></a>
 
 ### QueryTokenPairRequest
 
@@ -629,7 +629,7 @@ QueryTokenPairRequest is the request type for the Query/TokenPair RPC method.
 | ----- | ---- | ----- | ----------- |
 | `token` | [string](#string) |  | token identifier can be either the hex contract address of the ERC20 or the Cosmos base denomination |
 
-<a name="evmos.erc20.v1.QueryTokenPairResponse"></a>
+<a name="torque.erc20.v1.QueryTokenPairResponse"></a>
 
 ### QueryTokenPairResponse
 
@@ -638,9 +638,9 @@ method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `token_pair` | [TokenPair](#evmos.erc20.v1.TokenPair) |  |  |
+| `token_pair` | [TokenPair](#torque.erc20.v1.TokenPair) |  |  |
 
-<a name="evmos.erc20.v1.QueryTokenPairsRequest"></a>
+<a name="torque.erc20.v1.QueryTokenPairsRequest"></a>
 
 ### QueryTokenPairsRequest
 
@@ -651,7 +651,7 @@ method.
 | ----- | ---- | ----- | ----------- |
 | `pagination` | [cosmos.base.query.v1beta1.PageRequest](#cosmos.base.query.v1beta1.PageRequest) |  | pagination defines an optional pagination for the request. |
 
-<a name="evmos.erc20.v1.QueryTokenPairsResponse"></a>
+<a name="torque.erc20.v1.QueryTokenPairsResponse"></a>
 
 ### QueryTokenPairsResponse
 
@@ -660,7 +660,7 @@ method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `token_pairs` | [TokenPair](#evmos.erc20.v1.TokenPair) | repeated |  |
+| `token_pairs` | [TokenPair](#torque.erc20.v1.TokenPair) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  | pagination defines the pagination in the response. |
 
  <!-- end messages -->
@@ -669,7 +669,7 @@ method.
 
  <!-- end HasExtensions -->
 
-<a name="evmos.erc20.v1.Query"></a>
+<a name="torque.erc20.v1.Query"></a>
 
 ### Query
 
@@ -677,18 +677,18 @@ Query defines the gRPC querier service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `TokenPairs` | [QueryTokenPairsRequest](#evmos.erc20.v1.QueryTokenPairsRequest) | [QueryTokenPairsResponse](#evmos.erc20.v1.QueryTokenPairsResponse) | TokenPairs retrieves registered token pairs | GET|/evmos/erc20/v1/token_pairs|
-| `TokenPair` | [QueryTokenPairRequest](#evmos.erc20.v1.QueryTokenPairRequest) | [QueryTokenPairResponse](#evmos.erc20.v1.QueryTokenPairResponse) | TokenPair retrieves a registered token pair | GET|/evmos/erc20/v1/token_pairs/{token}|
-| `Params` | [QueryParamsRequest](#evmos.erc20.v1.QueryParamsRequest) | [QueryParamsResponse](#evmos.erc20.v1.QueryParamsResponse) | Params retrieves the erc20 module params | GET|/evmos/erc20/v1/params|
+| `TokenPairs` | [QueryTokenPairsRequest](#torque.erc20.v1.QueryTokenPairsRequest) | [QueryTokenPairsResponse](#torque.erc20.v1.QueryTokenPairsResponse) | TokenPairs retrieves registered token pairs | GET|/torque/erc20/v1/token_pairs|
+| `TokenPair` | [QueryTokenPairRequest](#torque.erc20.v1.QueryTokenPairRequest) | [QueryTokenPairResponse](#torque.erc20.v1.QueryTokenPairResponse) | TokenPair retrieves a registered token pair | GET|/torque/erc20/v1/token_pairs/{token}|
+| `Params` | [QueryParamsRequest](#torque.erc20.v1.QueryParamsRequest) | [QueryParamsResponse](#torque.erc20.v1.QueryParamsResponse) | Params retrieves the erc20 module params | GET|/torque/erc20/v1/params|
 
  <!-- end services -->
 
-<a name="evmos/erc20/v1/tx.proto"></a>
+<a name="torque/erc20/v1/tx.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/erc20/v1/tx.proto
+## torque/erc20/v1/tx.proto
 
-<a name="evmos.erc20.v1.MsgConvertCoin"></a>
+<a name="torque.erc20.v1.MsgConvertCoin"></a>
 
 ### MsgConvertCoin
 
@@ -700,13 +700,13 @@ MsgConvertCoin defines a Msg to convert a native Cosmos coin to a ERC20 token
 | `receiver` | [string](#string) |  | recipient hex address to receive ERC20 token |
 | `sender` | [string](#string) |  | cosmos bech32 address from the owner of the given Cosmos coins |
 
-<a name="evmos.erc20.v1.MsgConvertCoinResponse"></a>
+<a name="torque.erc20.v1.MsgConvertCoinResponse"></a>
 
 ### MsgConvertCoinResponse
 
 MsgConvertCoinResponse returns no fields
 
-<a name="evmos.erc20.v1.MsgConvertERC20"></a>
+<a name="torque.erc20.v1.MsgConvertERC20"></a>
 
 ### MsgConvertERC20
 
@@ -720,7 +720,7 @@ coin.
 | `receiver` | [string](#string) |  | bech32 address to receive native Cosmos coins |
 | `sender` | [string](#string) |  | sender hex address from the owner of the given ERC20 tokens |
 
-<a name="evmos.erc20.v1.MsgConvertERC20Response"></a>
+<a name="torque.erc20.v1.MsgConvertERC20Response"></a>
 
 ### MsgConvertERC20Response
 
@@ -732,7 +732,7 @@ MsgConvertERC20Response returns no fields
 
  <!-- end HasExtensions -->
 
-<a name="evmos.erc20.v1.Msg"></a>
+<a name="torque.erc20.v1.Msg"></a>
 
 ### Msg
 
@@ -740,17 +740,17 @@ Msg defines the erc20 Msg service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `ConvertCoin` | [MsgConvertCoin](#evmos.erc20.v1.MsgConvertCoin) | [MsgConvertCoinResponse](#evmos.erc20.v1.MsgConvertCoinResponse) | ConvertCoin mints a ERC20 representation of the native Cosmos coin denom that is registered on the token mapping. | GET|/evmos/erc20/v1/tx/convert_coin|
-| `ConvertERC20` | [MsgConvertERC20](#evmos.erc20.v1.MsgConvertERC20) | [MsgConvertERC20Response](#evmos.erc20.v1.MsgConvertERC20Response) | ConvertERC20 mints a native Cosmos coin representation of the ERC20 token contract that is registered on the token mapping. | GET|/evmos/erc20/v1/tx/convert_erc20|
+| `ConvertCoin` | [MsgConvertCoin](#torque.erc20.v1.MsgConvertCoin) | [MsgConvertCoinResponse](#torque.erc20.v1.MsgConvertCoinResponse) | ConvertCoin mints a ERC20 representation of the native Cosmos coin denom that is registered on the token mapping. | GET|/torque/erc20/v1/tx/convert_coin|
+| `ConvertERC20` | [MsgConvertERC20](#torque.erc20.v1.MsgConvertERC20) | [MsgConvertERC20Response](#torque.erc20.v1.MsgConvertERC20Response) | ConvertERC20 mints a native Cosmos coin representation of the ERC20 token contract that is registered on the token mapping. | GET|/torque/erc20/v1/tx/convert_erc20|
 
  <!-- end services -->
 
-<a name="evmos/fees/v1/fees.proto"></a>
+<a name="torque/fees/v1/fees.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/fees/v1/fees.proto
+## torque/fees/v1/fees.proto
 
-<a name="evmos.fees.v1.DevFeeInfo"></a>
+<a name="torque.fees.v1.DevFeeInfo"></a>
 
 ### DevFeeInfo
 
@@ -771,12 +771,12 @@ for the owner of a given smart contract
 
  <!-- end services -->
 
-<a name="evmos/fees/v1/genesis.proto"></a>
+<a name="torque/fees/v1/genesis.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/fees/v1/genesis.proto
+## torque/fees/v1/genesis.proto
 
-<a name="evmos.fees.v1.GenesisState"></a>
+<a name="torque.fees.v1.GenesisState"></a>
 
 ### GenesisState
 
@@ -784,10 +784,10 @@ GenesisState defines the module's genesis state.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.fees.v1.Params) |  | module parameters |
-| `dev_fee_infos` | [DevFeeInfo](#evmos.fees.v1.DevFeeInfo) | repeated | active registered contracts |
+| `params` | [Params](#torque.fees.v1.Params) |  | module parameters |
+| `dev_fee_infos` | [DevFeeInfo](#torque.fees.v1.DevFeeInfo) | repeated | active registered contracts |
 
-<a name="evmos.fees.v1.Params"></a>
+<a name="torque.fees.v1.Params"></a>
 
 ### Params
 
@@ -808,12 +808,12 @@ Params defines the fees module params
 
  <!-- end services -->
 
-<a name="evmos/fees/v1/query.proto"></a>
+<a name="torque/fees/v1/query.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/fees/v1/query.proto
+## torque/fees/v1/query.proto
 
-<a name="evmos.fees.v1.QueryDevFeeInfoRequest"></a>
+<a name="torque.fees.v1.QueryDevFeeInfoRequest"></a>
 
 ### QueryDevFeeInfoRequest
 
@@ -824,7 +824,7 @@ method.
 | ----- | ---- | ----- | ----------- |
 | `contract_address` | [string](#string) |  | contract identifier is the hex contract address of a contract |
 
-<a name="evmos.fees.v1.QueryDevFeeInfoResponse"></a>
+<a name="torque.fees.v1.QueryDevFeeInfoResponse"></a>
 
 ### QueryDevFeeInfoResponse
 
@@ -833,9 +833,9 @@ method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `fee` | [DevFeeInfo](#evmos.fees.v1.DevFeeInfo) |  |  |
+| `fee` | [DevFeeInfo](#torque.fees.v1.DevFeeInfo) |  |  |
 
-<a name="evmos.fees.v1.QueryDevFeeInfosPerDeployerRequest"></a>
+<a name="torque.fees.v1.QueryDevFeeInfosPerDeployerRequest"></a>
 
 ### QueryDevFeeInfosPerDeployerRequest
 
@@ -847,7 +847,7 @@ Query/DevFeeInfosPerDeployer RPC method.
 | `deployer_address` | [string](#string) |  | deployer bech32 address |
 | `pagination` | [cosmos.base.query.v1beta1.PageRequest](#cosmos.base.query.v1beta1.PageRequest) |  | pagination defines an optional pagination for the request. |
 
-<a name="evmos.fees.v1.QueryDevFeeInfosPerDeployerResponse"></a>
+<a name="torque.fees.v1.QueryDevFeeInfosPerDeployerResponse"></a>
 
 ### QueryDevFeeInfosPerDeployerResponse
 
@@ -856,10 +856,10 @@ Query/DevFeeInfosPerDeployer RPC method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `fees` | [DevFeeInfo](#evmos.fees.v1.DevFeeInfo) | repeated |  |
+| `fees` | [DevFeeInfo](#torque.fees.v1.DevFeeInfo) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  | pagination defines the pagination in the response. |
 
-<a name="evmos.fees.v1.QueryDevFeeInfosRequest"></a>
+<a name="torque.fees.v1.QueryDevFeeInfosRequest"></a>
 
 ### QueryDevFeeInfosRequest
 
@@ -870,7 +870,7 @@ method.
 | ----- | ---- | ----- | ----------- |
 | `pagination` | [cosmos.base.query.v1beta1.PageRequest](#cosmos.base.query.v1beta1.PageRequest) |  | pagination defines an optional pagination for the request. |
 
-<a name="evmos.fees.v1.QueryDevFeeInfosResponse"></a>
+<a name="torque.fees.v1.QueryDevFeeInfosResponse"></a>
 
 ### QueryDevFeeInfosResponse
 
@@ -879,16 +879,16 @@ RPC method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `fees` | [DevFeeInfo](#evmos.fees.v1.DevFeeInfo) | repeated |  |
+| `fees` | [DevFeeInfo](#torque.fees.v1.DevFeeInfo) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  | pagination defines the pagination in the response. |
 
-<a name="evmos.fees.v1.QueryParamsRequest"></a>
+<a name="torque.fees.v1.QueryParamsRequest"></a>
 
 ### QueryParamsRequest
 
 QueryParamsRequest is the request type for the Query/Params RPC method.
 
-<a name="evmos.fees.v1.QueryParamsResponse"></a>
+<a name="torque.fees.v1.QueryParamsResponse"></a>
 
 ### QueryParamsResponse
 
@@ -897,7 +897,7 @@ method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.fees.v1.Params) |  |  |
+| `params` | [Params](#torque.fees.v1.Params) |  |  |
 
  <!-- end messages -->
 
@@ -905,7 +905,7 @@ method.
 
  <!-- end HasExtensions -->
 
-<a name="evmos.fees.v1.Query"></a>
+<a name="torque.fees.v1.Query"></a>
 
 ### Query
 
@@ -913,19 +913,19 @@ Query defines the gRPC querier service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `DevFeeInfos` | [QueryDevFeeInfosRequest](#evmos.fees.v1.QueryDevFeeInfosRequest) | [QueryDevFeeInfosResponse](#evmos.fees.v1.QueryDevFeeInfosResponse) | DevFeeInfos retrieves all registered contracts for fee distribution | GET|/evmos/fees/v1/fees|
-| `DevFeeInfo` | [QueryDevFeeInfoRequest](#evmos.fees.v1.QueryDevFeeInfoRequest) | [QueryDevFeeInfoResponse](#evmos.fees.v1.QueryDevFeeInfoResponse) | DevFeeInfo retrieves a registered contract for fee distribution | GET|/evmos/fees/v1/fees/{contract_address}|
-| `Params` | [QueryParamsRequest](#evmos.fees.v1.QueryParamsRequest) | [QueryParamsResponse](#evmos.fees.v1.QueryParamsResponse) | Params retrieves the fees module params | GET|/evmos/fees/v1/params|
-| `DevFeeInfosPerDeployer` | [QueryDevFeeInfosPerDeployerRequest](#evmos.fees.v1.QueryDevFeeInfosPerDeployerRequest) | [QueryDevFeeInfosPerDeployerResponse](#evmos.fees.v1.QueryDevFeeInfosPerDeployerResponse) | DevFeeInfosPerDeployer retrieves all contracts that a deployer has registered for fee distribution | GET|/evmos/fees/v1/fees/{deployer_address}|
+| `DevFeeInfos` | [QueryDevFeeInfosRequest](#torque.fees.v1.QueryDevFeeInfosRequest) | [QueryDevFeeInfosResponse](#torque.fees.v1.QueryDevFeeInfosResponse) | DevFeeInfos retrieves all registered contracts for fee distribution | GET|/torque/fees/v1/fees|
+| `DevFeeInfo` | [QueryDevFeeInfoRequest](#torque.fees.v1.QueryDevFeeInfoRequest) | [QueryDevFeeInfoResponse](#torque.fees.v1.QueryDevFeeInfoResponse) | DevFeeInfo retrieves a registered contract for fee distribution | GET|/torque/fees/v1/fees/{contract_address}|
+| `Params` | [QueryParamsRequest](#torque.fees.v1.QueryParamsRequest) | [QueryParamsResponse](#torque.fees.v1.QueryParamsResponse) | Params retrieves the fees module params | GET|/torque/fees/v1/params|
+| `DevFeeInfosPerDeployer` | [QueryDevFeeInfosPerDeployerRequest](#torque.fees.v1.QueryDevFeeInfosPerDeployerRequest) | [QueryDevFeeInfosPerDeployerResponse](#torque.fees.v1.QueryDevFeeInfosPerDeployerResponse) | DevFeeInfosPerDeployer retrieves all contracts that a deployer has registered for fee distribution | GET|/torque/fees/v1/fees/{deployer_address}|
 
  <!-- end services -->
 
-<a name="evmos/fees/v1/tx.proto"></a>
+<a name="torque/fees/v1/tx.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/fees/v1/tx.proto
+## torque/fees/v1/tx.proto
 
-<a name="evmos.fees.v1.MsgCancelDevFeeInfo"></a>
+<a name="torque.fees.v1.MsgCancelDevFeeInfo"></a>
 
 ### MsgCancelDevFeeInfo
 
@@ -937,13 +937,13 @@ DevFeeInfo
 | `contract_address` | [string](#string) |  | contract hex address |
 | `deployer_address` | [string](#string) |  | deployer bech32 address |
 
-<a name="evmos.fees.v1.MsgCancelDevFeeInfoResponse"></a>
+<a name="torque.fees.v1.MsgCancelDevFeeInfoResponse"></a>
 
 ### MsgCancelDevFeeInfoResponse
 
 MsgCancelDevFeeInfoResponse defines the MsgCancelDevFeeInfo response type
 
-<a name="evmos.fees.v1.MsgRegisterDevFeeInfo"></a>
+<a name="torque.fees.v1.MsgRegisterDevFeeInfo"></a>
 
 ### MsgRegisterDevFeeInfo
 
@@ -956,14 +956,14 @@ MsgRegisterFeesContract defines a message that registers a DevFeeInfo
 | `withdraw_address` | [string](#string) |  | bech32 address of account receiving the transaction fees |
 | `nonces` | [uint64](#uint64) | repeated | array of nonces from the address path, where the last nonce is the nonce that determines the contract's address - it can be an EOA nonce or a factory contract nonce |
 
-<a name="evmos.fees.v1.MsgRegisterDevFeeInfoResponse"></a>
+<a name="torque.fees.v1.MsgRegisterDevFeeInfoResponse"></a>
 
 ### MsgRegisterDevFeeInfoResponse
 
 MsgRegisterDevFeeInfoResponse defines the MsgRegisterDevFeeInfo response
 type
 
-<a name="evmos.fees.v1.MsgUpdateDevFeeInfo"></a>
+<a name="torque.fees.v1.MsgUpdateDevFeeInfo"></a>
 
 ### MsgUpdateDevFeeInfo
 
@@ -976,7 +976,7 @@ a registered DevFeeInfo
 | `deployer_address` | [string](#string) |  | deployer bech32 address |
 | `withdraw_address` | [string](#string) |  | new withdraw bech32 address for receiving the transaction fees |
 
-<a name="evmos.fees.v1.MsgUpdateDevFeeInfoResponse"></a>
+<a name="torque.fees.v1.MsgUpdateDevFeeInfoResponse"></a>
 
 ### MsgUpdateDevFeeInfoResponse
 
@@ -988,7 +988,7 @@ MsgUpdateDevFeeInfoResponse defines the MsgUpdateDevFeeInfo response type
 
  <!-- end HasExtensions -->
 
-<a name="evmos.fees.v1.Msg"></a>
+<a name="torque.fees.v1.Msg"></a>
 
 ### Msg
 
@@ -996,18 +996,18 @@ Msg defines the fees Msg service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `RegisterDevFeeInfo` | [MsgRegisterDevFeeInfo](#evmos.fees.v1.MsgRegisterDevFeeInfo) | [MsgRegisterDevFeeInfoResponse](#evmos.fees.v1.MsgRegisterDevFeeInfoResponse) | RegisterDevFeeInfo is used by a deployer to register a new contract for receiving transaction fees | POST|/evmos/fees/v1/tx/register_dev_fee_info|
-| `CancelDevFeeInfo` | [MsgCancelDevFeeInfo](#evmos.fees.v1.MsgCancelDevFeeInfo) | [MsgCancelDevFeeInfoResponse](#evmos.fees.v1.MsgCancelDevFeeInfoResponse) | CancelDevFeeInfo is used by a deployer to cancel a registered contract and stop receiving transaction fees | POST|/evmos/fees/v1/tx/cancel_dev_fee_info|
-| `UpdateDevFeeInfo` | [MsgUpdateDevFeeInfo](#evmos.fees.v1.MsgUpdateDevFeeInfo) | [MsgUpdateDevFeeInfoResponse](#evmos.fees.v1.MsgUpdateDevFeeInfoResponse) | UpdateDevFeeInfo is used by a deployer to update the withdraw address | POST|/evmos/fees/v1/tx/update_dev_fee_info|
+| `RegisterDevFeeInfo` | [MsgRegisterDevFeeInfo](#torque.fees.v1.MsgRegisterDevFeeInfo) | [MsgRegisterDevFeeInfoResponse](#torque.fees.v1.MsgRegisterDevFeeInfoResponse) | RegisterDevFeeInfo is used by a deployer to register a new contract for receiving transaction fees | POST|/torque/fees/v1/tx/register_dev_fee_info|
+| `CancelDevFeeInfo` | [MsgCancelDevFeeInfo](#torque.fees.v1.MsgCancelDevFeeInfo) | [MsgCancelDevFeeInfoResponse](#torque.fees.v1.MsgCancelDevFeeInfoResponse) | CancelDevFeeInfo is used by a deployer to cancel a registered contract and stop receiving transaction fees | POST|/torque/fees/v1/tx/cancel_dev_fee_info|
+| `UpdateDevFeeInfo` | [MsgUpdateDevFeeInfo](#torque.fees.v1.MsgUpdateDevFeeInfo) | [MsgUpdateDevFeeInfoResponse](#torque.fees.v1.MsgUpdateDevFeeInfoResponse) | UpdateDevFeeInfo is used by a deployer to update the withdraw address | POST|/torque/fees/v1/tx/update_dev_fee_info|
 
  <!-- end services -->
 
-<a name="evmos/incentives/v1/incentives.proto"></a>
+<a name="torque/incentives/v1/incentives.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/incentives/v1/incentives.proto
+## torque/incentives/v1/incentives.proto
 
-<a name="evmos.incentives.v1.CancelIncentiveProposal"></a>
+<a name="torque.incentives.v1.CancelIncentiveProposal"></a>
 
 ### CancelIncentiveProposal
 
@@ -1019,7 +1019,7 @@ CancelIncentiveProposal is a gov Content type to cancel an incentive
 | `description` | [string](#string) |  | proposal description |
 | `contract` | [string](#string) |  | contract address |
 
-<a name="evmos.incentives.v1.GasMeter"></a>
+<a name="torque.incentives.v1.GasMeter"></a>
 
 ### GasMeter
 
@@ -1031,7 +1031,7 @@ GasMeter tracks the cumulative gas spent per participant in one epoch
 | `participant` | [string](#string) |  | participant address that interacts with the incentive |
 | `cumulative_gas` | [uint64](#uint64) |  | cumulative gas spent during the epoch |
 
-<a name="evmos.incentives.v1.Incentive"></a>
+<a name="torque.incentives.v1.Incentive"></a>
 
 ### Incentive
 
@@ -1046,7 +1046,7 @@ given smart contract
 | `start_time` | [google.protobuf.Timestamp](#google.protobuf.Timestamp) |  | distribution start time |
 | `total_gas` | [uint64](#uint64) |  | cumulative gas spent by all gasmeters of the incentive during the epoch |
 
-<a name="evmos.incentives.v1.RegisterIncentiveProposal"></a>
+<a name="torque.incentives.v1.RegisterIncentiveProposal"></a>
 
 ### RegisterIncentiveProposal
 
@@ -1068,12 +1068,12 @@ RegisterIncentiveProposal is a gov Content type to register an incentive
 
  <!-- end services -->
 
-<a name="evmos/incentives/v1/genesis.proto"></a>
+<a name="torque/incentives/v1/genesis.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/incentives/v1/genesis.proto
+## torque/incentives/v1/genesis.proto
 
-<a name="evmos.incentives.v1.GenesisState"></a>
+<a name="torque.incentives.v1.GenesisState"></a>
 
 ### GenesisState
 
@@ -1081,11 +1081,11 @@ GenesisState defines the module's genesis state.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.incentives.v1.Params) |  | module parameters |
-| `incentives` | [Incentive](#evmos.incentives.v1.Incentive) | repeated | active incentives |
-| `gas_meters` | [GasMeter](#evmos.incentives.v1.GasMeter) | repeated | active Gasmeters |
+| `params` | [Params](#torque.incentives.v1.Params) |  | module parameters |
+| `incentives` | [Incentive](#torque.incentives.v1.Incentive) | repeated | active incentives |
+| `gas_meters` | [GasMeter](#torque.incentives.v1.GasMeter) | repeated | active Gasmeters |
 
-<a name="evmos.incentives.v1.Params"></a>
+<a name="torque.incentives.v1.Params"></a>
 
 ### Params
 
@@ -1106,12 +1106,12 @@ Params defines the incentives module params
 
  <!-- end services -->
 
-<a name="evmos/incentives/v1/query.proto"></a>
+<a name="torque/incentives/v1/query.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/incentives/v1/query.proto
+## torque/incentives/v1/query.proto
 
-<a name="evmos.incentives.v1.QueryAllocationMeterRequest"></a>
+<a name="torque.incentives.v1.QueryAllocationMeterRequest"></a>
 
 ### QueryAllocationMeterRequest
 
@@ -1122,7 +1122,7 @@ RPC method.
 | ----- | ---- | ----- | ----------- |
 | `denom` | [string](#string) |  | denom is the coin denom to query an allocation meter for. |
 
-<a name="evmos.incentives.v1.QueryAllocationMeterResponse"></a>
+<a name="torque.incentives.v1.QueryAllocationMeterResponse"></a>
 
 ### QueryAllocationMeterResponse
 
@@ -1133,7 +1133,7 @@ Query/AllocationMeter RPC method.
 | ----- | ---- | ----- | ----------- |
 | `allocation_meter` | [cosmos.base.v1beta1.DecCoin](#cosmos.base.v1beta1.DecCoin) |  |  |
 
-<a name="evmos.incentives.v1.QueryAllocationMetersRequest"></a>
+<a name="torque.incentives.v1.QueryAllocationMetersRequest"></a>
 
 ### QueryAllocationMetersRequest
 
@@ -1144,7 +1144,7 @@ Query/AllocationMeters RPC method.
 | ----- | ---- | ----- | ----------- |
 | `pagination` | [cosmos.base.query.v1beta1.PageRequest](#cosmos.base.query.v1beta1.PageRequest) |  | pagination defines an optional pagination for the request. |
 
-<a name="evmos.incentives.v1.QueryAllocationMetersResponse"></a>
+<a name="torque.incentives.v1.QueryAllocationMetersResponse"></a>
 
 ### QueryAllocationMetersResponse
 
@@ -1156,7 +1156,7 @@ Query/AllocationMeters RPC method.
 | `allocation_meters` | [cosmos.base.v1beta1.DecCoin](#cosmos.base.v1beta1.DecCoin) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  | pagination defines the pagination in the response. |
 
-<a name="evmos.incentives.v1.QueryGasMeterRequest"></a>
+<a name="torque.incentives.v1.QueryGasMeterRequest"></a>
 
 ### QueryGasMeterRequest
 
@@ -1167,7 +1167,7 @@ QueryGasMeterRequest is the request type for the Query/Incentive RPC method.
 | `contract` | [string](#string) |  | contract identifier is the hex contract address of a contract |
 | `participant` | [string](#string) |  | participant identifier is the hex address of a user |
 
-<a name="evmos.incentives.v1.QueryGasMeterResponse"></a>
+<a name="torque.incentives.v1.QueryGasMeterResponse"></a>
 
 ### QueryGasMeterResponse
 
@@ -1178,7 +1178,7 @@ method.
 | ----- | ---- | ----- | ----------- |
 | `gas_meter` | [uint64](#uint64) |  |  |
 
-<a name="evmos.incentives.v1.QueryGasMetersRequest"></a>
+<a name="torque.incentives.v1.QueryGasMetersRequest"></a>
 
 ### QueryGasMetersRequest
 
@@ -1190,7 +1190,7 @@ method.
 | `contract` | [string](#string) |  | contract is the hex contract address of a incentivized smart contract |
 | `pagination` | [cosmos.base.query.v1beta1.PageRequest](#cosmos.base.query.v1beta1.PageRequest) |  | pagination defines an optional pagination for the request. |
 
-<a name="evmos.incentives.v1.QueryGasMetersResponse"></a>
+<a name="torque.incentives.v1.QueryGasMetersResponse"></a>
 
 ### QueryGasMetersResponse
 
@@ -1199,10 +1199,10 @@ method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `gas_meters` | [GasMeter](#evmos.incentives.v1.GasMeter) | repeated |  |
+| `gas_meters` | [GasMeter](#torque.incentives.v1.GasMeter) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  | pagination defines the pagination in the response. |
 
-<a name="evmos.incentives.v1.QueryIncentiveRequest"></a>
+<a name="torque.incentives.v1.QueryIncentiveRequest"></a>
 
 ### QueryIncentiveRequest
 
@@ -1212,7 +1212,7 @@ QueryIncentiveRequest is the request type for the Query/Incentive RPC method.
 | ----- | ---- | ----- | ----------- |
 | `contract` | [string](#string) |  | contract identifier is the hex contract address of a contract |
 
-<a name="evmos.incentives.v1.QueryIncentiveResponse"></a>
+<a name="torque.incentives.v1.QueryIncentiveResponse"></a>
 
 ### QueryIncentiveResponse
 
@@ -1221,9 +1221,9 @@ method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `incentive` | [Incentive](#evmos.incentives.v1.Incentive) |  |  |
+| `incentive` | [Incentive](#torque.incentives.v1.Incentive) |  |  |
 
-<a name="evmos.incentives.v1.QueryIncentivesRequest"></a>
+<a name="torque.incentives.v1.QueryIncentivesRequest"></a>
 
 ### QueryIncentivesRequest
 
@@ -1234,7 +1234,7 @@ method.
 | ----- | ---- | ----- | ----------- |
 | `pagination` | [cosmos.base.query.v1beta1.PageRequest](#cosmos.base.query.v1beta1.PageRequest) |  | pagination defines an optional pagination for the request. |
 
-<a name="evmos.incentives.v1.QueryIncentivesResponse"></a>
+<a name="torque.incentives.v1.QueryIncentivesResponse"></a>
 
 ### QueryIncentivesResponse
 
@@ -1243,16 +1243,16 @@ method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `incentives` | [Incentive](#evmos.incentives.v1.Incentive) | repeated |  |
+| `incentives` | [Incentive](#torque.incentives.v1.Incentive) | repeated |  |
 | `pagination` | [cosmos.base.query.v1beta1.PageResponse](#cosmos.base.query.v1beta1.PageResponse) |  | pagination defines the pagination in the response. |
 
-<a name="evmos.incentives.v1.QueryParamsRequest"></a>
+<a name="torque.incentives.v1.QueryParamsRequest"></a>
 
 ### QueryParamsRequest
 
 QueryParamsRequest is the request type for the Query/Params RPC method.
 
-<a name="evmos.incentives.v1.QueryParamsResponse"></a>
+<a name="torque.incentives.v1.QueryParamsResponse"></a>
 
 ### QueryParamsResponse
 
@@ -1261,7 +1261,7 @@ method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.incentives.v1.Params) |  |  |
+| `params` | [Params](#torque.incentives.v1.Params) |  |  |
 
  <!-- end messages -->
 
@@ -1269,7 +1269,7 @@ method.
 
  <!-- end HasExtensions -->
 
-<a name="evmos.incentives.v1.Query"></a>
+<a name="torque.incentives.v1.Query"></a>
 
 ### Query
 
@@ -1277,22 +1277,22 @@ Query defines the gRPC querier service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Incentives` | [QueryIncentivesRequest](#evmos.incentives.v1.QueryIncentivesRequest) | [QueryIncentivesResponse](#evmos.incentives.v1.QueryIncentivesResponse) | Incentives retrieves registered incentives | GET|/evmos/incentives/v1/incentives|
-| `Incentive` | [QueryIncentiveRequest](#evmos.incentives.v1.QueryIncentiveRequest) | [QueryIncentiveResponse](#evmos.incentives.v1.QueryIncentiveResponse) | Incentive retrieves a registered incentive | GET|/evmos/incentives/v1/incentives/{contract}|
-| `GasMeters` | [QueryGasMetersRequest](#evmos.incentives.v1.QueryGasMetersRequest) | [QueryGasMetersResponse](#evmos.incentives.v1.QueryGasMetersResponse) | GasMeters retrieves active gas meters for a given contract | GET|/evmos/incentives/v1/gas_meters/{contract}|
-| `GasMeter` | [QueryGasMeterRequest](#evmos.incentives.v1.QueryGasMeterRequest) | [QueryGasMeterResponse](#evmos.incentives.v1.QueryGasMeterResponse) | GasMeter Retrieves a active gas meter | GET|/evmos/incentives/v1/gas_meters/{contract}/{participant}|
-| `AllocationMeters` | [QueryAllocationMetersRequest](#evmos.incentives.v1.QueryAllocationMetersRequest) | [QueryAllocationMetersResponse](#evmos.incentives.v1.QueryAllocationMetersResponse) | AllocationMeters retrieves active allocation meters for a given denomination | GET|/evmos/incentives/v1/allocation_meters|
-| `AllocationMeter` | [QueryAllocationMeterRequest](#evmos.incentives.v1.QueryAllocationMeterRequest) | [QueryAllocationMeterResponse](#evmos.incentives.v1.QueryAllocationMeterResponse) | AllocationMeter Retrieves a active gas meter | GET|/evmos/incentives/v1/allocation_meters/{denom}|
-| `Params` | [QueryParamsRequest](#evmos.incentives.v1.QueryParamsRequest) | [QueryParamsResponse](#evmos.incentives.v1.QueryParamsResponse) | Params retrieves the incentives module params | GET|/evmos/incentives/v1/params|
+| `Incentives` | [QueryIncentivesRequest](#torque.incentives.v1.QueryIncentivesRequest) | [QueryIncentivesResponse](#torque.incentives.v1.QueryIncentivesResponse) | Incentives retrieves registered incentives | GET|/torque/incentives/v1/incentives|
+| `Incentive` | [QueryIncentiveRequest](#torque.incentives.v1.QueryIncentiveRequest) | [QueryIncentiveResponse](#torque.incentives.v1.QueryIncentiveResponse) | Incentive retrieves a registered incentive | GET|/torque/incentives/v1/incentives/{contract}|
+| `GasMeters` | [QueryGasMetersRequest](#torque.incentives.v1.QueryGasMetersRequest) | [QueryGasMetersResponse](#torque.incentives.v1.QueryGasMetersResponse) | GasMeters retrieves active gas meters for a given contract | GET|/torque/incentives/v1/gas_meters/{contract}|
+| `GasMeter` | [QueryGasMeterRequest](#torque.incentives.v1.QueryGasMeterRequest) | [QueryGasMeterResponse](#torque.incentives.v1.QueryGasMeterResponse) | GasMeter Retrieves a active gas meter | GET|/torque/incentives/v1/gas_meters/{contract}/{participant}|
+| `AllocationMeters` | [QueryAllocationMetersRequest](#torque.incentives.v1.QueryAllocationMetersRequest) | [QueryAllocationMetersResponse](#torque.incentives.v1.QueryAllocationMetersResponse) | AllocationMeters retrieves active allocation meters for a given denomination | GET|/torque/incentives/v1/allocation_meters|
+| `AllocationMeter` | [QueryAllocationMeterRequest](#torque.incentives.v1.QueryAllocationMeterRequest) | [QueryAllocationMeterResponse](#torque.incentives.v1.QueryAllocationMeterResponse) | AllocationMeter Retrieves a active gas meter | GET|/torque/incentives/v1/allocation_meters/{denom}|
+| `Params` | [QueryParamsRequest](#torque.incentives.v1.QueryParamsRequest) | [QueryParamsResponse](#torque.incentives.v1.QueryParamsResponse) | Params retrieves the incentives module params | GET|/torque/incentives/v1/params|
 
  <!-- end services -->
 
-<a name="evmos/inflation/v1/inflation.proto"></a>
+<a name="torque/inflation/v1/inflation.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/inflation/v1/inflation.proto
+## torque/inflation/v1/inflation.proto
 
-<a name="evmos.inflation.v1.ExponentialCalculation"></a>
+<a name="torque.inflation.v1.ExponentialCalculation"></a>
 
 ### ExponentialCalculation
 
@@ -1310,7 +1310,7 @@ f(x)            = (a* (1 - r) ^ x + c)  *(1 + max_variance - bondedRatio*
 | `bonding_target` | [string](#string) |  | bonding target |
 | `max_variance` | [string](#string) |  | max variance |
 
-<a name="evmos.inflation.v1.InflationDistribution"></a>
+<a name="torque.inflation.v1.InflationDistribution"></a>
 
 ### InflationDistribution
 
@@ -1336,12 +1336,12 @@ mintDistribution1 = distribution1 / (1 - teamVestingDistribution)
 
  <!-- end services -->
 
-<a name="evmos/inflation/v1/genesis.proto"></a>
+<a name="torque/inflation/v1/genesis.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/inflation/v1/genesis.proto
+## torque/inflation/v1/genesis.proto
 
-<a name="evmos.inflation.v1.GenesisState"></a>
+<a name="torque.inflation.v1.GenesisState"></a>
 
 ### GenesisState
 
@@ -1349,13 +1349,13 @@ GenesisState defines the inflation module's genesis state.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.inflation.v1.Params) |  | params defines all the paramaters of the module. |
+| `params` | [Params](#torque.inflation.v1.Params) |  | params defines all the paramaters of the module. |
 | `period` | [uint64](#uint64) |  | amount of past periods, based on the epochs per period param |
 | `epoch_identifier` | [string](#string) |  | inflation epoch identifier |
 | `epochs_per_period` | [int64](#int64) |  | number of epochs after which inflation is recalculated |
 | `skipped_epochs` | [uint64](#uint64) |  | number of epochs that have passed while inflation is disabled |
 
-<a name="evmos.inflation.v1.Params"></a>
+<a name="torque.inflation.v1.Params"></a>
 
 ### Params
 
@@ -1364,8 +1364,8 @@ Params holds parameters for the inflation module.
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | `mint_denom` | [string](#string) |  | type of coin to mint |
-| `exponential_calculation` | [ExponentialCalculation](#evmos.inflation.v1.ExponentialCalculation) |  | variables to calculate exponential inflation |
-| `inflation_distribution` | [InflationDistribution](#evmos.inflation.v1.InflationDistribution) |  | inflation distribution of the minted denom |
+| `exponential_calculation` | [ExponentialCalculation](#torque.inflation.v1.ExponentialCalculation) |  | variables to calculate exponential inflation |
+| `inflation_distribution` | [InflationDistribution](#torque.inflation.v1.InflationDistribution) |  | inflation distribution of the minted denom |
 | `enable_inflation` | [bool](#bool) |  | parameter to enable inflation and halt increasing the skipped_epochs |
 
  <!-- end messages -->
@@ -1376,19 +1376,19 @@ Params holds parameters for the inflation module.
 
  <!-- end services -->
 
-<a name="evmos/inflation/v1/query.proto"></a>
+<a name="torque/inflation/v1/query.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/inflation/v1/query.proto
+## torque/inflation/v1/query.proto
 
-<a name="evmos.inflation.v1.QueryCirculatingSupplyRequest"></a>
+<a name="torque.inflation.v1.QueryCirculatingSupplyRequest"></a>
 
 ### QueryCirculatingSupplyRequest
 
 QueryCirculatingSupplyRequest is the request type for the
 Query/CirculatingSupply RPC method.
 
-<a name="evmos.inflation.v1.QueryCirculatingSupplyResponse"></a>
+<a name="torque.inflation.v1.QueryCirculatingSupplyResponse"></a>
 
 ### QueryCirculatingSupplyResponse
 
@@ -1399,14 +1399,14 @@ Query/CirculatingSupply RPC method.
 | ----- | ---- | ----- | ----------- |
 | `circulating_supply` | [cosmos.base.v1beta1.DecCoin](#cosmos.base.v1beta1.DecCoin) |  | total amount of coins in circulation |
 
-<a name="evmos.inflation.v1.QueryEpochMintProvisionRequest"></a>
+<a name="torque.inflation.v1.QueryEpochMintProvisionRequest"></a>
 
 ### QueryEpochMintProvisionRequest
 
 QueryEpochMintProvisionRequest is the request type for the
 Query/EpochMintProvision RPC method.
 
-<a name="evmos.inflation.v1.QueryEpochMintProvisionResponse"></a>
+<a name="torque.inflation.v1.QueryEpochMintProvisionResponse"></a>
 
 ### QueryEpochMintProvisionResponse
 
@@ -1417,14 +1417,14 @@ Query/EpochMintProvision RPC method.
 | ----- | ---- | ----- | ----------- |
 | `epoch_mint_provision` | [cosmos.base.v1beta1.DecCoin](#cosmos.base.v1beta1.DecCoin) |  | epoch_mint_provision is the current minting per epoch provision value. |
 
-<a name="evmos.inflation.v1.QueryInflationRateRequest"></a>
+<a name="torque.inflation.v1.QueryInflationRateRequest"></a>
 
 ### QueryInflationRateRequest
 
 QueryInflationRateRequest is the request type for the Query/InflationRate RPC
 method.
 
-<a name="evmos.inflation.v1.QueryInflationRateResponse"></a>
+<a name="torque.inflation.v1.QueryInflationRateResponse"></a>
 
 ### QueryInflationRateResponse
 
@@ -1435,13 +1435,13 @@ RPC method.
 | ----- | ---- | ----- | ----------- |
 | `inflation_rate` | [string](#string) |  | rate by which the total supply increases within one period |
 
-<a name="evmos.inflation.v1.QueryParamsRequest"></a>
+<a name="torque.inflation.v1.QueryParamsRequest"></a>
 
 ### QueryParamsRequest
 
 QueryParamsRequest is the request type for the Query/Params RPC method.
 
-<a name="evmos.inflation.v1.QueryParamsResponse"></a>
+<a name="torque.inflation.v1.QueryParamsResponse"></a>
 
 ### QueryParamsResponse
 
@@ -1449,15 +1449,15 @@ QueryParamsResponse is the response type for the Query/Params RPC method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.inflation.v1.Params) |  | params defines the parameters of the module. |
+| `params` | [Params](#torque.inflation.v1.Params) |  | params defines the parameters of the module. |
 
-<a name="evmos.inflation.v1.QueryPeriodRequest"></a>
+<a name="torque.inflation.v1.QueryPeriodRequest"></a>
 
 ### QueryPeriodRequest
 
 QueryPeriodRequest is the request type for the Query/Period RPC method.
 
-<a name="evmos.inflation.v1.QueryPeriodResponse"></a>
+<a name="torque.inflation.v1.QueryPeriodResponse"></a>
 
 ### QueryPeriodResponse
 
@@ -1467,14 +1467,14 @@ QueryPeriodResponse is the response type for the Query/Period RPC method.
 | ----- | ---- | ----- | ----------- |
 | `period` | [uint64](#uint64) |  | period is the current minting per epoch provision value. |
 
-<a name="evmos.inflation.v1.QuerySkippedEpochsRequest"></a>
+<a name="torque.inflation.v1.QuerySkippedEpochsRequest"></a>
 
 ### QuerySkippedEpochsRequest
 
 QuerySkippedEpochsRequest is the request type for the Query/SkippedEpochs RPC
 method.
 
-<a name="evmos.inflation.v1.QuerySkippedEpochsResponse"></a>
+<a name="torque.inflation.v1.QuerySkippedEpochsResponse"></a>
 
 ### QuerySkippedEpochsResponse
 
@@ -1491,7 +1491,7 @@ RPC method.
 
  <!-- end HasExtensions -->
 
-<a name="evmos.inflation.v1.Query"></a>
+<a name="torque.inflation.v1.Query"></a>
 
 ### Query
 
@@ -1499,21 +1499,21 @@ Query provides defines the gRPC querier service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Period` | [QueryPeriodRequest](#evmos.inflation.v1.QueryPeriodRequest) | [QueryPeriodResponse](#evmos.inflation.v1.QueryPeriodResponse) | Period retrieves current period. | GET|/evmos/inflation/v1/period|
-| `EpochMintProvision` | [QueryEpochMintProvisionRequest](#evmos.inflation.v1.QueryEpochMintProvisionRequest) | [QueryEpochMintProvisionResponse](#evmos.inflation.v1.QueryEpochMintProvisionResponse) | EpochMintProvision retrieves current minting epoch provision value. | GET|/evmos/inflation/v1/epoch_mint_provision|
-| `SkippedEpochs` | [QuerySkippedEpochsRequest](#evmos.inflation.v1.QuerySkippedEpochsRequest) | [QuerySkippedEpochsResponse](#evmos.inflation.v1.QuerySkippedEpochsResponse) | SkippedEpochs retrieves the total number of skipped epochs. | GET|/evmos/inflation/v1/skipped_epochs|
-| `CirculatingSupply` | [QueryCirculatingSupplyRequest](#evmos.inflation.v1.QueryCirculatingSupplyRequest) | [QueryCirculatingSupplyResponse](#evmos.inflation.v1.QueryCirculatingSupplyResponse) | CirculatingSupply retrieves the total number of tokens that are in circulation (i.e. excluding unvested tokens). | GET|/evmos/inflation/v1/circulating_supply|
-| `InflationRate` | [QueryInflationRateRequest](#evmos.inflation.v1.QueryInflationRateRequest) | [QueryInflationRateResponse](#evmos.inflation.v1.QueryInflationRateResponse) | InflationRate retrieves the inflation rate of the current period. | GET|/evmos/inflation/v1/inflation_rate|
-| `Params` | [QueryParamsRequest](#evmos.inflation.v1.QueryParamsRequest) | [QueryParamsResponse](#evmos.inflation.v1.QueryParamsResponse) | Params retrieves the total set of minting parameters. | GET|/evmos/inflation/v1/params|
+| `Period` | [QueryPeriodRequest](#torque.inflation.v1.QueryPeriodRequest) | [QueryPeriodResponse](#torque.inflation.v1.QueryPeriodResponse) | Period retrieves current period. | GET|/torque/inflation/v1/period|
+| `EpochMintProvision` | [QueryEpochMintProvisionRequest](#torque.inflation.v1.QueryEpochMintProvisionRequest) | [QueryEpochMintProvisionResponse](#torque.inflation.v1.QueryEpochMintProvisionResponse) | EpochMintProvision retrieves current minting epoch provision value. | GET|/torque/inflation/v1/epoch_mint_provision|
+| `SkippedEpochs` | [QuerySkippedEpochsRequest](#torque.inflation.v1.QuerySkippedEpochsRequest) | [QuerySkippedEpochsResponse](#torque.inflation.v1.QuerySkippedEpochsResponse) | SkippedEpochs retrieves the total number of skipped epochs. | GET|/torque/inflation/v1/skipped_epochs|
+| `CirculatingSupply` | [QueryCirculatingSupplyRequest](#torque.inflation.v1.QueryCirculatingSupplyRequest) | [QueryCirculatingSupplyResponse](#torque.inflation.v1.QueryCirculatingSupplyResponse) | CirculatingSupply retrieves the total number of tokens that are in circulation (i.e. excluding unvested tokens). | GET|/torque/inflation/v1/circulating_supply|
+| `InflationRate` | [QueryInflationRateRequest](#torque.inflation.v1.QueryInflationRateRequest) | [QueryInflationRateResponse](#torque.inflation.v1.QueryInflationRateResponse) | InflationRate retrieves the inflation rate of the current period. | GET|/torque/inflation/v1/inflation_rate|
+| `Params` | [QueryParamsRequest](#torque.inflation.v1.QueryParamsRequest) | [QueryParamsResponse](#torque.inflation.v1.QueryParamsResponse) | Params retrieves the total set of minting parameters. | GET|/torque/inflation/v1/params|
 
  <!-- end services -->
 
-<a name="evmos/recovery/v1/genesis.proto"></a>
+<a name="torque/recovery/v1/genesis.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/recovery/v1/genesis.proto
+## torque/recovery/v1/genesis.proto
 
-<a name="evmos.recovery.v1.GenesisState"></a>
+<a name="torque.recovery.v1.GenesisState"></a>
 
 ### GenesisState
 
@@ -1521,9 +1521,9 @@ GenesisState defines the recovery module's genesis state.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.recovery.v1.Params) |  | params defines all the paramaters of the module. |
+| `params` | [Params](#torque.recovery.v1.Params) |  | params defines all the paramaters of the module. |
 
-<a name="evmos.recovery.v1.Params"></a>
+<a name="torque.recovery.v1.Params"></a>
 
 ### Params
 
@@ -1542,18 +1542,18 @@ Params holds parameters for the recovery module
 
  <!-- end services -->
 
-<a name="evmos/recovery/v1/query.proto"></a>
+<a name="torque/recovery/v1/query.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/recovery/v1/query.proto
+## torque/recovery/v1/query.proto
 
-<a name="evmos.recovery.v1.QueryParamsRequest"></a>
+<a name="torque.recovery.v1.QueryParamsRequest"></a>
 
 ### QueryParamsRequest
 
 QueryParamsRequest is the request type for the Query/Params RPC method.
 
-<a name="evmos.recovery.v1.QueryParamsResponse"></a>
+<a name="torque.recovery.v1.QueryParamsResponse"></a>
 
 ### QueryParamsResponse
 
@@ -1561,7 +1561,7 @@ QueryParamsResponse is the response type for the Query/Params RPC method.
 
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
-| `params` | [Params](#evmos.recovery.v1.Params) |  | params defines the parameters of the module. |
+| `params` | [Params](#torque.recovery.v1.Params) |  | params defines the parameters of the module. |
 
  <!-- end messages -->
 
@@ -1569,7 +1569,7 @@ QueryParamsResponse is the response type for the Query/Params RPC method.
 
  <!-- end HasExtensions -->
 
-<a name="evmos.recovery.v1.Query"></a>
+<a name="torque.recovery.v1.Query"></a>
 
 ### Query
 
@@ -1577,16 +1577,16 @@ Query defines the gRPC querier service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Params` | [QueryParamsRequest](#evmos.recovery.v1.QueryParamsRequest) | [QueryParamsResponse](#evmos.recovery.v1.QueryParamsResponse) | Params retrieves the total set of recovery parameters. | GET|/evmos/recovery/v1/params|
+| `Params` | [QueryParamsRequest](#torque.recovery.v1.QueryParamsRequest) | [QueryParamsResponse](#torque.recovery.v1.QueryParamsResponse) | Params retrieves the total set of recovery parameters. | GET|/torque/recovery/v1/params|
 
  <!-- end services -->
 
-<a name="evmos/vesting/v1/query.proto"></a>
+<a name="torque/vesting/v1/query.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/vesting/v1/query.proto
+## torque/vesting/v1/query.proto
 
-<a name="evmos.vesting.v1.QueryBalancesRequest"></a>
+<a name="torque.vesting.v1.QueryBalancesRequest"></a>
 
 ### QueryBalancesRequest
 
@@ -1596,7 +1596,7 @@ QueryBalancesRequest is the request type for the Query/Balances RPC method.
 | ----- | ---- | ----- | ----------- |
 | `address` | [string](#string) |  | address of the clawback vesting account |
 
-<a name="evmos.vesting.v1.QueryBalancesResponse"></a>
+<a name="torque.vesting.v1.QueryBalancesResponse"></a>
 
 ### QueryBalancesResponse
 
@@ -1615,7 +1615,7 @@ method.
 
  <!-- end HasExtensions -->
 
-<a name="evmos.vesting.v1.Query"></a>
+<a name="torque.vesting.v1.Query"></a>
 
 ### Query
 
@@ -1623,16 +1623,16 @@ Query defines the gRPC querier service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `Balances` | [QueryBalancesRequest](#evmos.vesting.v1.QueryBalancesRequest) | [QueryBalancesResponse](#evmos.vesting.v1.QueryBalancesResponse) | Retrieves the unvested, vested and locked tokens for a vesting account | GET|/evmos/vesting/v1/balances/{address}|
+| `Balances` | [QueryBalancesRequest](#torque.vesting.v1.QueryBalancesRequest) | [QueryBalancesResponse](#torque.vesting.v1.QueryBalancesResponse) | Retrieves the unvested, vested and locked tokens for a vesting account | GET|/torque/vesting/v1/balances/{address}|
 
  <!-- end services -->
 
-<a name="evmos/vesting/v1/tx.proto"></a>
+<a name="torque/vesting/v1/tx.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/vesting/v1/tx.proto
+## torque/vesting/v1/tx.proto
 
-<a name="evmos.vesting.v1.MsgClawback"></a>
+<a name="torque.vesting.v1.MsgClawback"></a>
 
 ### MsgClawback
 
@@ -1645,13 +1645,13 @@ ClawbackVestingAccount.
 | `account_address` | [string](#string) |  | account_address is the address of the ClawbackVestingAccount to claw back from. |
 | `dest_address` | [string](#string) |  | dest_address specifies where the clawed-back tokens should be transferred to. If empty, the tokens will be transferred back to the original funder of the account. |
 
-<a name="evmos.vesting.v1.MsgClawbackResponse"></a>
+<a name="torque.vesting.v1.MsgClawbackResponse"></a>
 
 ### MsgClawbackResponse
 
 MsgClawbackResponse defines the MsgClawback response type.
 
-<a name="evmos.vesting.v1.MsgCreateClawbackVestingAccount"></a>
+<a name="torque.vesting.v1.MsgCreateClawbackVestingAccount"></a>
 
 ### MsgCreateClawbackVestingAccount
 
@@ -1666,7 +1666,7 @@ MsgCreateClawbackVestingAccount defines a message that enables creating a Clawba
 | `vesting_periods` | [cosmos.vesting.v1beta1.Period](#cosmos.vesting.v1beta1.Period) | repeated | vesting_periods defines thevesting schedule relative to the start_time |
 | `merge` | [bool](#bool) |  | merge specifies a the creation mechanism for existing ClawbackVestingAccounts. If true, merge this new grant into an existing ClawbackVestingAccount, or create it if it does not exist. If false, creates a new account. New grants to an existing account must be from the same from_address. |
 
-<a name="evmos.vesting.v1.MsgCreateClawbackVestingAccountResponse"></a>
+<a name="torque.vesting.v1.MsgCreateClawbackVestingAccountResponse"></a>
 
 ### MsgCreateClawbackVestingAccountResponse
 
@@ -1679,7 +1679,7 @@ MsgCreateClawbackVestingAccount response type.
 
  <!-- end HasExtensions -->
 
-<a name="evmos.vesting.v1.Msg"></a>
+<a name="torque.vesting.v1.Msg"></a>
 
 ### Msg
 
@@ -1687,17 +1687,17 @@ Msg defines the vesting Msg service.
 
 | Method Name | Request Type | Response Type | Description | HTTP Verb | Endpoint |
 | ----------- | ------------ | ------------- | ------------| ------- | -------- |
-| `CreateClawbackVestingAccount` | [MsgCreateClawbackVestingAccount](#evmos.vesting.v1.MsgCreateClawbackVestingAccount) | [MsgCreateClawbackVestingAccountResponse](#evmos.vesting.v1.MsgCreateClawbackVestingAccountResponse) | CreateClawbackVestingAccount creats a vesting account that is subject to clawback and the configuration of vesting and lockup schedules. | GET|/evmos/vesting/v1/tx/create_clawback_vesting_account|
-| `Clawback` | [MsgClawback](#evmos.vesting.v1.MsgClawback) | [MsgClawbackResponse](#evmos.vesting.v1.MsgClawbackResponse) | Clawback removes the unvested tokens from a ClawbackVestingAccount. | GET|/evmos/vesting/v1/tx/clawback|
+| `CreateClawbackVestingAccount` | [MsgCreateClawbackVestingAccount](#torque.vesting.v1.MsgCreateClawbackVestingAccount) | [MsgCreateClawbackVestingAccountResponse](#torque.vesting.v1.MsgCreateClawbackVestingAccountResponse) | CreateClawbackVestingAccount creats a vesting account that is subject to clawback and the configuration of vesting and lockup schedules. | GET|/torque/vesting/v1/tx/create_clawback_vesting_account|
+| `Clawback` | [MsgClawback](#torque.vesting.v1.MsgClawback) | [MsgClawbackResponse](#torque.vesting.v1.MsgClawbackResponse) | Clawback removes the unvested tokens from a ClawbackVestingAccount. | GET|/torque/vesting/v1/tx/clawback|
 
  <!-- end services -->
 
-<a name="evmos/vesting/v1/vesting.proto"></a>
+<a name="torque/vesting/v1/vesting.proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## evmos/vesting/v1/vesting.proto
+## torque/vesting/v1/vesting.proto
 
-<a name="evmos.vesting.v1.ClawbackVestingAccount"></a>
+<a name="torque.vesting.v1.ClawbackVestingAccount"></a>
 
 ### ClawbackVestingAccount
 

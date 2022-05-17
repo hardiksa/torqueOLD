@@ -1,5 +1,5 @@
 syntax = "proto3";
-package evmos.incentives.v1;
+package torque.incentives.v1;
 
 import "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";

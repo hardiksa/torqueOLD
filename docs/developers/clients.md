@@ -30,7 +30,7 @@ wallets and block explorers to interact with the Proof-of-Stake logic and native
 generates a reverse-proxy server which translates RESTful JSON API into gRPC. With gRPC-Gateway,
 users can use REST to interact the Cosmos gRPC service.
 
-See the list of supported gRPC-Gateway API endpoints for the Torque testnet [here](https://api.evmos.dev/).
+See the list of supported gRPC-Gateway API endpoints for the Torque testnet [here](https://api.torque.dev/).
 
 ## Ethereum JSON-RPC
 

@@ -10,16 +10,16 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/hardiksa/torque/v4/app"
-	evmosd "github.com/hardiksa/torque/v4/cmd/evmosd"
+	torqued "github.com/hardiksa/torque/v4/cmd/torqued"
 )
 
 func TestInitCmd(t *testing.T) {
-	rootCmd, _ := evmosd.NewRootCmd()
+	rootCmd, _ := torqued.NewRootCmd()
 	rootCmd.SetArgs([]string{
 		"init",       // Test the init cmd
-		"evmos-test", // Moniker
+		"torque-test", // Moniker
 		fmt.Sprintf("--%s=%s", cli.FlagOverwrite, "true"), // Overwrite genesis.json, in case it already exists
-		fmt.Sprintf("--%s=%s", flags.FlagChainID, "evmos_9000-1"),
+		fmt.Sprintf("--%s=%s", flags.FlagChainID, "torque_9000-1"),
 	})
 
 	err := svrcmd.Execute(rootCmd, app.DefaultNodeHome)
@@ -27,7 +27,7 @@ func TestInitCmd(t *testing.T) {
 }
 
 func TestAddKeyLedgerCmd(t *testing.T) {
-	rootCmd, _ := evmosd.NewRootCmd()
+	rootCmd, _ := torqued.NewRootCmd()
 	rootCmd.SetArgs([]string{
 		"keys",
 		"add",

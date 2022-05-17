@@ -22,9 +22,9 @@ For a comprehensive list of available module parameters see the table below:
 | `slashing`     | `cosmos-sdk` | [reference](https://docs.cosmos.network/main/modules/slashing/08_params.html)                 |
 | `staking`      | `cosmos-sdk` | [reference](https://docs.cosmos.network/main/modules/staking/08_params.html)                  |
 | `transfer`     | `ibc-go`     | [reference](https://github.com/cosmos/ibc-go/blob/main/modules/apps/transfer/spec/07_params.md) |
-| `evm`          | `ethermint`  | [reference](https://evmos.dev/modules/evm/08_params.html)                                       |
-| `feemarket`    | `ethermint`  | [reference](https://evmos.dev/modules/feemarket/07_params.html)                                 |
-| `claims`       | `evmos`      | [reference](https://evmos.dev/modules/claims/06_parameters.html)                                |
-| `erc20`        | `evmos`      | [reference](https://evmos.dev/modules/erc20/07_parameters.html)                                 |
-| `incentives`   | `evmos`      | [reference](https://evmos.dev/modules/incentives/07_parameters.html)                            |
-| `inflation`    | `evmos`      | [reference](https://evmos.dev/modules/inflation/05_parameters.html)                             |
+| `evm`          | `ethermint`  | [reference](https://torque.dev/modules/evm/08_params.html)                                       |
+| `feemarket`    | `ethermint`  | [reference](https://torque.dev/modules/feemarket/07_params.html)                                 |
+| `claims`       | `torque`      | [reference](https://torque.dev/modules/claims/06_parameters.html)                                |
+| `erc20`        | `torque`      | [reference](https://torque.dev/modules/erc20/07_parameters.html)                                 |
+| `incentives`   | `torque`      | [reference](https://torque.dev/modules/incentives/07_parameters.html)                            |
+| `inflation`    | `torque`      | [reference](https://torque.dev/modules/inflation/05_parameters.html)                             |

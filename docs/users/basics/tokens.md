@@ -16,7 +16,7 @@ The denomination used for staking, governance and gas consumption on the EVM is 
 
 Torque uses [Atto](https://en.wikipedia.org/wiki/Atto-) TORQUE as the base denomination to maintain parity with Ethereum.
 
-$$1 evmos = 1 ~ * ~ 10^{18} aevmos$$
+$$1 torque = 1 ~ * ~ 10^{18} atorque$$
 
 This matches Ethereum denomination of:
 

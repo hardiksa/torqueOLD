@@ -43,28 +43,28 @@ Once on-chain, most people will rely upon network explorers to interpret this in
 
 ## Sending the transaction that submits your governance proposal
 
-For information on how to use `evmosd` binary to submit an on-chain proposal through the governance module, please refer to the [quickstart](../quickstart/binary.md) documentation.
+For information on how to use `torqued` binary to submit an on-chain proposal through the governance module, please refer to the [quickstart](../quickstart/binary.md) documentation.
 
 ### CLI
 
-This is the command format for using `evmosd` (the command-line interface) to submit your proposal on-chain:
+This is the command format for using `torqued` (the command-line interface) to submit your proposal on-chain:
 
 ```bash
-evmosd tx gov submit-proposal \
+torqued tx gov submit-proposal \
   --title=<title> \
   --description=<description> \
   --type="Text" \
-  --deposit="1000000aevmos" \
+  --deposit="1000000atorque" \
   --from=<mykey> \
   --chain-id=<chain_id>
   --node <address>
 ```
 
 ::: tip
-Use the `evmos tx gov --help` flag to get more info about the governance commands
+Use the `torque tx gov --help` flag to get more info about the governance commands
 :::
 
-1. `evmosd` is the command-line interface client that is used to send transactions and query Torque
+1. `torqued` is the command-line interface client that is used to send transactions and query Torque
 2. `tx gov submit-proposal param-change` indicates that the transaction is submitting a parameter-change proposal
 3. `--from mykey` is the account key that pays the transaction fee and deposit amount
 4. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction
@@ -74,37 +74,37 @@ Use the `evmos tx gov --help` flag to get more info about the governance command
 5. `--fees` is a flat-rate incentive for a validator to process your transaction
    - the network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee
    - many nodes (including the Figment node) use a minimum fee to desincentivize transaction spamming
-   - 7500aevmos is equal to 0.0075 TORQUE
-6. `--chain-id evmos_90001-2` is Torque Mainnet. For current and past chain-id's, please look at the [tharsis/mainnet resource](https://github.com/tharsis/mainnet)
-   - the testnet chain ID is [evmos_9000-4](https://testnet.mintscan.io/evmos). For current and past testnet information, please look at the [testnet repository](https://github.com/tharsis/testnets)
+   - 7500atorque is equal to 0.0075 TORQUE
+6. `--chain-id torque_90001-2` is Torque Mainnet. For current and past chain-id's, please look at the [tharsis/mainnet resource](https://github.com/tharsis/mainnet)
+   - the testnet chain ID is [torque_9000-4](https://testnet.mintscan.io/torque). For current and past testnet information, please look at the [testnet repository](https://github.com/tharsis/testnets)
 7. `--node` is using a full node to send the transaction to the Torque Mainnet
 
 ### Verifying your transaction
 
-After posting your transaction, your command line interface (`evmosd`) will provide you with the transaction's hash, which you can either query using evmosd or by searching the transaction hash using [Mintscan](https://www.mintscan.io/evmos) or any block explorer.
+After posting your transaction, your command line interface (`torqued`) will provide you with the transaction's hash, which you can either query using torqued or by searching the transaction hash using [Mintscan](https://www.mintscan.io/torque) or any block explorer.
 
 ### Depositing funds after a proposal has been submitted
 
 Sometimes a proposal is submitted without having the minimum token amount deposited yet. In these cases you would want to be able to deposit more tokens to get the proposal into the voting stage. In order to deposit tokens, you'll need to know what your proposal ID is after you've submitted your proposal. You can query all proposals by the following command:
 
 ```bash
-evmosd q gov proposals
+torqued q gov proposals
 ```
 
 If there are a lot of proposals on the chain already, you can also filter by your own address. For the proposal above, that would be:
 
 ```bash
-evmosd q gov proposals --depositor evmos1hxv7mpztvln45eghez6evw2ypcw4vjmsmr8cdx
+torqued q gov proposals --depositor torque1hxv7mpztvln45eghez6evw2ypcw4vjmsmr8cdx
 ```
 
 Once you have the proposal ID, this is the command to deposit extra tokens:
 
 ```bash
-evmosd tx gov deposit <proposal-id> <deposit> --from <name>
+torqued tx gov deposit <proposal-id> <deposit> --from <name>
 ```
 
 In our case above, the `<proposal-id>` would be 59 as queried earlier.
-The `<deposit>` is written as `500000aevmos`, just like the example above.
+The `<deposit>` is written as `500000atorque`, just like the example above.
 
 ### Submit your proposal to the testnet
 
@@ -119,4 +119,4 @@ Submitting your proposal to the testnet increases the likelihood that you will d
 
 - you'll need testnet tokens for your proposal (ask around for a faucet)
 - the parameters for testnet proposals are different (eg. voting period timing, deposit amount, deposit denomination)
-- the deposit denomination is in 'atevmos' instead of 'aevmos'
+- the deposit denomination is in 'attorque' instead of 'atorque'

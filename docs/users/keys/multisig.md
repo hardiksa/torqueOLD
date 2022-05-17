@@ -16,7 +16,7 @@ To sign with a multisig account, the transaction must be signed individually by 
 ## Generate a Multisig key
 
 ```bash
-evmosd keys add --multisig=name1,name2,name3[...] --multisig-threshold=K new_key_name
+torqued keys add --multisig=name1,name2,name3[...] --multisig-threshold=K new_key_name
 ```
 
 `K` is the minimum number of private keys that must have signed the transactions that carry the public key's address as signer.
@@ -26,14 +26,14 @@ The `--multisig` flag must contain the name of public keys that will be combined
 Unless the flag `--nosort` is set, the order in which the keys are supplied on the command line does not matter, i.e. the following commands generate two identical keys:
 
 ```bash
-evmosd keys add --multisig=p1,p2,p3 --multisig-threshold=2 multisig_address
-evmosd keys add --multisig=p2,p3,p1 --multisig-threshold=2 multisig_address
+torqued keys add --multisig=p1,p2,p3 --multisig-threshold=2 multisig_address
+torqued keys add --multisig=p2,p3,p1 --multisig-threshold=2 multisig_address
 ```
 
 Multisig addresses can also be generated on-the-fly and printed through the which command:
 
 ```bash
-evmosd keys show --multisig-threshold=K name1 name2 name3 [...]
+torqued keys show --multisig-threshold=K name1 name2 name3 [...]
 ```
 
 ## Signing a transaction
@@ -45,15 +45,15 @@ Let's assume that you have `test1` and `test2` want to make a multisig account w
 First import the public keys of `test3` into your keyring.
 
 ```sh
-evmosd keys add \
+torqued keys add \
     test3 \
-    --pubkey=evmospub1addwnpepqgcxazmq6wgt2j4rdfumsfwla0zfk8e5sws3p3zg5dkm9007hmfysxas0u2
+    --pubkey=torquepub1addwnpepqgcxazmq6wgt2j4rdfumsfwla0zfk8e5sws3p3zg5dkm9007hmfysxas0u2
 ```
 
 Generate the multisig key with 2/3 threshold.
 
 ```sh
-evmosd keys add \
+torqued keys add \
     multi \
     --multisig=test1,test2,test3 \
     --multisig-threshold=2
@@ -62,12 +62,12 @@ evmosd keys add \
 You can see its address and details:
 
 ```sh
-evmosd keys show multi
+torqued keys show multi
 
 - name: multi
   type: multi
-  address: evmos1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m
-  pubkey: evmospub1ytql0csgqgfzd666axrjzq3mxw59ys6yqcd3ydjvhgs0uzs6kdk5fp4t73gmkl8t6y02yfq7tvfzd666axrjzq3sd69kp5usk492x6nehqjal67ynv0nfqapzrzy3gmdk27la0kjfqfzd666axrjzq6utqt639ka2j3xkncgk65dup06t297ccljmxhvhu3rmk92u3afjuyz9dg9
+  address: torque1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m
+  pubkey: torquepub1ytql0csgqgfzd666axrjzq3mxw59ys6yqcd3ydjvhgs0uzs6kdk5fp4t73gmkl8t6y02yfq7tvfzd666axrjzq3sd69kp5usk492x6nehqjal67ynv0nfqapzrzy3gmdk27la0kjfqfzd666axrjzq6utqt639ka2j3xkncgk65dup06t297ccljmxhvhu3rmk92u3afjuyz9dg9
   mnemonic: ""
   threshold: 0
   pubkeys: []
@@ -76,28 +76,28 @@ evmosd keys show multi
 Let's add 10 TORQUE to the multisig wallet:
 
 ```bash
-evmosd tx bank send \
+torqued tx bank send \
     test1 \
-    evmos1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m \
-    10000000000000000000aevmos \
-    --chain-id=evmos_9000-4 \
+    torque1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m \
+    10000000000000000000atorque \
+    --chain-id=torque_9000-4 \
     --gas=auto \
-    --fees=1000000aevmos \
+    --fees=1000000atorque \
     --broadcast-mode=block
 ```
 
 ### Step 2: Create the multisig transaction
 
-We want to send 5 TORQUE from our multisig account to `evmos1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft`.
+We want to send 5 TORQUE from our multisig account to `torque1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft`.
 
 ```bash
-evmosd tx bank send \
-    evmos1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft \
-    evmos157g6rn6t6k5rl0dl57zha2wx72t633axqyvvwq \
-    5000000000000000000aevmos \
+torqued tx bank send \
+    torque1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft \
+    torque157g6rn6t6k5rl0dl57zha2wx72t633axqyvvwq \
+    5000000000000000000atorque \
     --gas=200000 \
-    --fees=1000000aevmos \
-    --chain-id=evmos_9000-4 \
+    --fees=1000000atorque \
+    --chain-id=torque_9000-4 \
     --generate-only > unsignedTx.json
 ```
 
@@ -109,11 +109,11 @@ The file `unsignedTx.json` contains the unsigned transaction encoded in JSON.
     "messages": [
       {
         "@type": "/cosmos.bank.v1beta1.MsgSend",
-        "from_address": "evmos1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft",
-        "to_address": "evmos157g6rn6t6k5rl0dl57zha2wx72t633axqyvvwq",
+        "from_address": "torque1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft",
+        "to_address": "torque157g6rn6t6k5rl0dl57zha2wx72t633axqyvvwq",
         "amount": [
           {
-            "denom": "aevmos",
+            "denom": "atorque",
             "amount": "5000000000000000000"
           }
         ]
@@ -129,7 +129,7 @@ The file `unsignedTx.json` contains the unsigned transaction encoded in JSON.
     "fee": {
       "amount": [
         {
-          "denom": "aevmos",
+          "denom": "atorque",
           "amount": "1000000"
         }
       ],
@@ -147,21 +147,21 @@ The file `unsignedTx.json` contains the unsigned transaction encoded in JSON.
 Sign with `test1` and `test2` and create individual signatures.
 
 ```sh
-evmosd tx sign \
+torqued tx sign \
     unsignedTx.json \
-    --multisig=evmos1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m \
+    --multisig=torque1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m \
     --from=test1 \
     --output-document=test1sig.json \
-    --chain-id=evmos_9000-4
+    --chain-id=torque_9000-4
 ```
 
 ```sh
-evmosd tx sign \
+torqued tx sign \
     unsignedTx.json \
-    --multisig=evmos1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m \
+    --multisig=torque1e0fx0q9meawrcq7fmma9x60gk35lpr4xk3884m \
     --from=test2 \
     --output-document=test2sig.json \
-    --chain-id=evmos_9000-4
+    --chain-id=torque_9000-4
 ```
 
 ### Step 4: Create multisignature
@@ -169,12 +169,12 @@ evmosd tx sign \
 Combine signatures to sign transaction.
 
 ```sh
-evmosd tx multisign \
+torqued tx multisign \
     unsignedTx.json \
     multi \
     test1sig.json test2sig.json \
     --output-document=signedTx.json \
-    --chain-id=evmos_9000-4
+    --chain-id=torque_9000-4
 ```
 
 The TX is now signed:
@@ -185,11 +185,11 @@ The TX is now signed:
     "messages": [
       {
         "@type": "/cosmos.bank.v1beta1.MsgSend",
-        "from_address": "evmos1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft",
-        "to_address": "evmos157g6rn6t6k5rl0dl57zha2wx72t633axqyvvwq",
+        "from_address": "torque1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft",
+        "to_address": "torque157g6rn6t6k5rl0dl57zha2wx72t633axqyvvwq",
         "amount": [
           {
-            "denom": "aevmos",
+            "denom": "atorque",
             "amount": "5000000000000000000"
           }
         ]
@@ -247,7 +247,7 @@ The TX is now signed:
     "fee": {
       "amount": [
         {
-          "denom": "aevmos",
+          "denom": "atorque",
           "amount": "1000000"
         }
       ],
@@ -265,7 +265,7 @@ The TX is now signed:
 ### Step 5: Broadcast transaction
 
 ```sh
-evmosd tx broadcast signedTx.json \
-    --chain-id=evmos_9000-4 \
+torqued tx broadcast signedTx.json \
+    --chain-id=torque_9000-4 \
     --broadcast-mode=block
 ```

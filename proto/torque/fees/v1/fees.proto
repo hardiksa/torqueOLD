@@ -1,5 +1,5 @@
 syntax = "proto3";
-package evmos.fees.v1;
+package torque.fees.v1;
 
 option go_package = "github.com/hardiksa/torque/v4/x/fees/types";
 

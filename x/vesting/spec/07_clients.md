@@ -8,7 +8,7 @@ A user can query the Torque `x/vesting` module using the CLI, gRPC, or REST.
 
 ## CLI
 
-Find below a list of `evmosd` commands added with the `x/vesting` module. You can obtain the full list by using the `evmosd -h` command.
+Find below a list of `torqued` commands added with the `x/vesting` module. You can obtain the full list by using the `torqued -h` command.
 
 ### Genesis
 
@@ -22,7 +22,7 @@ If both files are given, they must describe schedules for the same total amount.
 If one file is omitted, it will default to a schedule that immediately unlocks or vests the entire amount. The described amount of coins will be transferred from the --from address to the vesting account. Unvested coins may be "clawed back" by the funder with the clawback command. Coins may not be transferred out of the account if they are locked or unvested. Only vested coins may be staked. For an example of how to set this see [this link](https://github.com/hardiksa/torque/pull/303).
 
 ```go
-evmosd add-genesis-account [address_or_key_name] [coin][,[coin]] [flags]
+torqued add-genesis-account [address_or_key_name] [coin][,[coin]] [flags]
 ```
 
 ### Queries
@@ -34,7 +34,7 @@ The `query` commands allow users to query `vesting` account state.
 Allows users to query the locked, unvested and vested tokens for a given vesting account
 
 ```go
-evmosd query vesting balances [address] [flags]
+torqued query vesting balances [address] [flags]
 ```
 
 ### Transactions
@@ -49,7 +49,7 @@ If both files are given, they must describe schedules for the same total amount.
 If one file is omitted, it will default to a schedule that immediately unlocks or vests the entire amount. The described amount of coins will be transferred from the --from address to the vesting account. Unvested coins may be "clawed back" by the funder with the clawback command. Coins may not be transferred out of the account if they are locked or unvested. Only vested coins may be staked. For an example of how to set this see [this link](https://github.com/hardiksa/torque/pull/303).
 
 ```go
-evmosd tx vesting create-clawback-vesting-account [to_address] [flags]
+torqued tx vesting create-clawback-vesting-account [to_address] [flags]
 ```
 
 **`clawback`**
@@ -57,7 +57,7 @@ evmosd tx vesting create-clawback-vesting-account [to_address] [flags]
 Allows users to create a transfer unvested amount out of a ClawbackVestingAccount. Must be requested by the original funder address (--from) and may provide a destination address (--dest), otherwise the coins return to the funder. Delegated or undelegating staking tokens will be transferred in the delegated (undelegating) state. The recipient is vulnerable to slashing, and must act to unbond the tokens if desired.
 
 ```go
-evmosd tx vesting clawback [address] [flags]
+torqued tx vesting clawback [address] [flags]
 ```
 
 ## gRPC
@@ -66,14 +66,14 @@ evmosd tx vesting clawback [address] [flags]
 
 | Verb   | Method                                 | Description                            |
 | ------ | -------------------------------------- | -------------------------------------- |
-| `gRPC` | `evmos.vesting.v1.Query/Balances`      | Gets locked, unvested and vested coins |
-| `GET`  | `/evmos/vesting/v1/balances/{address}` | Gets locked, unvested and vested coins |
+| `gRPC` | `torque.vesting.v1.Query/Balances`      | Gets locked, unvested and vested coins |
+| `GET`  | `/torque/vesting/v1/balances/{address}` | Gets locked, unvested and vested coins |
 
 ### Transactions
 
 | Verb   | Method                                                 | Description                      |
 | ------ | ------------------------------------------------------ | -------------------------------- |
-| `gRPC` | `evmos.vesting.v1.Msg/CreateClawbackVestingAccount`    | Creates clawback vesting account |
-| `gRPC` | `/evmos.vesting.v1.Msg/Clawback`                       | Performs clawback                |
-| `GET`  | `/evmos/vesting/v1/tx/create_clawback_vesting_account` | Creates clawback vesting account |
-| `GET`  | `/evmos/vesting/v1/tx/clawback`                        | Performs clawback                |
+| `gRPC` | `torque.vesting.v1.Msg/CreateClawbackVestingAccount`    | Creates clawback vesting account |
+| `gRPC` | `/torque.vesting.v1.Msg/Clawback`                       | Performs clawback                |
+| `GET`  | `/torque/vesting/v1/tx/create_clawback_vesting_account` | Creates clawback vesting account |
+| `GET`  | `/torque/vesting/v1/tx/clawback`                        | Performs clawback                |

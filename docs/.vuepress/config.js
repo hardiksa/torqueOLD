@@ -54,29 +54,29 @@ module.exports = {
       name: 'Torque',
       denom: 'Torque',
       ticker: 'TORQUE',
-      binary: 'evmosd',
+      binary: 'torqued',
       testnet_denom: 'tTorque',
       testnet_ticker: 'tTORQUE',
-      rpc_url: 'https://eth.bd.evmos.org:8545',
-      rpc_url_testnet: 'https://eth.bd.evmos.dev:8545',
+      rpc_url: 'https://eth.bd.torque.org:8545',
+      rpc_url_testnet: 'https://eth.bd.torque.dev:8545',
       rpc_url_local: 'http://localhost:8545/',
       chain_id: '9001',
       testnet_chain_id: '9000',
       latest_version: 'v4.0.1',
       version_number: '2',
       testnet_version_number: '4',
-      testnet_evm_explorer_url: 'https://evm.evmos.dev',
-      evm_explorer_url: 'https://evm.evmos.org',
-      testnet_cosmos_explorer_url: 'https://explorer.evmos.dev/',
-      cosmos_explorer_url: 'https://www.mintscan.io/evmos',
+      testnet_evm_explorer_url: 'https://evm.torque.dev',
+      evm_explorer_url: 'https://evm.torque.org',
+      testnet_cosmos_explorer_url: 'https://explorer.torque.dev/',
+      cosmos_explorer_url: 'https://www.mintscan.io/torque',
     },
     logo: {
-      src: '/evmos-black.svg',
+      src: '/torque-black.svg',
     },
     algolia: {
       id: '03ZGNVGBA8',
       key: '56dbc1a7c67f8549b76a383447e246ab',
-      index: 'evmos'
+      index: 'torque'
     },
     topbar: {
       banner: false
@@ -94,7 +94,7 @@ module.exports = {
             },
             {
               title: 'Torque Ecosystem',
-              path: 'https://evmos.space/'
+              path: 'https://torque.space/'
             },
             {
               title: 'Awesome Torque',
@@ -172,7 +172,7 @@ module.exports = {
             },
             {
               title: 'Cosmos gRPC & REST',
-              path: 'https://api.evmos.dev/'
+              path: 'https://api.torque.dev/'
             },
             {
               title: 'Tendermint RPC',
@@ -267,11 +267,11 @@ module.exports = {
             },
             {
               title: 'Blockscout (EVM)',
-              path: 'https://evm.evmos.org'
+              path: 'https://evm.torque.org'
             },
             {
               title: 'Mintscan (Cosmos)',
-              path: 'https://www.mintscan.io/evmos/'
+              path: 'https://www.mintscan.io/torque/'
             },
           ]
         },
@@ -282,13 +282,13 @@ module.exports = {
       chat: {
         title: 'Discord Channel',
         text: 'Chat with Torque users and team on Discord.',
-        url: 'https://discord.gg/evmos',
+        url: 'https://discord.gg/torque',
         bg: 'linear-gradient(103.75deg, #1B1E36 0%, #22253F 100%)'
       },
       forum: {
         title: 'Commonwealth Forum',
         text: 'Join the Torque Commonwealth forum',
-        url: 'https://commonwealth.im/evmos', 
+        url: 'https://commonwealth.im/torque',
         bg: 'linear-gradient(221.79deg, #3D6B99 -1.08%, #336699 95.88%)',
       },
       github: {
@@ -298,10 +298,10 @@ module.exports = {
       }
     },
     footer: {
-      logo: '/evmos-black.svg',
+      logo: '/torque-black.svg',
       textLink: {
-        text: "evmos.org",
-        url: 'https://evmos.org'
+        text: "torque.org",
+        url: 'https://torque.org'
       },
       services: [
         {
@@ -322,7 +322,7 @@ module.exports = {
         },
         {
           service: "medium",
-          url: "https://evmos.blog/",
+          url: "https://torque.blog/",
         },
       ],
       smallprint: 'This website is maintained by Tharsis Labs Ltd.',
@@ -348,11 +348,11 @@ module.exports = {
         children: [
           {
             title: 'Torque Discord Community',
-            url: 'https://discord.gg/evmos'
+            url: 'https://discord.gg/torque'
           },
           {
             title: 'Torque Commonwealth Forum',
-            url: 'https://commonwealth.im/evmos'
+            url: 'https://commonwealth.im/torque'
           },
         ]
       },

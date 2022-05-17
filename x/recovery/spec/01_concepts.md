@@ -16,7 +16,7 @@ Some chains use different elliptic curves for generating public keys. An example
 ethPrivKey, err := ethsecp256k1.GenerateKey()
 ethsecpAddr := sdk.AccAddress(ethPrivKey.PubKey().Address())
 
-// Bech32 "evmos" address
+// Bech32 "torque" address
 ethsecpAddrTorque := sdk.AccAddress(ethPk.PubKey().Address()).String()
 
 // We can also change the HRP to use "cosmos"
@@ -25,7 +25,7 @@ ethsecpAddrCosmos := sdk.MustBech32ifyAddressBytes(sdk.Bech32MainPrefix, ethsecp
 
 The above example code demonstrates a simple user account creation on Torque.
 On the second line, a private key is generated using the `eth_secp256k1` curve, which is used to create a human readable `PubKey` string.
-For more detailed info on accounts, please check the [accounts section](https://evmos.dev/technical_concepts/accounts.html#evmos-accounts) in the official Torque documentation.
+For more detailed info on accounts, please check the [accounts section](https://torque.dev/technical_concepts/accounts.html#torque-accounts) in the official Torque documentation.
 
 ## Stuck funds
 
@@ -43,7 +43,7 @@ After the initial Torque launch (`v1.1.2`), tokens got stuck from accounts with 
 
     **Recovery procedure**
 
-    - The receiver can send an IBC transfer from their Osmosis / Cosmos Hub  account (i.e `osmo1...` or `cosmos1...`) to its same Torque account (`evmos1...`) to recover the tokens by forwarding them to the corresponding sending chain (Osmosis or Cosmos Hub)
+    - The receiver can send an IBC transfer from their Osmosis / Cosmos Hub  account (i.e `osmo1...` or `cosmos1...`) to its same Torque account (`torque1...`) to recover the tokens by forwarding them to the corresponding sending chain (Osmosis or Cosmos Hub)
 2. Osmosis/Cosmos Hub account with claims record sent IBC transfer to Torque `secp256k1` receiver address
 
     **Consequences**
@@ -54,7 +54,7 @@ After the initial Torque launch (`v1.1.2`), tokens got stuck from accounts with 
 
     **Recovery procedure**
 
-    - The receiver can send an IBC transfer from their Osmosis / Cosmos Hub  account (i.e `osmo1...` or `cosmos1...`) to its same Torque account (`evmos1...`)  to recover the tokens by forwarding them to the corresponding sending chain (Osmosis or Cosmos Hub)
+    - The receiver can send an IBC transfer from their Osmosis / Cosmos Hub  account (i.e `osmo1...` or `cosmos1...`) to its same Torque account (`torque1...`)  to recover the tokens by forwarding them to the corresponding sending chain (Osmosis or Cosmos Hub)
     - Migrate once again the claims record to a valid account so that the remaining 3 actions can be claimed
     - Chain is restarted with restored Claims records
 
@@ -78,13 +78,13 @@ This means that the IBC transfer will be executed first, then the claim will be 
 
 **Example execution order**
 
-1. User attempts to recover `1000aevmos` that are stuck on the Torque chain.
+1. User attempts to recover `1000atorque` that are stuck on the Torque chain.
 2. User sends `100uosmo` from Osmosis to Torque through an IBC transaction.
 3. Torque receives the transaction, and goes through the IBC stack:
-    1. **IBC transfer**: the `100uosmo` IBC vouchers are added to the user balance on evmos.
+    1. **IBC transfer**: the `100uosmo` IBC vouchers are added to the user balance on torque.
     2. **Claims Middleware**: since `sender=receiver` -> perform no-op
-    3. **Recovery Middleware**: since `sender=receiver` -> recover user balance (`1000aevmos` and `100uosmo`) by sending an IBC transfer from `receiver` to the `sender` on the Osmosis chain.
-4. User receives `100uosmo` and `1000aevmos` (IBC voucher) on Osmosis.
+    3. **Recovery Middleware**: since `sender=receiver` -> recover user balance (`1000atorque` and `100uosmo`) by sending an IBC transfer from `receiver` to the `sender` on the Osmosis chain.
+4. User receives `100uosmo` and `1000atorque` (IBC voucher) on Osmosis.
 
 ### Execution errors
 

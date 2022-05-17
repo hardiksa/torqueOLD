@@ -67,7 +67,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 - (upgrade) [\#557](https://github.com/hardiksa/torque/pull/557) Update Torque go.mod version `v3` -> `v4`
 - (erc20) [\#544](https://github.com/hardiksa/torque/pull/544) Remove `updateTokenPairERC20Proposal` functionality rename `relay` to `conversion`
-- (inflation) [\#536](https://github.com/hardiksa/torque/pull/536) Rename inflation endpoint `/evmos/inflation/v1/total_supply` -> `/evmos/inflation/v1/circulating_supply`
+- (inflation) [\#536](https://github.com/hardiksa/torque/pull/536) Rename inflation endpoint `/torque/inflation/v1/total_supply` -> `/torque/inflation/v1/circulating_supply`
 
 ### Improvements
 
@@ -75,7 +75,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 - (gitpod) [\#564](https://github.com/hardiksa/torque/pull/564) Add one-click development environment
 - (erc20) [\#556](https://github.com/hardiksa/torque/pull/556) Remove deprecated migrations.
 - (incentives) [\#551](https://github.com/hardiksa/torque/pull/551) Add additional check to only distribute incentives to EOAs.
-- (cmd) [\#543](https://github.com/hardiksa/torque/pull/543) Update mainnet default `min-gas-price` to `0.0025aevmos`.
+- (cmd) [\#543](https://github.com/hardiksa/torque/pull/543) Update mainnet default `min-gas-price` to `0.0025atorque`.
 - (epochs) [\#539](https://github.com/hardiksa/torque/pull/539) Use constants for epoch identifiers.
 
 ### Bug Fixes
@@ -239,7 +239,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 - (app) [\#128](https://github.com/hardiksa/torque/pull/128) Add ibc-go `TestingApp` interface.
 - (ci) [\#117](https://github.com/hardiksa/torque/pull/117) Enable automatic backport of PRs.
 - (deps) [\#135](https://github.com/hardiksa/torque/pull/135) Bump Ethermint version to [`v0.9.0`](https://github.com/tharsis/ethermint/releases/tag/v0.9.0)
-- (ci) [\#136](https://github.com/hardiksa/torque/pull/136) Deploy `evmos` docker container to [docker hub](https://hub.docker.com/u/tharsishq) for every versioned releases
+- (ci) [\#136](https://github.com/hardiksa/torque/pull/136) Deploy `torque` docker container to [docker hub](https://hub.docker.com/u/tharsishq) for every versioned releases
 
 ### Bug Fixes
 

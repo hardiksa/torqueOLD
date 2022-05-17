@@ -17,17 +17,17 @@ Learn about the Torque chain-id format {synopsis}
 
 | Name                                            | Chain ID                                      | Identifier | EIP155 Number                         | Version Number                              |
 | ----------------------------------------------- | --------------------------------------------- | ---------- | ------------------------------------- | ------------------------------------------- |
-| Torque {{ $themeConfig.project.version_number }} | `evmos_{{ $themeConfig.project.chain_id }}-2` | `evmos`    | `{{ $themeConfig.project.chain_id }}` | `{{ $themeConfig.project.version_number }}` |
-| Torque 1                                         | `evmos_{{ $themeConfig.project.chain_id }}-1` | `evmos`    | `{{ $themeConfig.project.chain_id }}` | `1`                                         |
+| Torque {{ $themeConfig.project.version_number }} | `torque_{{ $themeConfig.project.chain_id }}-2` | `torque`    | `{{ $themeConfig.project.chain_id }}` | `{{ $themeConfig.project.version_number }}` |
+| Torque 1                                         | `torque_{{ $themeConfig.project.chain_id }}-1` | `torque`    | `{{ $themeConfig.project.chain_id }}` | `1`                                         |
 :::
 ::: tab Testnets
 
 | Name                              | Chain ID                                              | Identifier | EIP155 Number                                 | Version Number                                      |
 | --------------------------------- | ----------------------------------------------------- | ---------- | --------------------------------------------- | --------------------------------------------------- |
-| Torque Public Testnet              | `evmos_{{ $themeConfig.project.testnet_chain_id }}-4` | `evmos`    | `{{ $themeConfig.project.testnet_chain_id }}` | `{{ $themeConfig.project.testnet_version_number }}` |
-| Torque Public Testnet              | `evmos_{{ $themeConfig.project.testnet_chain_id }}-3` | `evmos`    | `{{ $themeConfig.project.testnet_chain_id }}` | `3`                                                 |
-| Olympus Mons Incentivized Testnet | `evmos_{{ $themeConfig.project.testnet_chain_id }}-2` | `evmos`    | `{{ $themeConfig.project.testnet_chain_id }}` | `2`                                                 |
-| Arsia Mons Testnet                | `evmos_{{ $themeConfig.project.testnet_chain_id }}-1` | `evmos`    | `{{ $themeConfig.project.testnet_chain_id }}` | `1`                                                 |
+| Torque Public Testnet              | `torque_{{ $themeConfig.project.testnet_chain_id }}-4` | `torque`    | `{{ $themeConfig.project.testnet_chain_id }}` | `{{ $themeConfig.project.testnet_version_number }}` |
+| Torque Public Testnet              | `torque_{{ $themeConfig.project.testnet_chain_id }}-3` | `torque`    | `{{ $themeConfig.project.testnet_chain_id }}` | `3`                                                 |
+| Olympus Mons Incentivized Testnet | `torque_{{ $themeConfig.project.testnet_chain_id }}-2` | `torque`    | `{{ $themeConfig.project.testnet_chain_id }}` | `2`                                                 |
+| Arsia Mons Testnet                | `torque_{{ $themeConfig.project.testnet_chain_id }}-1` | `torque`    | `{{ $themeConfig.project.testnet_chain_id }}` | `1`                                                 |
 
 :::
 ::::
@@ -64,7 +64,7 @@ The following table provides an example where the second row corresponds to an u
 
 | ChainID        | Identifier | EIP155 Number | Version Number |
 | -------------- | ---------- | ------------- | -------------- |
-| `evmos_9000-1` | evmos      | 9000          | 1              |
-| `evmos_9000-2` | evmos      | 9000          | 2              |
+| `torque_9000-1` | torque      | 9000          | 1              |
+| `torque_9000-2` | torque      | 9000          | 2              |
 | `...`          | ...        | ...           | ...            |
-| `evmos_9000-N` | evmos      | 9000          | N              |
+| `torque_9000-N` | torque      | 9000          | N              |

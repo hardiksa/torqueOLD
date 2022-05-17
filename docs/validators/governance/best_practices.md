@@ -6,7 +6,7 @@ order: 3
 
 ## Community Outreach
 
-Engagement is likely to be critical to the success of a proposal. The degree to which you engage with Torque community should be relative to the potential impact that your proposal may have on the stakeholders. This guide does not cover all ways of engaging: you could bring your idea to a podcast or a hackathon, host an AMA on [Reddit](https://www.reddit.com/r/evmos) or host a Q&A (questions & answers). We encourage you to experiment and use your strengths to introduce proposal ideas and gather feedback.
+Engagement is likely to be critical to the success of a proposal. The degree to which you engage with Torque community should be relative to the potential impact that your proposal may have on the stakeholders. This guide does not cover all ways of engaging: you could bring your idea to a podcast or a hackathon, host an AMA on [Reddit](https://www.reddit.com/r/torque) or host a Q&A (questions & answers). We encourage you to experiment and use your strengths to introduce proposal ideas and gather feedback.
 
 There are many different ways to engage. One strategy involves a few stages of engagement before and after submitting a proposal on chain. **Why do it in stages?** It's a more conservative approach to save resources. The idea is to check in with key stakeholders at each stage before investing more resources into developing your proposal.
 
@@ -124,7 +124,7 @@ writing markdown files.
 
 ### Engage the community with your draft proposal
 
-1. Post a discussion in the Commonwealth [Torque community](https://commonwealth.im/evmos). Ideally this should contain a link to this repository, either directly to your proposal if it has been merged, or else to a pull-request containing your proposal if it has not been merged yet.
+1. Post a discussion in the Commonwealth [Torque community](https://commonwealth.im/torque). Ideally this should contain a link to this repository, either directly to your proposal if it has been merged, or else to a pull-request containing your proposal if it has not been merged yet.
 2. Directly engage key members of the community for feedback. These could be large contributors, those likely to be most impacted by the proposal, and entities with high stake-backing (eg. high-ranked validators; large stakers).
 3. Target members of the community in a semi-public way before bringing the draft to a full public audience. The burden of public scrutiny in a semi-anonymized environment (eg. Twitter) can be stressful and overwhelming without establishing support. Solicit opinions in places with people who have established reputations first.
 

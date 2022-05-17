@@ -23,8 +23,8 @@ In this step we will create a simple counter contract. Feel free to skip this st
 Create a new directory to host the contracts and initialize it:
 
 ```console
-mkdir evmos-truffle
-cd evmos-truffle
+mkdir torque-truffle
+cd torque-truffle
 ```
 
 Initialize the Truffle suite with:

@@ -27,27 +27,27 @@ Set up the Cosmovisor environment variables. We recommend setting these in your 
 
 ```bash
 echo "# Setup Cosmovisor" >> ~/.profile
-echo "export DAEMON_NAME=evmosd" >> ~/.profile
-echo "export DAEMON_HOME=$HOME/.evmosd" >> ~/.profile
+echo "export DAEMON_NAME=torqued" >> ~/.profile
+echo "export DAEMON_HOME=$HOME/.torqued" >> ~/.profile
 source ~/.profile
 ```
 
-After this, you must make the necessary folders for `cosmosvisor` in your `DAEMON_HOME` directory (`~/.evmosd`) and copy over the current binary.
+After this, you must make the necessary folders for `cosmosvisor` in your `DAEMON_HOME` directory (`~/.torqued`) and copy over the current binary.
 
 ```bash
-mkdir -p ~/.evmosd/cosmovisor
-mkdir -p ~/.evmosd/cosmovisor/genesis
-mkdir -p ~/.evmosd/cosmovisor/genesis/bin
-mkdir -p ~/.evmosd/cosmovisor/upgrades
+mkdir -p ~/.torqued/cosmovisor
+mkdir -p ~/.torqued/cosmovisor/genesis
+mkdir -p ~/.torqued/cosmovisor/genesis/bin
+mkdir -p ~/.torqued/cosmovisor/upgrades
 
-cp $GOPATH/bin/evmosd ~/.evmosd/cosmovisor/genesis/bin
+cp $GOPATH/bin/torqued ~/.torqued/cosmovisor/genesis/bin
 ```
 
-To check that you did this correctly, ensure your versions of `cosmovisor` and `evmosd` are the same:
+To check that you did this correctly, ensure your versions of `cosmovisor` and `torqued` are the same:
 
 ```bash
 cosmovisor version
-evmosd version
+torqued version
 ```
 
 ### 2. Download the Torque release
@@ -64,11 +64,11 @@ Cosmovisor will continually poll the `$DAEMON_HOME/data/upgrade-info.json` for n
 ```json
 {
     "binaries": {
-        "darwin/arm64": "https://github.com/hardiksa/torque/releases/download/v3.0.0/evmos_3.0.0_Darwin_arm64.tar.gz",
-        "darwin/x86_64": "https://github.com/hardiksa/torque/releases/download/v3.0.0/evmos_3.0.0_Darwin_x86_64.tar.gz",
-        "linux/arm64": "https://github.com/hardiksa/torque/releases/download/v3.0.0/evmos_3.0.0_Linux_arm64.tar.gz",
-        "linux/x86_64": "https://github.com/hardiksa/torque/releases/download/v3.0.0/evmos_3.0.0_Linux_x86_64.tar.gz",
-        "windows/x86_64": "https://github.com/hardiksa/torque/releases/download/v3.0.0/evmos_3.0.0_Windows_x86_64.zip"
+        "darwin/arm64": "https://github.com/hardiksa/torque/releases/download/v3.0.0/torque_3.0.0_Darwin_arm64.tar.gz",
+        "darwin/x86_64": "https://github.com/hardiksa/torque/releases/download/v3.0.0/torque_3.0.0_Darwin_x86_64.tar.gz",
+        "linux/arm64": "https://github.com/hardiksa/torque/releases/download/v3.0.0/torque_3.0.0_Linux_arm64.tar.gz",
+        "linux/x86_64": "https://github.com/hardiksa/torque/releases/download/v3.0.0/torque_3.0.0_Linux_x86_64.tar.gz",
+        "windows/x86_64": "https://github.com/hardiksa/torque/releases/download/v3.0.0/torque_3.0.0_Windows_x86_64.zip"
     }
 }
 ```
@@ -80,11 +80,11 @@ cosmovisor/
 ├── current/   # either genesis or upgrades/<name>
 ├── genesis
 │   └── bin
-│       └── evmosd
+│       └── torqued
 └── upgrades
     └── v3.0.0
         ├── bin
-        │   └── evmosd
+        │   └── torqued
         └── upgrade-info.json
 ```
 
@@ -113,7 +113,7 @@ cosmovisor start
 You will need some way to keep the process always running. If you're on linux, you can do this by creating a service.
 
 ```bash
-sudo tee /etc/systemd/system/evmosd.service > /dev/null <<EOF
+sudo tee /etc/systemd/system/torqued.service > /dev/null <<EOF
 [Unit]
 Description=Torque Daemon
 After=network-online.target
@@ -125,8 +125,8 @@ Restart=always
 RestartSec=3
 LimitNOFILE=infinity
 
-Environment="DAEMON_HOME=$HOME/.evmosd"
-Environment="DAEMON_NAME=evmosd"
+Environment="DAEMON_HOME=$HOME/.torqued"
+Environment="DAEMON_NAME=torqued"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 
@@ -139,12 +139,12 @@ Then update and start the node
 
 ```bash
 sudo -S systemctl daemon-reload
-sudo -S systemctl enable evmosd
-sudo -S systemctl start evmosd
+sudo -S systemctl enable torqued
+sudo -S systemctl start torqued
 ```
 
 You can check the status with:
 
 ```bash
-systemctl status evmosd
+systemctl status torqued
 ```

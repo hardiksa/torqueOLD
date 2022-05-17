@@ -15,7 +15,7 @@ import (
 	"github.com/cosmos/ibc-go/v3/modules/core/exported"
 
 	"github.com/hardiksa/torque/v4/ibc"
-	evmos "github.com/hardiksa/torque/v4/types"
+	torque "github.com/hardiksa/torque/v4/types"
 	"github.com/hardiksa/torque/v4/x/recovery/types"
 )
 
@@ -48,7 +48,7 @@ func (k Keeper) OnRecvPacket(
 		return ack
 	}
 
-	// Get addresses in `evmos1` and the original bech32 format
+	// Get addresses in `torque1` and the original bech32 format
 	sender, recipient, senderBech32, recipientBech32, err := ibc.GetTransferSenderRecipient(packet)
 	if err != nil {
 		return channeltypes.NewErrorAcknowledgement(err.Error())
@@ -87,7 +87,7 @@ func (k Keeper) OnRecvPacket(
 	// Check if recipient pubkey is a supported key (eth_secp256k1, amino multisig,
 	// ed25519). Continue and return success ACK as the funds are not stuck on
 	// chain for supported keys
-	if account != nil && evmos.IsSupportedKey(account.GetPubKey()) {
+	if account != nil && torque.IsSupportedKey(account.GetPubKey()) {
 		return ack
 	}
 

@@ -89,7 +89,7 @@ EIP712 means that the signer will generate a signature for something like a JSON
 
 1. **Get your address in both encodings**
 
-After connecting the Ledger wallet to Metamask and connecting to the [https://evmos.me](https://evmos.me) webpage, it will display our wallet formatted on `bech32` and `hex` representation, we need these values to make sure that the message that we are going to sign is the correct one.
+After connecting the Ledger wallet to Metamask and connecting to the [https://torque.me](https://torque.me) webpage, it will display our wallet formatted on `bech32` and `hex` representation, we need these values to make sure that the message that we are going to sign is the correct one.
 
 ![addresses.png](./../../img/addresses.png)
 
@@ -115,7 +115,7 @@ You can see the complete message to be signed
 - `fee`: amount to be paid to send the transaction.
 - `gas`: max gas that can be spent by this transaction (aka gas limit).
 - `memo`: transaction note or comment.
-- `msgs`: This is the content of the cosmos transaction, in this example, we need to make sure that we are using a MsgSend, and that the *to_address* is the one that we want to send the founds. Also, we can verify that we are actually sending *10000aevmos* to that wallet.
+- `msgs`: This is the content of the cosmos transaction, in this example, we need to make sure that we are using a MsgSend, and that the *to_address* is the one that we want to send the founds. Also, we can verify that we are actually sending *10000atorque* to that wallet.
 
 ### Ledger signing
 
@@ -135,7 +135,7 @@ The Ledger device will display the domain hash and message hash before asking yo
 
 After signing the message, that signature needs to be added to the cosmos transaction and broadcasted to the network.
 
-This step should be done automatically by the same service that generated the message, in this case, [evmos.me](http://evmos.me) will broadcast the transaction for you.
+This step should be done automatically by the same service that generated the message, in this case, [torque.me](http://torque.me) will broadcast the transaction for you.
 
 ![txsent.png](./../../img/txsent.png)
 
@@ -160,13 +160,13 @@ This step should be done automatically by the same service that generated the me
 
 Cosmos `secp256k1` keys are not supported on Torque with Ledger. Only Ethereum keys (`eth_secp256k1`) can be generated with Ledger.
 
-2. **I can’t generate keys using the CLI with `evmosd` with the `--ledger` flag**
+2. **I can’t generate keys using the CLI with `torqued` with the `--ledger` flag**
 
-CLI bindings with `evmosd` binary are not currently supported. In the meantime, you can use the Ethereum Ledger App with EIP712 using [evmos.me](https://evmos.me). See the [`EIP712 Signing`](#eip712-signing) section for reference.
+CLI bindings with `torqued` binary are not currently supported. In the meantime, you can use the Ethereum Ledger App with EIP712 using [torque.me](https://torque.me). See the [`EIP712 Signing`](#eip712-signing) section for reference.
 
-3. **I can’t generate a key for the Torque native multisig using the `evmosd` CLI and and Ledger**
+3. **I can’t generate a key for the Torque native multisig using the `torqued` CLI and and Ledger**
 
-You can generate a multisig wallet using the `evmosd` CLI, although the `--ledger` option is not available at the moment.
+You can generate a multisig wallet using the `torqued` CLI, although the `--ledger` option is not available at the moment.
 
 4. **I can’t use Metamask or Keplr with the Cosmos Ledger app**
 

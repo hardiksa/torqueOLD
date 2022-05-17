@@ -24,7 +24,7 @@ import (
 	ethermint "github.com/tharsis/ethermint/types"
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"
 
-	evmoskr "github.com/hardiksa/torque/v4/crypto/keyring"
+	torquekr "github.com/hardiksa/torque/v4/crypto/keyring"
 
 	vestingcli "github.com/hardiksa/torque/v4/x/vesting/client/cli"
 	vestingtypes "github.com/hardiksa/torque/v4/x/vesting/types"
@@ -68,7 +68,7 @@ contain valid denominations. Accounts may optionally be supplied with vesting pa
 						keyringBackend,
 						clientCtx.HomeDir,
 						inBuf,
-						evmoskr.Option(),
+						torquekr.Option(),
 					)
 					if err != nil {
 						return err

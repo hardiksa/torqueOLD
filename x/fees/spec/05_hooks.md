@@ -8,7 +8,7 @@ The fees module implements one transaction hook, from the `x/evm` module.
 
 ## EVM Hook
 
-An [EVM hook](https://evmos.dev/modules/evm/06_hooks.html) executes custom logic after each successful EVM transaction.
+An [EVM hook](https://torque.dev/modules/evm/06_hooks.html) executes custom logic after each successful EVM transaction.
 
 All fees paid by a user for transaction execution are sent to the `FeeCollector` Module Account during the `AnteHandler` execution.
 

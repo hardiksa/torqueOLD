@@ -1,9 +1,9 @@
 syntax = "proto3";
-package evmos.inflation.v1;
+package torque.inflation.v1;
 
 import "gogoproto/gogo.proto";
 
-import "evmos/inflation/v1/inflation.proto";
+import "torque/inflation/v1/inflation.proto";
 
 option go_package = "github.com/hardiksa/torque/v4/x/inflation/types";
 

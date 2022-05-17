@@ -101,7 +101,7 @@ module.exports = {
     hardhat: {
     },
     testnet: {
-      url: "https://eth.bd.evmos.dev:8545",
+      url: "https://eth.bd.torque.dev:8545",
       accounts: [privateKey1, privateKey2, ...]
     }
   },

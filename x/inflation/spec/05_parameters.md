@@ -9,7 +9,7 @@ can be modified via governance.
 
 | Key                      | Type                   | Default Value                                                                 |
 | ------------------------ | ---------------------- | ----------------------------------------------------------------------------- |
-| `MintDenom`              | string                 | `evm.DefaultEVMDenom` // “aevmos”                                             |
+| `MintDenom`              | string                 | `evm.DefaultEVMDenom` // “atorque”                                             |
 | `ExponentialCalculation` | ExponentialCalculation | `A: sdk.NewDec(int64(300_000_000))`                                           |
 |                          |                        | `R: sdk.NewDecWithPrec(50, 2)`                                                |
 |                          |                        | `C: sdk.NewDec(int64(9_375_000))`                                             |
@@ -46,7 +46,7 @@ proposed in the Torque Token Model. Each `InflationDistribution` can be
 calculated like this:
 
 ```markdown
-stakingRewards = evmosTokenModelDistribution / (1 - teamVestingDistribution)
+stakingRewards = torqueTokenModelDistribution / (1 - teamVestingDistribution)
 0.5333333      = 40%                         / (1 - 25%)
 ```
 

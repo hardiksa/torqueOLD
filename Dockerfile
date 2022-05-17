@@ -16,8 +16,8 @@ RUN apt install ca-certificates jq -y
 
 WORKDIR /root
 
-COPY --from=build-env /go/src/github.com/hardiksa/torque/build/evmosd /usr/bin/evmosd
+COPY --from=build-env /go/src/github.com/hardiksa/torque/build/torqued /usr/bin/torqued
 
 EXPOSE 26656 26657 1317 9090
 
-CMD ["evmosd"]
+CMD ["torqued"]

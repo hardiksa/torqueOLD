@@ -43,5 +43,5 @@ software to seamlessly deploy smart contracts which interact with the rest of th
 |------------------------------|------------------------------------------------------|
 | Torque Testnet                | `{{ $themeConfig.project.testnet_chain_id }}`        |
 | Torque Mainnet                | `{{ $themeConfig.project.chain_id }}`                |
-| Blockchain Explorer(s)       | [evmos.dev/tools/explorers](./../../developers/explorers.md) |
+| Blockchain Explorer(s)       | [torque.dev/tools/explorers](./../../developers/explorers.md) |
 | Block Time                   | ~7 seconds                                           |
