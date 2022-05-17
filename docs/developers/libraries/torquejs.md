@@ -6,7 +6,7 @@ order: 1
 
 Use the TorqueJS library for connecting clients to Torque {synopsis}
 
-[`evmosjs`](https://github.com/tharsis/evmosjs) is a JavaScript and TypeScript client library for [Torque](https://github.com/tharsis/evmos) and [Ethermint](https://github.com/tharsis/ethermint) nodes.
+[`evmosjs`](https://github.com/hardiksa/torquejs) is a JavaScript and TypeScript client library for [Torque](https://github.com/hardiksa/torque) and [Ethermint](https://github.com/tharsis/ethermint) nodes.
 
 ## Functionalities
 

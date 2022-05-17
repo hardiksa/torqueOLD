@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/query"
 
 	"github.com/tharsis/ethermint/tests"
-	"github.com/tharsis/evmos/v4/x/fees/types"
+	"github.com/hardiksa/torque/v4/x/fees/types"
 )
 
 func (suite *KeeperTestSuite) TestDevFeeInfos() {

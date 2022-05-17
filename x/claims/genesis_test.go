@@ -15,10 +15,10 @@ import (
 	"github.com/tharsis/ethermint/tests"
 	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
 
-	"github.com/tharsis/evmos/v4/app"
-	"github.com/tharsis/evmos/v4/testutil"
-	"github.com/tharsis/evmos/v4/x/claims"
-	"github.com/tharsis/evmos/v4/x/claims/types"
+	"github.com/hardiksa/torque/v4/app"
+	"github.com/hardiksa/torque/v4/testutil"
+	"github.com/hardiksa/torque/v4/x/claims"
+	"github.com/hardiksa/torque/v4/x/claims/types"
 )
 
 type GenesisTestSuite struct {

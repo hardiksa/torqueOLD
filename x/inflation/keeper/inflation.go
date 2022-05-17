@@ -5,9 +5,9 @@ import (
 
 	ethermint "github.com/tharsis/ethermint/types"
 
-	evmos "github.com/tharsis/evmos/v4/types"
-	incentivestypes "github.com/tharsis/evmos/v4/x/incentives/types"
-	"github.com/tharsis/evmos/v4/x/inflation/types"
+	evmos "github.com/hardiksa/torque/v4/types"
+	incentivestypes "github.com/hardiksa/torque/v4/x/incentives/types"
+	"github.com/hardiksa/torque/v4/x/inflation/types"
 )
 
 // 200M token at year 4 allocated to the team

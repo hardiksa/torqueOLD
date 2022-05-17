@@ -5,8 +5,8 @@ import (
 
 	"github.com/tharsis/ethermint/tests"
 
-	"github.com/tharsis/evmos/v4/testutil"
-	"github.com/tharsis/evmos/v4/x/claims/types"
+	"github.com/hardiksa/torque/v4/testutil"
+	"github.com/hardiksa/torque/v4/x/claims/types"
 )
 
 func (suite *KeeperTestSuite) TestClaimsInvariant() {

@@ -1,4 +1,4 @@
-module github.com/tharsis/evmos/v4
+module github.com/hardiksa/torque/v4
 
 go 1.17
 

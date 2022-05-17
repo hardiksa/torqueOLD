@@ -14,7 +14,7 @@ import (
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/tharsis/ethermint/encoding"
-	"github.com/tharsis/evmos/v4/types"
+	"github.com/hardiksa/torque/v4/types"
 )
 
 func TestTorqueExport(t *testing.T) {

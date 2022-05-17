@@ -18,9 +18,9 @@ import (
 	"github.com/tharsis/ethermint/encoding"
 	"github.com/tharsis/ethermint/tests"
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"
-	"github.com/tharsis/evmos/v4/app"
-	"github.com/tharsis/evmos/v4/testutil"
-	"github.com/tharsis/evmos/v4/x/fees/types"
+	"github.com/hardiksa/torque/v4/app"
+	"github.com/hardiksa/torque/v4/testutil"
+	"github.com/hardiksa/torque/v4/x/fees/types"
 
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"

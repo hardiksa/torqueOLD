@@ -5,7 +5,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/tharsis/evmos/v4/x/incentives/types"
+	"github.com/hardiksa/torque/v4/x/incentives/types"
 )
 
 // GetAllIncentives - get all registered Incentives

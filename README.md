@@ -11,31 +11,31 @@ parent:
 <!-- ![banner](docs/ethermint.jpg) -->
 
 <div align="center">
-  <a href="https://github.com/tharsis/evmos/releases/latest">
-    <img alt="Version" src="https://img.shields.io/github/tag/tharsis/evmos.svg" />
+  <a href="https://github.com/hardiksa/torque/releases/latest">
+    <img alt="Version" src="https://img.shields.io/github/tag/hardiksa/torque.svg" />
   </a>
-  <a href="https://github.com/tharsis/evmos/blob/main/LICENSE">
-    <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/tharsis/evmos.svg" />
+  <a href="https://github.com/hardiksa/torque/blob/main/LICENSE">
+    <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/hardiksa/torque.svg" />
   </a>
-  <a href="https://pkg.go.dev/github.com/tharsis/evmos">
-    <img alt="GoDoc" src="https://godoc.org/github.com/tharsis/evmos?status.svg" />
+  <a href="https://pkg.go.dev/github.com/hardiksa/torque">
+    <img alt="GoDoc" src="https://godoc.org/github.com/hardiksa/torque?status.svg" />
   </a>
-  <a href="https://goreportcard.com/report/github.com/tharsis/evmos">
-    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/tharsis/evmos"/>
+  <a href="https://goreportcard.com/report/github.com/hardiksa/torque">
+    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/hardiksa/torque"/>
   </a>
   <a href="https://bestpractices.coreinfrastructure.org/projects/5018">
-    <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/tharsis/evmos">
+    <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/hardiksa/torque">
   </a>
 </div>
 <div align="center">
   <a href="https://discord.gg/evmos">
     <img alt="Discord" src="https://img.shields.io/discord/809048090249134080.svg" />
   </a>
-  <a href="https://github.com/tharsis/evmos/actions?query=branch%3Amain+workflow%3ALint">
-    <img alt="Lint Status" src="https://github.com/tharsis/evmos/actions/workflows/lint.yml/badge.svg?branch=main" />
+  <a href="https://github.com/hardiksa/torque/actions?query=branch%3Amain+workflow%3ALint">
+    <img alt="Lint Status" src="https://github.com/hardiksa/torque/actions/workflows/lint.yml/badge.svg?branch=main" />
   </a>
-  <a href="https://codecov.io/gh/tharsis/evmos">
-    <img alt="Code Coverage" src="https://codecov.io/gh/tharsis/evmos/branch/main/graph/badge.svg" />
+  <a href="https://codecov.io/gh/hardiksa/torque">
+    <img alt="Code Coverage" src="https://codecov.io/gh/hardiksa/torque/branch/main/graph/badge.svg" />
   </a>
   <a href="https://twitter.com/TorqueOrg">
     <img alt="Twitter Follow Torque" src="https://img.shields.io/twitter/follow/TorqueOrg"/>
@@ -55,7 +55,7 @@ For prerequisites and detailed build instructions please read the [Installation]
 make install
 ```
 
-Or check out the latest [release](https://github.com/tharsis/evmos/releases).
+Or check out the latest [release](https://github.com/hardiksa/torque/releases).
 
 ## Quick Start
 
@@ -72,7 +72,7 @@ The following chat channels and forums are a great spot to ask questions about T
 
 ## Contributing
 
-Looking for a good place to start contributing? Check out some [`good first issues`](https://github.com/tharsis/evmos/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
+Looking for a good place to start contributing? Check out some [`good first issues`](https://github.com/hardiksa/torque/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
 
 For additional instructions, standards and style guides, please refer to the [Contributing](./CONTRIBUTING.md) document.
 

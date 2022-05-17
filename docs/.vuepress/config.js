@@ -44,8 +44,8 @@ module.exports = {
     // ['link', { rel: "apple-touch-icon-precomposed", href: "/apple-touch-icon-precomposed.png" }],
   ],
   themeConfig: {
-    repo: 'tharsis/evmos',
-    docsRepo: 'tharsis/evmos',
+    repo: 'hardiksa/torque',
+    docsRepo: 'hardiksa/torque',
     docsBranch: 'main',
     docsDir: 'docs',
     editLinks: true,
@@ -195,7 +195,7 @@ module.exports = {
             },
             {
               title: 'Torque Go API',
-              path: 'https://pkg.go.dev/github.com/tharsis/evmos'
+              path: 'https://pkg.go.dev/github.com/hardiksa/torque'
             },
             {
               title: 'Ethermint Library Go API',
@@ -306,7 +306,7 @@ module.exports = {
       services: [
         {
           service: "github",
-          url: 'https://github.com/tharsis/evmos'
+          url: 'https://github.com/hardiksa/torque'
         },
         {
           service: "twitter",

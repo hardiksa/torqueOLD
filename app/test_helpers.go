@@ -16,8 +16,8 @@ import (
 	"github.com/tharsis/ethermint/encoding"
 	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
 
-	"github.com/tharsis/evmos/v4/cmd/config"
-	"github.com/tharsis/evmos/v4/types"
+	"github.com/hardiksa/torque/v4/cmd/config"
+	"github.com/hardiksa/torque/v4/types"
 )
 
 func init() {
