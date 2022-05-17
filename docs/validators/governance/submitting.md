@@ -74,7 +74,7 @@ Use the `evmos tx gov --help` flag to get more info about the governance command
 5. `--fees` is a flat-rate incentive for a validator to process your transaction
    - the network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee
    - many nodes (including the Figment node) use a minimum fee to desincentivize transaction spamming
-   - 7500aevmos is equal to 0.0075 EVMOS
+   - 7500aevmos is equal to 0.0075 TORQUE
 6. `--chain-id evmos_90001-2` is Evmos Mainnet. For current and past chain-id's, please look at the [tharsis/mainnet resource](https://github.com/tharsis/mainnet)
    - the testnet chain ID is [evmos_9000-4](https://testnet.mintscan.io/evmos). For current and past testnet information, please look at the [testnet repository](https://github.com/tharsis/testnets)
 7. `--node` is using a full node to send the transaction to the Evmos Mainnet

@@ -45,7 +45,7 @@ import (
 )
 
 const (
-	EnvPrefix = "EVMOS"
+	EnvPrefix = "TORQUE"
 )
 
 // NewRootCmd creates a new root command for evmosd. It is called once in the
