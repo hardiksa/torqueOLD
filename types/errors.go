@@ -7,7 +7,7 @@ import (
 // RootCodespace is the codespace for all errors defined in this package
 const RootCodespace = "evmos"
 
-// root error codes for Evmos
+// root error codes for Torque
 const (
 	codeKeyTypeNotSupported = iota + 2
 )

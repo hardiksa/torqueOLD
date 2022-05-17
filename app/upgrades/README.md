@@ -1,4 +1,4 @@
-# Evmos Upgrades
+# Torque Upgrades
 
 ### Mainnet
 

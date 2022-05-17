@@ -8,7 +8,7 @@ The `x/claims` module implements transaction hooks for each of the four actions 
 
 ## Governance Hook - Vote Action
 
-The user votes on a Governance proposal using their Evmos account. Once the vote is successfully included, the claimable amount corresponding to the vote action is transferred to the user address:
+The user votes on a Governance proposal using their Torque account. Once the vote is successfully included, the claimable amount corresponding to the vote action is transferred to the user address:
 
 1. The user submits a `MsgVote`.
 2. Begin claiming process for the `ActionVote`.
@@ -40,7 +40,7 @@ The user delegates their TORQUE tokens to a validator. Once the tokens are stake
 
 ## EVM Hook - EVM Action
 
-The user deploys or interacts with a smart contract using their Evmos account or send a transfer using their Web3 wallet. Once the EVM state transition is successfully processed, the claimable amount corresponding to the EVM action is transferred to the user address:
+The user deploys or interacts with a smart contract using their Torque account or send a transfer using their Web3 wallet. Once the EVM state transition is successfully processed, the claimable amount corresponding to the EVM action is transferred to the user address:
 
 1. The user submits a `MsgEthereumTx`.
 2. Begin claiming process for the `ActionEVM`.
@@ -86,7 +86,7 @@ The user receives an IBC transfer from a counterparty chain. If the transfer is 
 	address are the same. If a packet is sent from a non-EVM chain, the sender
 	addresss is not an ethereum key (i.e. `ethsecp256k1`). Thus, if
 	`sameAddress` is true, the recipient address must be a non-ethereum key as
-	well, which is not supported on Evmos. To prevent funds getting stuck,
+	well, which is not supported on Torque. To prevent funds getting stuck,
 	return an error, unless the destination channel from a connection to a chain
 	is EVM-compatible or supports ethereum keys (eg: Cronos, Injective).
 6. Check if destination channel is authorized to perform the IBC claim. Without this authorization the claiming process is vulerable to attacks.

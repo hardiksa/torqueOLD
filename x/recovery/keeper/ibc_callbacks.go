@@ -25,7 +25,7 @@ import (
 //
 // First transfer from authorized source chain:
 //  - sends back IBC tokens which originated from the source chain
-//  - sends over all Evmos native tokens
+//  - sends over all Torque native tokens
 // Second transfer from a different authorized source chain:
 //  - only sends back IBC tokens which originated from the source chain
 func (k Keeper) OnRecvPacket(
@@ -66,7 +66,7 @@ func (k Keeper) OnRecvPacket(
 	}
 
 	// Check if sender != recipient, as recovery is only possible for transfers to
-	// a sender's own account on Evmos (sender == recipient)
+	// a sender's own account on Torque (sender == recipient)
 	if !sender.Equals(recipient) {
 		// Continue to the next IBC middleware by returning the original ACK.
 		return ack
@@ -134,7 +134,7 @@ func (k Keeper) OnRecvPacket(
 			packet.DestinationPort,    // packet destination port is now the source
 			packet.DestinationChannel, // packet destination channel is now the source
 			coin,                      // balance of the coin
-			recipient,                 // recipient is the address in the Evmos chain
+			recipient,                 // recipient is the address in the Torque chain
 			senderBech32,              // transfer to your own account address on the source chain
 			clienttypes.ZeroHeight(),  // timeout height disabled
 			timeout,                   // timeout timestamp is 4 hours from now
@@ -203,7 +203,7 @@ func (k Keeper) OnRecvPacket(
 }
 
 // GetIBCDenomDestinationIdentifiers returns the destination port and channel of
-// the IBC denomination, i.e port and channel on Evmos for the voucher. It
+// the IBC denomination, i.e port and channel on Torque for the voucher. It
 // returns an error if:
 //  - the denomination is invalid
 //  - the denom trace is not found on the store

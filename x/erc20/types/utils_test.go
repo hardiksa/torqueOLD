@@ -61,9 +61,9 @@ func TestEqualMetadata(t *testing.T) {
 			banktypes.Metadata{
 				Base:        "aevmos",
 				Display:     "evmos",
-				Name:        "Evmos",
+				Name:        "Torque",
 				Symbol:      "TORQUE",
-				Description: "EVM, staking and governance denom of Evmos",
+				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
 						Denom:    "aevmos",
@@ -79,9 +79,9 @@ func TestEqualMetadata(t *testing.T) {
 			banktypes.Metadata{
 				Base:        "aevmos",
 				Display:     "evmos",
-				Name:        "Evmos",
+				Name:        "Torque",
 				Symbol:      "TORQUE",
-				Description: "EVM, staking and governance denom of Evmos",
+				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
 						Denom:    "aevmos",
@@ -111,9 +111,9 @@ func TestEqualMetadata(t *testing.T) {
 			banktypes.Metadata{
 				Base:        "aevmos",
 				Display:     "evmos",
-				Name:        "Evmos",
+				Name:        "Torque",
 				Symbol:      "TORQUE",
-				Description: "EVM, staking and governance denom of Evmos",
+				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
 						Denom:    "aevmos",
@@ -129,9 +129,9 @@ func TestEqualMetadata(t *testing.T) {
 			banktypes.Metadata{
 				Base:        "aevmos",
 				Display:     "evmos",
-				Name:        "Evmos",
+				Name:        "Torque",
 				Symbol:      "TORQUE",
-				Description: "EVM, staking and governance denom of Evmos",
+				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
 						Denom:    "aevmos",
@@ -147,9 +147,9 @@ func TestEqualMetadata(t *testing.T) {
 			banktypes.Metadata{
 				Base:        "aevmos",
 				Display:     "evmos",
-				Name:        "Evmos",
+				Name:        "Torque",
 				Symbol:      "TORQUE",
-				Description: "EVM, staking and governance denom of Evmos",
+				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
 						Denom:    "aevmos",
@@ -170,9 +170,9 @@ func TestEqualMetadata(t *testing.T) {
 			banktypes.Metadata{
 				Base:        "aevmos",
 				Display:     "evmos",
-				Name:        "Evmos",
+				Name:        "Torque",
 				Symbol:      "TORQUE",
-				Description: "EVM, staking and governance denom of Evmos",
+				Description: "EVM, staking and governance denom of Torque",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
 						Denom:    "aevmos",

@@ -4,7 +4,7 @@ order: 2
 
 # Running the Server
 
-Learn how to run and setup the JSON-RPC server on Evmos. {synopsis}
+Learn how to run and setup the JSON-RPC server on Torque. {synopsis}
 
 ## Enable Server
 

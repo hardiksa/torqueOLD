@@ -65,7 +65,7 @@ A valid token pair can be modified through several governance proposals. The int
 
 ## Token Conversion
 
-Once a token pair proposal passes, the module allows for the conversion of that token pair. Holders of native Cosmos coins and IBC vouchers on the Evmos chain can convert their Coin into ERC20 Tokens, which can then be used in Evmos EVM, by creating a `ConvertCoin` Tx. Vice versa, the `ConvertERC20` Tx allows holders of ERC20 tokens on the Evmos chain to convert ERC-20 tokens back to their native Cosmos Coin representation.
+Once a token pair proposal passes, the module allows for the conversion of that token pair. Holders of native Cosmos coins and IBC vouchers on the Torque chain can convert their Coin into ERC20 Tokens, which can then be used in Torque EVM, by creating a `ConvertCoin` Tx. Vice versa, the `ConvertERC20` Tx allows holders of ERC20 tokens on the Torque chain to convert ERC-20 tokens back to their native Cosmos Coin representation.
 
 Depending on the ownership of the ERC20 contract, the ERC20 tokens either follow a burn/mint or a transfer/escrow mechanism during conversion.
 

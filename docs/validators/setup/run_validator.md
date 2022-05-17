@@ -119,7 +119,7 @@ Your validator is active if the following command returns anything:
 evmosd query tendermint-validator-set | grep "$(evmosd tendermint show-address)"
 ```
 
-You should now see your validator in one of Evmos explorers. You are looking for the `bech32` encoded `address` in the `~/.evmosd/config/priv_validator.json` file.
+You should now see your validator in one of Torque explorers. You are looking for the `bech32` encoded `address` in the `~/.evmosd/config/priv_validator.json` file.
 
 ::: warning Note
 To be in the validator set, you need to have more total voting power than the 100th validator.
@@ -163,7 +163,7 @@ The default number of files Linux can open (per-process) is `1024`. `evmosd` is 
 ```toml
 # /etc/systemd/system/evmosd.service
 [Unit]
-Description=Evmos Node
+Description=Torque Node
 After=network.target
 
 [Service]

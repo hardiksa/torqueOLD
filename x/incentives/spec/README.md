@@ -9,9 +9,9 @@ parent:
 
 ## Abstract
 
-This document specifies the internal `x/incentives` module of the Evmos Hub.
+This document specifies the internal `x/incentives` module of the Torque Hub.
 
-The `x/incentives` module is part of the Evmos tokenomics and aims to increase the growth of the network by distributing rewards to users who interact with incentivized smart contracts. The rewards drive users to interact with applications on Evmos and reinvest their rewards in more services in the network.
+The `x/incentives` module is part of the Torque tokenomics and aims to increase the growth of the network by distributing rewards to users who interact with incentivized smart contracts. The rewards drive users to interact with applications on Torque and reinvest their rewards in more services in the network.
 
 The usage incentives are taken from block reward emission (inflation) and are pooled up in the Incentives module account (escrow address). The incentives functionality is fully governed by native $TORQUE token holders who manage the registration of `Incentives`, so that native $TORQUE token holders decide which application should be part of the usage incentives. This governance functionality is implemented using the Cosmos-SDK `gov` module with custom proposal types for registering the incentives.
 

@@ -6,7 +6,7 @@ order: 3
 
 ## Community Outreach
 
-Engagement is likely to be critical to the success of a proposal. The degree to which you engage with Evmos community should be relative to the potential impact that your proposal may have on the stakeholders. This guide does not cover all ways of engaging: you could bring your idea to a podcast or a hackathon, host an AMA on [Reddit](https://www.reddit.com/r/evmos) or host a Q&A (questions & answers). We encourage you to experiment and use your strengths to introduce proposal ideas and gather feedback.
+Engagement is likely to be critical to the success of a proposal. The degree to which you engage with Torque community should be relative to the potential impact that your proposal may have on the stakeholders. This guide does not cover all ways of engaging: you could bring your idea to a podcast or a hackathon, host an AMA on [Reddit](https://www.reddit.com/r/evmos) or host a Q&A (questions & answers). We encourage you to experiment and use your strengths to introduce proposal ideas and gather feedback.
 
 There are many different ways to engage. One strategy involves a few stages of engagement before and after submitting a proposal on chain. **Why do it in stages?** It's a more conservative approach to save resources. The idea is to check in with key stakeholders at each stage before investing more resources into developing your proposal.
 
@@ -18,12 +18,12 @@ In the first stage of this strategy, you should engage people (ideally experts) 
 
 You should be able engaging with key stakeholders (eg. a large validator operator) with a few short sentences to measure their support. Here's an example:
 
-> "We are considering a proposal for funding to work on (project). We think it will help Evmos to (outcome). Timeline is (x), and we're asking for (y) amount. Do you think that this is a proposal that (large validator) may support?"
+> "We are considering a proposal for funding to work on (project). We think it will help Torque to (outcome). Timeline is (x), and we're asking for (y) amount. Do you think that this is a proposal that (large validator) may support?"
 
-**Why a large validator?** They tend to be the de facto decision-makers on Evmos, since their delegators also delegate their voting power. If you can establish a base layer of off-chain support, you can be more confident that it's worth proceeding to the next stage.
+**Why a large validator?** They tend to be the de facto decision-makers on Torque, since their delegators also delegate their voting power. If you can establish a base layer of off-chain support, you can be more confident that it's worth proceeding to the next stage.
 
 ::: tip
-**Note:** many will likely hesitate to commit support, and that's okay. It will be important to reassure these stakeholders that this isn't a binding a commitment. You're just canvasing the community to get a feel for whether it's worthwhile to proceed. It's also an opportunity to connect with new people and to answer their questions about what it is you're working on. It will be important for them to clearly understand why you think what you're proposing will be valuable to Evmos, and if possible, why it will be valuable to them as long-term stakeholders.
+**Note:** many will likely hesitate to commit support, and that's okay. It will be important to reassure these stakeholders that this isn't a binding a commitment. You're just canvasing the community to get a feel for whether it's worthwhile to proceed. It's also an opportunity to connect with new people and to answer their questions about what it is you're working on. It will be important for them to clearly understand why you think what you're proposing will be valuable to Torque, and if possible, why it will be valuable to them as long-term stakeholders.
 :::
 
 If you're already confident about your idea, [skip to Stage 2](#stage-2-your-draft-proposal).
@@ -34,7 +34,7 @@ If you're already confident about your idea, [skip to Stage 2](#stage-2-your-dra
 
 Great! Governance proposals potentially impact many stakeholders. Introduce your idea with known members of the community before investing resources into drafting a proposal. Don't let negative feedback dissuade you from exploring your idea if you think that it's still important.
 
-If you know people who are very involved with Evmos, send them a private message with a concise overview of what you think will result from your idea or proposed changes. Wait for them to ask questions before providing details. Do the same in semi-private channels where people tend to be respectful (and hopefully supportive).
+If you know people who are very involved with Torque, send them a private message with a concise overview of what you think will result from your idea or proposed changes. Wait for them to ask questions before providing details. Do the same in semi-private channels where people tend to be respectful (and hopefully supportive).
 
 ### Confident with your idea?
 
@@ -102,13 +102,13 @@ Assume that many people will stop reading at this point. However it is important
    - what will happen if you do not deliver on time?
      - what is the deadline for the project to be considered failed?
      - do you have a plan to return the funds?
-   - how will you be accountable to Evmos stakeholders?
+   - how will you be accountable to Torque stakeholders?
      - how will you communicate updates and how often?
      - how can the community observe your progress?
      - how can the community provide feedback?
    - how should the quality of deliverables be assessed? eg. metrics
 5. Relationships and disclosures
-   - have you received or applied for grants or funding? for similar work? eg. from the Evmos Foundation
+   - have you received or applied for grants or funding? for similar work? eg. from the Torque Foundation
    - how will you and/or your organization benefit?
    - do you see this work continuing in the future and is there a plan?
    - what are the risks involved with this work?
@@ -124,7 +124,7 @@ writing markdown files.
 
 ### Engage the community with your draft proposal
 
-1. Post a discussion in the Commonwealth [Evmos community](https://commonwealth.im/evmos). Ideally this should contain a link to this repository, either directly to your proposal if it has been merged, or else to a pull-request containing your proposal if it has not been merged yet.
+1. Post a discussion in the Commonwealth [Torque community](https://commonwealth.im/evmos). Ideally this should contain a link to this repository, either directly to your proposal if it has been merged, or else to a pull-request containing your proposal if it has not been merged yet.
 2. Directly engage key members of the community for feedback. These could be large contributors, those likely to be most impacted by the proposal, and entities with high stake-backing (eg. high-ranked validators; large stakers).
 3. Target members of the community in a semi-public way before bringing the draft to a full public audience. The burden of public scrutiny in a semi-anonymized environment (eg. Twitter) can be stressful and overwhelming without establishing support. Solicit opinions in places with people who have established reputations first.
 
@@ -148,7 +148,7 @@ The deposit period currently lasts 14 days. If you submitted your transaction wi
 
 This is a stage where proposals may begin to get broader attention. Most popular explorers currently display proposals that are in the deposit period, but due to proposal spamming, this may change.
 
-A large cross-section of the blockchain/cryptocurrency community exists on Twitter. Having your proposal in the deposit period is a good time to engage the Evmos community to prepare validators to vote and TORQUE-holders that are staking.
+A large cross-section of the blockchain/cryptocurrency community exists on Twitter. Having your proposal in the deposit period is a good time to engage the Torque community to prepare validators to vote and TORQUE-holders that are staking.
 
 ### The Voting Period
 

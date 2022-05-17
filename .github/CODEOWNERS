@@ -6,7 +6,7 @@
 # Documentation
 docs/ @danburck
 
-# Evmos Modules
+# Torque Modules
 x/epochs/ @ramacarlucho
 x/erc20/ @danburck @hanchon
 x/incentives/ @danburck

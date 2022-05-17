@@ -9,13 +9,13 @@ parent:
 
 ## Abstract
 
-This document specifies the internal `x/claims` module of the Evmos Hub.
+This document specifies the internal `x/claims` module of the Torque Hub.
 
-The `x/claims` module is part of the Evmos [Rektdrop](https://evmos.blog/the-evmos-rektdrop-abbe931ba823) and aims to increase the distribution of the network tokens to a large number of users.
+The `x/claims` module is part of the Torque [Rektdrop](https://evmos.blog/the-evmos-rektdrop-abbe931ba823) and aims to increase the distribution of the network tokens to a large number of users.
 
 Users are assigned with an initial amount of tokens from the airdrop allocation, and then are able to automatically claim higher percentages as they perform certain tasks on-chain.
 
-For the Evmos Rektdrop, users are required to claim their airdrop by participating in core network activities. A Rektdrop recipient has to perform the following activities to get the allocated tokens:
+For the Torque Rektdrop, users are required to claim their airdrop by participating in core network activities. A Rektdrop recipient has to perform the following activities to get the allocated tokens:
 
 * 25% is claimed by staking
 * 25% is claimed by voting in governance

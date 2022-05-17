@@ -4,7 +4,7 @@ order: 3
 
 # Resources
 
-Learn about Evmos with the list of official resources. {synopsis}
+Learn about Torque with the list of official resources. {synopsis}
 
 ::: tip
 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧 🚧
@@ -53,4 +53,4 @@ Note: most of these articles are outdated as they refer to the previous Ethermin
 
 ## Next {hide}
 
-Learn how to run an Evmos [node](./../../validators/quickstart/run_node.md) {hide}
+Learn how to run an Torque [node](./../../validators/quickstart/run_node.md) {hide}

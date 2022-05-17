@@ -11,7 +11,7 @@ The `x/incentive` module allows for two types of registration state transitions:
 A user registers an incentive defining the contract, allocations, and number of epochs. Once the proposal passes (i.e is approved by governance), the incentive module creates the incentive and distributes rewards.
 
 1. User submits a `RegisterIncentiveProposal`.
-2. Validators of the Evmos Hub vote on the proposal using `MsgVote` and proposal passes.
+2. Validators of the Torque Hub vote on the proposal using `MsgVote` and proposal passes.
 3. Create incentive for the contract with a `TotalGas = 0` and set its `startTime` to `ctx.Blocktime` if the following conditions are met:
     1. Incentives param is globally enabled
     2. Incentive is not yet registered

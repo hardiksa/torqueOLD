@@ -9,13 +9,13 @@ Learn how to manually upgrade your node. {synopsis}
 
 ## Pre-requisites
 
-- [Install Evmos](./../quickstart/installation.md) {prereq}
+- [Install Torque](./../quickstart/installation.md) {prereq}
 
-## 1. Upgrade the Evmos version
+## 1. Upgrade the Torque version
 
-Before upgrading the Evmos version. Stop your instance of `evmosd` using `Ctrl/Cmd+C`.
+Before upgrading the Torque version. Stop your instance of `evmosd` using `Ctrl/Cmd+C`.
 
-Next, upgrade the software to the desired release version. Check the Evmos [releases page](https://github.com/tharsis/evmos/releases) for details on each release.
+Next, upgrade the software to the desired release version. Check the Torque [releases page](https://github.com/tharsis/evmos/releases) for details on each release.
 
 ::: warning
 Ensure that the version installed matches the one needed for the network you are running (mainnet or testnet).
@@ -31,7 +31,7 @@ make install
 If you have issues at this step, please check that you have the latest stable version of [Golang](https://golang.org/dl/) installed.
 :::
 
-Verify that you've successfully installed Evmos on your system by using the `version` command:
+Verify that you've successfully installed Torque on your system by using the `version` command:
 
 ```bash
 $ evmosd version --long

@@ -12,8 +12,8 @@ You specify the network you want to join by setting the **genesis file** and **s
 
 | Testnet Chain ID | Description                       | Site                                                                       | Version                                                                      | Status  |
 | ---------------- | --------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------- |
-| `evmos_9000-4`   | Evmos_9000-4 Testnet              | [Evmos 9000-4](https://github.com/tharsis/testnets/tree/main/evmos_9000-4) | [`v4.0.1`](https://github.com/tharsis/evmos/releases/v4.0.1)                 | `Live`  |
-| `evmos_9000-3`   | Evmos_9000-3 Testnet              | [Evmos 9000-3](https://github.com/tharsis/testnets/tree/main/evmos_9000-3) | [`v1.0.0-beta1`](https://github.com/tharsis/evmos/releases/tag/v1.0.0-beta1) | `Stale` |
+| `evmos_9000-4`   | Torque_9000-4 Testnet              | [Torque 9000-4](https://github.com/tharsis/testnets/tree/main/evmos_9000-4) | [`v4.0.1`](https://github.com/tharsis/evmos/releases/v4.0.1)                 | `Live`  |
+| `evmos_9000-3`   | Torque_9000-3 Testnet              | [Torque 9000-3](https://github.com/tharsis/testnets/tree/main/evmos_9000-3) | [`v1.0.0-beta1`](https://github.com/tharsis/evmos/releases/tag/v1.0.0-beta1) | `Stale` |
 | `evmos_9000-2`   | Olympus Mons Incentivized Testnet | [Olympus Mons](https://github.com/tharsis/testnets/tree/main/olympus_mons) | [`v0.3.x`](https://github.com/tharsis/evmos/releases)                        | `Stale` |
 | `evmos_9000-1`   | Arsia Mons Testnet                | [Arsia Mons](https://github.com/tharsis/testnets/tree/main/arsia_mons)     | [`v0.1.x`](https://github.com/tharsis/evmos/releases)                        | `Stale` |
 
@@ -106,7 +106,7 @@ For more information on seeds and peers, you can the Tendermint [P2P documentati
 We can set the [`persistent_peers`](https://docs.tendermint.com/master/tendermint-core/using-tendermint.html#persistent-peer) field in `~/.evmosd/config/config.toml` to specify peers that your node will maintain persistent connections with. You can retrieve them from the list of
 available peers on the [`testnets`](https://github.com/tharsis/testnets) repo.
 
-A list of available persistent peers is also available in the `#find-peers` channel in the [Evmos Discord](https://discord.gg/evmos). You can get a random 10 entries from the `peers.txt` file in the `PEERS` variable by running the following command:
+A list of available persistent peers is also available in the `#find-peers` channel in the [Torque Discord](https://discord.gg/evmos). You can get a random 10 entries from the `peers.txt` file in the `PEERS` variable by running the following command:
 
 ```bash
 PEERS=`curl -sL https://raw.githubusercontent.com/tharsis/testnets/main/evmos_9000-4/peers.txt | sort -R | head -n 10 | awk '{print $1}' | paste -s -d, -`
@@ -130,7 +130,7 @@ For more details on how to run your validator, follow [these](./setup/run_valida
 evmosd tx staking create-validator \
   --amount=1000000000000atevmos \
   --pubkey=$(evmosd tendermint show-validator) \
-  --moniker="EvmosWhale" \
+  --moniker="TorqueWhale" \
   --chain-id=<chain_id> \
   --commission-rate="0.10" \
   --commission-max-rate="0.20" \
@@ -186,7 +186,7 @@ evmosd start
 
 ## Share your Peer
 
-You can share your peer to posting it in the `#find-peers` channel in the [Evmos Discord](https://discord.gg/evmos).
+You can share your peer to posting it in the `#find-peers` channel in the [Torque Discord](https://discord.gg/evmos).
 
 ::: tip
 To get your Node ID use

@@ -1,6 +1,6 @@
 module.exports = {
   theme: 'cosmos',
-  title: 'Evmos Documentation',
+  title: 'Torque Documentation',
   locales: {
     '/': {
       lang: 'en-US'
@@ -51,11 +51,11 @@ module.exports = {
     editLinks: true,
     custom: true,
     project: {
-      name: 'Evmos',
-      denom: 'Evmos',
+      name: 'Torque',
+      denom: 'Torque',
       ticker: 'TORQUE',
       binary: 'evmosd',
-      testnet_denom: 'tEvmos',
+      testnet_denom: 'tTorque',
       testnet_ticker: 'tTORQUE',
       rpc_url: 'https://eth.bd.evmos.org:8545',
       rpc_url_testnet: 'https://eth.bd.evmos.dev:8545',
@@ -85,7 +85,7 @@ module.exports = {
       auto: false,
       nav: [
         {
-          title: 'About Evmos',
+          title: 'About Torque',
           children: [
             {
               title: 'Introduction',
@@ -93,11 +93,11 @@ module.exports = {
               path: '/about/intro'
             },
             {
-              title: 'Evmos Ecosystem',
+              title: 'Torque Ecosystem',
               path: 'https://evmos.space/'
             },
             {
-              title: 'Awesome Evmos',
+              title: 'Awesome Torque',
               path: 'https://github.com/tharsis/awesome'
             },
           ]
@@ -141,7 +141,7 @@ module.exports = {
               path: '/developers/connect'
             },
             {
-              title: 'Evmos Clients',
+              title: 'Torque Clients',
               directory: false,
               path: '/developers/clients'
             },
@@ -194,7 +194,7 @@ module.exports = {
               path: '/modules'
             },
             {
-              title: 'Evmos Go API',
+              title: 'Torque Go API',
               path: 'https://pkg.go.dev/github.com/tharsis/evmos'
             },
             {
@@ -202,7 +202,7 @@ module.exports = {
               path: 'https://pkg.go.dev/github.com/tharsis/ethermint'
             },
             {
-              title: 'Evmos Protobuf',
+              title: 'Torque Protobuf',
               directory: false,
               path: '/protocol/proto-docs'
             }
@@ -247,7 +247,7 @@ module.exports = {
               path: '/validators/upgrades'
             },
             {
-              title: 'Evmos Governance',
+              title: 'Torque Governance',
               directory: true,
               path: '/validators/governance'
             },
@@ -281,13 +281,13 @@ module.exports = {
       title: 'Help & Support',
       chat: {
         title: 'Discord Channel',
-        text: 'Chat with Evmos users and team on Discord.',
+        text: 'Chat with Torque users and team on Discord.',
         url: 'https://discord.gg/evmos',
         bg: 'linear-gradient(103.75deg, #1B1E36 0%, #22253F 100%)'
       },
       forum: {
         title: 'Commonwealth Forum',
-        text: 'Join the Evmos Commonwealth forum',
+        text: 'Join the Torque Commonwealth forum',
         url: 'https://commonwealth.im/evmos', 
         bg: 'linear-gradient(221.79deg, #3D6B99 -1.08%, #336699 95.88%)',
       },
@@ -310,11 +310,11 @@ module.exports = {
         },
         {
           service: "twitter",
-          url: "https://twitter.com/EvmosOrg",
+          url: "https://twitter.com/TorqueOrg",
         },
         {
           service: "telegram",
-          url: "https://t.me/EvmosOrg",
+          url: "https://t.me/TorqueOrg",
         },
         {
           service: "linkedin",
@@ -347,20 +347,20 @@ module.exports = {
         title: 'Community',
         children: [
           {
-            title: 'Evmos Discord Community',
+            title: 'Torque Discord Community',
             url: 'https://discord.gg/evmos'
           },
           {
-            title: 'Evmos Commonwealth Forum',
+            title: 'Torque Commonwealth Forum',
             url: 'https://commonwealth.im/evmos'
           },
         ]
       },
       {
-        title: 'Evmos',
+        title: 'Torque',
         children: [
           {
-            title: 'Jobs at Evmos',
+            title: 'Jobs at Torque',
             url: 'https://tharsis.notion.site/'
           }
         ]

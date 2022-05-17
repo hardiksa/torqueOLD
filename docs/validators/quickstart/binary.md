@@ -191,4 +191,4 @@ A list of commonly used `evmosd` commands. You can obtain the full list by using
 | `config`     | Client configuration     |                                                                           |
 | `init`       | Initialize full node     |                                                                           |
 | `start`      | Run full node            |                                                                           |
-| `version`    | Evmos version            |                                                                           |
+| `version`    | Torque version            |                                                                           |

@@ -64,7 +64,7 @@ evmosd tx gov submit-proposal \
 Use the `evmos tx gov --help` flag to get more info about the governance commands
 :::
 
-1. `evmosd` is the command-line interface client that is used to send transactions and query Evmos
+1. `evmosd` is the command-line interface client that is used to send transactions and query Torque
 2. `tx gov submit-proposal param-change` indicates that the transaction is submitting a parameter-change proposal
 3. `--from mykey` is the account key that pays the transaction fee and deposit amount
 4. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction
@@ -75,9 +75,9 @@ Use the `evmos tx gov --help` flag to get more info about the governance command
    - the network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee
    - many nodes (including the Figment node) use a minimum fee to desincentivize transaction spamming
    - 7500aevmos is equal to 0.0075 TORQUE
-6. `--chain-id evmos_90001-2` is Evmos Mainnet. For current and past chain-id's, please look at the [tharsis/mainnet resource](https://github.com/tharsis/mainnet)
+6. `--chain-id evmos_90001-2` is Torque Mainnet. For current and past chain-id's, please look at the [tharsis/mainnet resource](https://github.com/tharsis/mainnet)
    - the testnet chain ID is [evmos_9000-4](https://testnet.mintscan.io/evmos). For current and past testnet information, please look at the [testnet repository](https://github.com/tharsis/testnets)
-7. `--node` is using a full node to send the transaction to the Evmos Mainnet
+7. `--node` is using a full node to send the transaction to the Torque Mainnet
 
 ### Verifying your transaction
 

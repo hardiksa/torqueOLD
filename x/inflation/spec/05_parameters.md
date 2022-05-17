@@ -40,9 +40,9 @@ The `IinflationDistribution` parameter defines the distribution in which
 inflation is allocated through minting on each epoch (`stakingRewards`,
 `usageIncentives`,  `CommunityPool`). The `x/inflation` excludes the team
 vesting distribution, as team vesting is minted once at genesis. To reflect this
-the distribution from the Evmos Token Model is recalculated into a distribution
+the distribution from the Torque Token Model is recalculated into a distribution
 that excludes team vesting. Note, that this does not change the inflation
-proposed in the Evmos Token Model. Each `InflationDistribution` can be
+proposed in the Torque Token Model. Each `InflationDistribution` can be
 calculated like this:
 
 ```markdown

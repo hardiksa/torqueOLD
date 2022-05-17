@@ -2,20 +2,20 @@
 order: 1
 -->
 
-# EvmosJS
+# TorqueJS
 
-Use the EvmosJS library for connecting clients to Evmos {synopsis}
+Use the TorqueJS library for connecting clients to Torque {synopsis}
 
-[`evmosjs`](https://github.com/tharsis/evmosjs) is a JavaScript and TypeScript client library for [Evmos](https://github.com/tharsis/evmos) and [Ethermint](https://github.com/tharsis/ethermint) nodes.
+[`evmosjs`](https://github.com/tharsis/evmosjs) is a JavaScript and TypeScript client library for [Torque](https://github.com/tharsis/evmos) and [Ethermint](https://github.com/tharsis/ethermint) nodes.
 
 ## Functionalities
 
 - Address format converter (Bech32 <--> Hex)
-- Protobuf files used to generate Cosmos/Evmos transactions
-- Query REST provider for interacting with Evmos nodes
-- Evmos transaction generator
-- Send Evmos's Cosmos transactions using EIP712 transactions generator
-- Sign Evmos transactions using Keplr
+- Protobuf files used to generate Cosmos/Torque transactions
+- Query REST provider for interacting with Torque nodes
+- Torque transaction generator
+- Send Torque's Cosmos transactions using EIP712 transactions generator
+- Sign Torque transactions using Keplr
 
 ## List of packages
 

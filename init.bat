@@ -35,7 +35,7 @@ evmosd config chain-id %CHAINID%
 
 evmosd keys add %KEY% --keyring-backend %KEYRING% --algo %KEYALGO%
 
-rem Set moniker and chain-id for Evmos (Moniker can be anything, chain-id must be an integer)
+rem Set moniker and chain-id for Torque (Moniker can be anything, chain-id must be an integer)
 evmosd init %MONIKER% --chain-id %CHAINID% 
 
 rem Change parameter token denominations to aevmos

@@ -4,7 +4,7 @@ order: 1
 
 # Installation
 
-Build and install the Evmos binaries from source or using Docker. {synopsis}
+Build and install the Torque binaries from source or using Docker. {synopsis}
 
 ## Pre-requisites
 
@@ -14,7 +14,7 @@ Build and install the Evmos binaries from source or using Docker. {synopsis}
 ## Install Go
 
 ::: warning
-Evmos is built using [Go](https://golang.org/dl/) version `1.17.5+`
+Torque is built using [Go](https://golang.org/dl/) version `1.17.5+`
 :::
 
 ```bash

@@ -4,7 +4,7 @@ order: 4
 
 # Keplr
 
-Connect your Keplr wallet with Evmos {synopsis}
+Connect your Keplr wallet with Torque {synopsis}
 
 ## Pre-requisite Readings
 
@@ -22,4 +22,4 @@ Open the Keplr extension on your browser. If you are setting up Keplr for the fi
 
 ## Connect Keplr to Mainnet
 
-Once you are signed in to the Keplr extension, you can connect the wallet with the Evmos network. The Evmos mainnet network is already built into Keplr; look for the `Evmos (beta)` network.
+Once you are signed in to the Keplr extension, you can connect the wallet with the Torque network. The Torque mainnet network is already built into Keplr; look for the `Torque (beta)` network.

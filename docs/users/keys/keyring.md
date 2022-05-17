@@ -34,7 +34,7 @@ This command generates a new 24-word mnemonic phrase, persists it to the relevan
 By default, the keyring generates a `eth_secp256k1` key. The keyring also supports `ed25519` keys, which may be created by passing the `--algo` flag. A keyring can of course hold both types of keys simultaneously.
 
 ::: warning
-**NOTE**: Cosmos `secp256k1` keys are not supported on Evmos due to compatibility issues with Ethereum transactions.
+**NOTE**: Cosmos `secp256k1` keys are not supported on Torque due to compatibility issues with Ethereum transactions.
 :::
 
 ## Keyring Backends

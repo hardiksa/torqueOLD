@@ -65,7 +65,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### API Breaking
 
-- (upgrade) [\#557](https://github.com/tharsis/evmos/pull/557) Update Evmos go.mod version `v3` -> `v4`
+- (upgrade) [\#557](https://github.com/tharsis/evmos/pull/557) Update Torque go.mod version `v3` -> `v4`
 - (erc20) [\#544](https://github.com/tharsis/evmos/pull/544) Remove `updateTokenPairERC20Proposal` functionality rename `relay` to `conversion`
 - (inflation) [\#536](https://github.com/tharsis/evmos/pull/536) Rename inflation endpoint `/evmos/inflation/v1/total_supply` -> `/evmos/inflation/v1/circulating_supply`
 
@@ -99,7 +99,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### API Breaking
 
-- [\#415](https://github.com/tharsis/evmos/pull/415) Bump Evmos go version to v3
+- [\#415](https://github.com/tharsis/evmos/pull/415) Bump Torque go version to v3
 
 ### Bug Fixes
 
@@ -117,7 +117,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 - (deps) [\#478](https://github.com/tharsis/evmos/pull/478) Bump Cosmos SDK to [`v0.45.3`](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.45.3)
 - (deps) [\#478](https://github.com/tharsis/evmos/pull/478) Bump Ethermint to [`v0.14.0`](https://github.com/tharsis/ethermint/releases/tag/v0.14.0)
 - (vesting) [\#468](https://github.com/tharsis/evmos/pull/468) Use coins `Min` function from Cosmos SDK.
-- (cmd) [\#446](https://github.com/tharsis/evmos/pull/446) Update `migrate` command to migrate Evmos, Ethermint and Cosmos SDK modules.
+- (cmd) [\#446](https://github.com/tharsis/evmos/pull/446) Update `migrate` command to migrate Torque, Ethermint and Cosmos SDK modules.
 - (app) [\#446](https://github.com/tharsis/evmos/pull/446) Refactor upgrade code.
 - (ibc) [\#412](https://github.com/tharsis/evmos/pull/412) Introduce boilerplate struct for IBC applications.
 - (deps) [\#402](https://github.com/tharsis/evmos/pull/402) Bump IBC go to [`v3.0.0`](https://github.com/cosmos/ibc-go/releases/tag/v3.0.0)

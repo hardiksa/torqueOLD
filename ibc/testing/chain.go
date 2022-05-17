@@ -23,7 +23,7 @@ import (
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"
 )
 
-// ChainIDPrefix defines the default chain ID prefix for Evmos test chains
+// ChainIDPrefix defines the default chain ID prefix for Torque test chains
 var ChainIDPrefix = "evmos_9000-"
 
 func init() {

@@ -114,7 +114,7 @@ func (k Keeper) OnRecvPacket(
 	// If the packet is sent from a non-EVM chain, the sender address is not an
 	// ethereum key (i.e. `ethsecp256k1`). Thus, if `sameAddress` is true, the
 	// recipient address must be a non-ethereum key as well, which is not
-	// supported on Evmos. To prevent funds getting stuck, return an error, unless
+	// supported on Torque. To prevent funds getting stuck, return an error, unless
 	// the destination channel from a connection to a chain is EVM-compatible or
 	// supports ethereum keys (eg: Cronos, Injective).
 	if sameAddress && !fromEVMChain {

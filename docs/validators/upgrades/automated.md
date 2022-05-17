@@ -50,7 +50,7 @@ cosmovisor version
 evmosd version
 ```
 
-### 2. Download the Evmos release
+### 2. Download the Torque release
 
 #### 2.a) Manual Download
 
@@ -115,7 +115,7 @@ You will need some way to keep the process always running. If you're on linux, y
 ```bash
 sudo tee /etc/systemd/system/evmosd.service > /dev/null <<EOF
 [Unit]
-Description=Evmos Daemon
+Description=Torque Daemon
 After=network-online.target
 
 [Service]

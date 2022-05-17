@@ -20,8 +20,8 @@ You need to set the **genesis file** and **seeds**. If you need more information
 
 | Chain ID       | Description     | Site                                                               | Version                                                      | Status  |
 | -------------- | --------------- | ------------------------------------------------------------------ | ------------------------------------------------------------ | ------- |
-| `evmos_9001-2` | Evmos Mainnet 2 | [Evmos](https://github.com/tharsis/mainnet/tree/main/evmos_9001-2) | [`v4.0.1`](https://github.com/tharsis/evmos/releases/v4.0.1) | `Live`  |
-| `evmos_9001-1` | Evmos Mainnet 1 | [Evmos](https://github.com/tharsis/mainnet/tree/main/evmos_9001-1) | [`v2.0.1`](https://github.com/tharsis/evmos/releases/v2.0.1) | `Stale` |
+| `evmos_9001-2` | Torque Mainnet 2 | [Torque](https://github.com/tharsis/mainnet/tree/main/evmos_9001-2) | [`v4.0.1`](https://github.com/tharsis/evmos/releases/v4.0.1) | `Live`  |
+| `evmos_9001-1` | Torque Mainnet 1 | [Torque](https://github.com/tharsis/mainnet/tree/main/evmos_9001-1) | [`v2.0.1`](https://github.com/tharsis/evmos/releases/v2.0.1) | `Stale` |
 
 ## Install `evmosd`
 
@@ -109,7 +109,7 @@ For more information on seeds and peers, you can the Tendermint [P2P documentati
 We can set the [`persistent_peers`](https://docs.tendermint.com/master/tendermint-core/using-tendermint.html#persistent-peer) field in `~/.evmosd/config/config.toml` to specify peers that your node will maintain persistent connections with. You can retrieve them from the list of
 available peers on the [`mainnet`](https://github.com/tharsis/mainnet) repo.
 
-A list of available persistent peers is also available in the `#find-peers` channel in the [Evmos Discord](https://discord.gg/evmos). You can get a random 10 entries from the `peers.txt` file in the `PEERS` variable by running the following command:
+A list of available persistent peers is also available in the `#find-peers` channel in the [Torque Discord](https://discord.gg/evmos). You can get a random 10 entries from the `peers.txt` file in the `PEERS` variable by running the following command:
 
 ```bash
 PEERS=`curl -sL https://raw.githubusercontent.com/tharsis/mainnet/main/evmos_9001-2/peers.txt | sort -R | head -n 10 | awk '{print $1}' | paste -s -d, -`
@@ -131,7 +131,7 @@ For more details on how to run your validator, follow the validator [these](./se
 evmosd tx staking create-validator \
   --amount=1000000000000aevmos \
   --pubkey=$(evmosd tendermint show-validator) \
-  --moniker="EvmosWhale" \
+  --moniker="TorqueWhale" \
   --chain-id=<chain_id> \
   --commission-rate="0.05" \
   --commission-max-rate="0.20" \
@@ -158,7 +158,7 @@ evmosd start
 
 ## Share your Peer
 
-You can share your peer to posting it in the `#find-peers` channel in the [Evmos Discord](https://discord.gg/evmos).
+You can share your peer to posting it in the `#find-peers` channel in the [Torque Discord](https://discord.gg/evmos).
 
 ::: tip
 To get your Node ID use

@@ -4,7 +4,7 @@ order: 7
 
 # Clients
 
-A user can query the Evmos `x/vesting` module using the CLI, gRPC, or REST.
+A user can query the Torque `x/vesting` module using the CLI, gRPC, or REST.
 
 ## CLI
 
