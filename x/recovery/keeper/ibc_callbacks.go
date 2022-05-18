@@ -36,17 +36,6 @@ func (k Keeper) OnRecvPacket(
 	logger := k.Logger(ctx)
 
 	params := k.GetParams(ctx)
-	claimsParams := k.claimsKeeper.GetParams(ctx)
-
-	// Check and return original ACK if:
-	//  - recovery is disabled globally
-	//  - channel is not authorized
-	//  - channel is an EVM channel
-	if !params.EnableRecovery ||
-		!claimsParams.IsAuthorizedChannel(packet.DestinationChannel) ||
-		claimsParams.IsEVMChannel(packet.DestinationChannel) {
-		return ack
-	}
 
 	// Get addresses in `torque1` and the original bech32 format
 	sender, recipient, senderBech32, recipientBech32, err := ibc.GetTransferSenderRecipient(packet)

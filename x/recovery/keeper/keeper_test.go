@@ -18,7 +18,6 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
 	"github.com/hardiksa/torque/v4/app"
-	claimstypes "github.com/hardiksa/torque/v4/x/claims/types"
 	"github.com/hardiksa/torque/v4/x/recovery/types"
 )
 
@@ -71,12 +70,7 @@ func (suite *KeeperTestSuite) SetupTest() {
 	types.RegisterQueryServer(queryHelper, suite.app.RecoveryKeeper)
 	suite.queryClient = types.NewQueryClient(queryHelper)
 
-	claimsParams := claimstypes.DefaultParams()
-	claimsParams.AirdropStartTime = suite.ctx.BlockTime()
-	suite.app.ClaimsKeeper.SetParams(suite.ctx, claimsParams)
-
 	stakingParams := suite.app.StakingKeeper.GetParams(suite.ctx)
-	stakingParams.BondDenom = claimsParams.GetClaimsDenom()
 	suite.app.StakingKeeper.SetParams(suite.ctx, stakingParams)
 }
 
